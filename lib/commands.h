@@ -52,11 +52,9 @@ void CommandLine::resetstatus(){
 
 int CommandLine::serialread()
 {
-    // recieve();
+    
     {
-        // ndx = 0;
-        // char endMarker = '!';
-        // char rc;
+
         bufReady = false;
         if (device_ref->available() > 0)
         {
