@@ -7,12 +7,8 @@
 #include "../lib/commands.h"
 #include "../lib/parser.h"
 #include "../lib/sensors.h"
-enum display_settings
-{
-  TFT_CS = 10, TFT_RST = 6, TFT_DC = 7, TFT_SCLK = 13, TFT_MOSI = 11
-};
+#include "../lib/menus.h"
 
-Adafruit_ST7735 tft = Adafruit_ST7735(TFT_CS, TFT_DC, TFT_MOSI, TFT_SCLK, TFT_RST);
 char sdi12buf[200];
 CommandLine sdiBuf = CommandLine(&sdi12, sdi12buf, sizeof(sdi12buf), 7);
 Parser commandHandler = Parser('0');
@@ -45,9 +41,10 @@ void setup()
   sensors.init();
   Serial.begin(9600);
   sdi12.begin(1200, SERIAL_7E1);
-  tft.initR(INITR_BLACKTAB);
-  tft.setRotation(3);
-  tft.fillScreen(ST77XX_BLACK);
+  Menuinit();
+  //tft.initR(INITR_BLACKTAB);
+  //tft.setRotation(3);
+  //tft.fillScreen(ST77XX_BLACK);
   SENDF;
   CLR12();
   RECEIVEF;
@@ -64,4 +61,5 @@ void loop()
     memset(sdi12buf, 0, sizeof(sdi12buf));
     RECEIVEF;
   }
+  updateMenu();
 }
