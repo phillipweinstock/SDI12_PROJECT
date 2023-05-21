@@ -1,0 +1,3149 @@
+{
+    "extension": "linecounter",
+    "version": "0.2.7",
+    "workspace": "c:\\Users\\pip43\\OneDrive\\Documents\\PlatformIO\\Projects\\SDI12_IMPLEMENTATION2",
+    "linecount": [
+        {
+            "version": "0.2.7",
+            "counttime": "2023-05-21 17:06:21",
+            "filesum": 493,
+            "codesum": 49587,
+            "commentsum": 20596,
+            "blanksum": 7037,
+            "statistics": {
+                ".ini": {
+                    "code": 12,
+                    "comment": 9,
+                    "blank": 1
+                },
+                ".cpp": {
+                    "code": 11523,
+                    "comment": 7993,
+                    "blank": 2396
+                },
+                ".h": {
+                    "code": 25405,
+                    "comment": 9155,
+                    "blank": 1434
+                },
+                "": {
+                    "code": 211,
+                    "comment": 13,
+                    "blank": 45
+                },
+                ".md": {
+                    "code": 836,
+                    "comment": 108,
+                    "blank": 314
+                },
+                ".properties": {
+                    "code": 121,
+                    "comment": 12,
+                    "blank": 1
+                },
+                ".txt": {
+                    "code": 792,
+                    "comment": 6,
+                    "blank": 227
+                },
+                ".ino": {
+                    "code": 8271,
+                    "comment": 2784,
+                    "blank": 2235
+                },
+                ".json": {
+                    "code": 286,
+                    "comment": 0,
+                    "blank": 0
+                },
+                ".dat": {
+                    "code": 7,
+                    "comment": 0,
+                    "blank": 0
+                },
+                ".adoc": {
+                    "code": 28,
+                    "comment": 2,
+                    "blank": 10
+                },
+                ".yml": {
+                    "code": 312,
+                    "comment": 2,
+                    "blank": 61
+                },
+                ".mk": {
+                    "code": 4,
+                    "comment": 0,
+                    "blank": 0
+                },
+                ".bash": {
+                    "code": 64,
+                    "comment": 4,
+                    "blank": 8
+                },
+                ".skip": {
+                    "code": 0,
+                    "comment": 0,
+                    "blank": 0
+                },
+                ".only": {
+                    "code": 0,
+                    "comment": 0,
+                    "blank": 0
+                },
+                ".py": {
+                    "code": 110,
+                    "comment": 41,
+                    "blank": 24
+                },
+                ".checksum": {
+                    "code": 1,
+                    "comment": 0,
+                    "blank": 0
+                },
+                ".c": {
+                    "code": 1582,
+                    "comment": 455,
+                    "blank": 277
+                },
+                ".sh": {
+                    "code": 22,
+                    "comment": 12,
+                    "blank": 4
+                }
+            },
+            "filelist": [
+                {
+                    "blank": 0,
+                    "code": 5,
+                    "comment": 0,
+                    "filename": ".gitignore"
+                },
+                {
+                    "filename": ".pio\\build\\due\\.sconsign39.dblite",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pio\\build\\due\\firmware.bin",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pio\\build\\due\\firmware.elf",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pio\\build\\due\\FrameworkArduino\\abi.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pio\\build\\due\\FrameworkArduino\\avr\\dtostrf.c.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pio\\build\\due\\FrameworkArduino\\cortex_handlers.c.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pio\\build\\due\\FrameworkArduino\\hooks.c.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pio\\build\\due\\FrameworkArduino\\iar_calls_sam3.c.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pio\\build\\due\\FrameworkArduino\\IPAddress.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pio\\build\\due\\FrameworkArduino\\itoa.c.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pio\\build\\due\\FrameworkArduino\\main.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pio\\build\\due\\FrameworkArduino\\new.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pio\\build\\due\\FrameworkArduino\\Print.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pio\\build\\due\\FrameworkArduino\\Reset.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pio\\build\\due\\FrameworkArduino\\RingBuffer.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pio\\build\\due\\FrameworkArduino\\Stream.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pio\\build\\due\\FrameworkArduino\\syscalls_sam3.c.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pio\\build\\due\\FrameworkArduino\\UARTClass.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pio\\build\\due\\FrameworkArduino\\USARTClass.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pio\\build\\due\\FrameworkArduino\\USB\\CDC.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pio\\build\\due\\FrameworkArduino\\USB\\PluggableUSB.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pio\\build\\due\\FrameworkArduino\\USB\\USBCore.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pio\\build\\due\\FrameworkArduino\\watchdog.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pio\\build\\due\\FrameworkArduino\\WInterrupts.c.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pio\\build\\due\\FrameworkArduino\\wiring.c.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pio\\build\\due\\FrameworkArduino\\wiring_analog.c.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pio\\build\\due\\FrameworkArduino\\wiring_digital.c.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pio\\build\\due\\FrameworkArduino\\wiring_pulse.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pio\\build\\due\\FrameworkArduino\\wiring_pulse_asm.S.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pio\\build\\due\\FrameworkArduino\\wiring_shift.c.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pio\\build\\due\\FrameworkArduino\\WMath.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pio\\build\\due\\FrameworkArduino\\WString.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pio\\build\\due\\FrameworkArduinoVariant\\variant.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": ".pio\\build\\due\\idedata.json"
+                },
+                {
+                    "filename": ".pio\\build\\due\\lib020\\CRC\\CRC.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pio\\build\\due\\lib020\\CRC\\CRC12.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pio\\build\\due\\lib020\\CRC\\CRC16.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pio\\build\\due\\lib020\\CRC\\CRC32.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pio\\build\\due\\lib020\\CRC\\CRC64.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pio\\build\\due\\lib020\\CRC\\CRC8.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pio\\build\\due\\lib020\\libCRC.a",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pio\\build\\due\\lib0b7\\Adafruit ST7735 and ST7789 Library\\Adafruit_ST7735.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pio\\build\\due\\lib0b7\\Adafruit ST7735 and ST7789 Library\\Adafruit_ST7789.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pio\\build\\due\\lib0b7\\Adafruit ST7735 and ST7789 Library\\Adafruit_ST77xx.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pio\\build\\due\\lib0b7\\libAdafruit ST7735 and ST7789 Library.a",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pio\\build\\due\\lib121\\Adafruit GFX Library\\Adafruit_GFX.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pio\\build\\due\\lib121\\Adafruit GFX Library\\Adafruit_GrayOLED.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pio\\build\\due\\lib121\\Adafruit GFX Library\\Adafruit_SPITFT.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pio\\build\\due\\lib121\\Adafruit GFX Library\\glcdfont.c.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pio\\build\\due\\lib121\\libAdafruit GFX Library.a",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pio\\build\\due\\lib1f7\\DueFlashStorage\\DueFlashStorage.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pio\\build\\due\\lib1f7\\DueFlashStorage\\efc.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pio\\build\\due\\lib1f7\\DueFlashStorage\\flash_efc.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pio\\build\\due\\lib1f7\\libDueFlashStorage.a",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pio\\build\\due\\libb31\\libSPI.a",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pio\\build\\due\\libb31\\SPI\\SPI.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pio\\build\\due\\libd08\\Adafruit BusIO\\Adafruit_BusIO_Register.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pio\\build\\due\\libd08\\Adafruit BusIO\\Adafruit_I2CDevice.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pio\\build\\due\\libd08\\Adafruit BusIO\\Adafruit_SPIDevice.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pio\\build\\due\\libd08\\libAdafruit BusIO.a",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pio\\build\\due\\libdbd\\libWire.a",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pio\\build\\due\\libdbd\\Wire\\Wire.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pio\\build\\due\\libdeb\\Adafruit BME680 Library\\Adafruit_BME680.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pio\\build\\due\\libdeb\\Adafruit BME680 Library\\bme68x.c.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pio\\build\\due\\libdeb\\libAdafruit BME680 Library.a",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pio\\build\\due\\libea1\\Adafruit Unified Sensor\\Adafruit_Sensor.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pio\\build\\due\\libea1\\libAdafruit Unified Sensor.a",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pio\\build\\due\\libf49\\BH1750\\BH1750.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pio\\build\\due\\libf49\\libBH1750.a",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pio\\build\\due\\libFrameworkArduino.a",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pio\\build\\due\\libFrameworkArduinoVariant.a",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": ".pio\\build\\due\\sizedata.json"
+                },
+                {
+                    "filename": ".pio\\build\\due\\src\\main.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": ".pio\\build\\project.checksum"
+                },
+                {
+                    "blank": 7,
+                    "code": 21,
+                    "comment": 2,
+                    "filename": ".pio\\libdeps\\due\\Adafruit BME680 Library\\.github\\ISSUE_TEMPLATE.md"
+                },
+                {
+                    "blank": 3,
+                    "code": 10,
+                    "comment": 0,
+                    "filename": ".pio\\libdeps\\due\\Adafruit BME680 Library\\.github\\PULL_REQUEST_TEMPLATE.md"
+                },
+                {
+                    "blank": 7,
+                    "code": 25,
+                    "comment": 0,
+                    "filename": ".pio\\libdeps\\due\\Adafruit BME680 Library\\.github\\workflows\\githubci.yml"
+                },
+                {
+                    "blank": 1,
+                    "code": 8,
+                    "comment": 0,
+                    "filename": ".pio\\libdeps\\due\\Adafruit BME680 Library\\.gitignore"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": ".pio\\libdeps\\due\\Adafruit BME680 Library\\.piopm"
+                },
+                {
+                    "blank": 78,
+                    "code": 342,
+                    "comment": 192,
+                    "filename": ".pio\\libdeps\\due\\Adafruit BME680 Library\\Adafruit_BME680.cpp"
+                },
+                {
+                    "blank": 19,
+                    "code": 71,
+                    "comment": 54,
+                    "filename": ".pio\\libdeps\\due\\Adafruit BME680 Library\\Adafruit_BME680.h"
+                },
+                {
+                    "blank": 238,
+                    "code": 1294,
+                    "comment": 316,
+                    "filename": ".pio\\libdeps\\due\\Adafruit BME680 Library\\bme68x.c"
+                },
+                {
+                    "blank": 24,
+                    "code": 23,
+                    "comment": 276,
+                    "filename": ".pio\\libdeps\\due\\Adafruit BME680 Library\\bme68x.h"
+                },
+                {
+                    "blank": 265,
+                    "code": 319,
+                    "comment": 388,
+                    "filename": ".pio\\libdeps\\due\\Adafruit BME680 Library\\bme68x_defs.h"
+                },
+                {
+                    "blank": 16,
+                    "code": 60,
+                    "comment": 28,
+                    "filename": ".pio\\libdeps\\due\\Adafruit BME680 Library\\examples\\bme680async\\bme680async.ino"
+                },
+                {
+                    "blank": 15,
+                    "code": 52,
+                    "comment": 24,
+                    "filename": ".pio\\libdeps\\due\\Adafruit BME680 Library\\examples\\bme680oled\\bme680oled.ino"
+                },
+                {
+                    "blank": 13,
+                    "code": 47,
+                    "comment": 21,
+                    "filename": ".pio\\libdeps\\due\\Adafruit BME680 Library\\examples\\bme680test\\bme680test.ino"
+                },
+                {
+                    "blank": 0,
+                    "code": 10,
+                    "comment": 1,
+                    "filename": ".pio\\libdeps\\due\\Adafruit BME680 Library\\library.properties"
+                },
+                {
+                    "blank": 11,
+                    "code": 20,
+                    "comment": 4,
+                    "filename": ".pio\\libdeps\\due\\Adafruit BME680 Library\\README.md"
+                },
+                {
+                    "blank": 7,
+                    "code": 21,
+                    "comment": 2,
+                    "filename": ".pio\\libdeps\\due\\Adafruit BusIO\\.github\\ISSUE_TEMPLATE.md"
+                },
+                {
+                    "blank": 3,
+                    "code": 10,
+                    "comment": 0,
+                    "filename": ".pio\\libdeps\\due\\Adafruit BusIO\\.github\\PULL_REQUEST_TEMPLATE.md"
+                },
+                {
+                    "blank": 8,
+                    "code": 25,
+                    "comment": 0,
+                    "filename": ".pio\\libdeps\\due\\Adafruit BusIO\\.github\\workflows\\githubci.yml"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": ".pio\\libdeps\\due\\Adafruit BusIO\\.piopm"
+                },
+                {
+                    "blank": 37,
+                    "code": 189,
+                    "comment": 144,
+                    "filename": ".pio\\libdeps\\due\\Adafruit BusIO\\Adafruit_BusIO_Register.cpp"
+                },
+                {
+                    "blank": 18,
+                    "code": 61,
+                    "comment": 29,
+                    "filename": ".pio\\libdeps\\due\\Adafruit BusIO\\Adafruit_BusIO_Register.h"
+                },
+                {
+                    "blank": 29,
+                    "code": 205,
+                    "comment": 82,
+                    "filename": ".pio\\libdeps\\due\\Adafruit BusIO\\Adafruit_I2CDevice.cpp"
+                },
+                {
+                    "blank": 6,
+                    "code": 27,
+                    "comment": 4,
+                    "filename": ".pio\\libdeps\\due\\Adafruit BusIO\\Adafruit_I2CDevice.h"
+                },
+                {
+                    "blank": 3,
+                    "code": 7,
+                    "comment": 0,
+                    "filename": ".pio\\libdeps\\due\\Adafruit BusIO\\Adafruit_I2CRegister.h"
+                },
+                {
+                    "blank": 49,
+                    "code": 333,
+                    "comment": 133,
+                    "filename": ".pio\\libdeps\\due\\Adafruit BusIO\\Adafruit_SPIDevice.cpp"
+                },
+                {
+                    "blank": 18,
+                    "code": 103,
+                    "comment": 19,
+                    "filename": ".pio\\libdeps\\due\\Adafruit BusIO\\Adafruit_SPIDevice.h"
+                },
+                {
+                    "blank": 3,
+                    "code": 8,
+                    "comment": 1,
+                    "filename": ".pio\\libdeps\\due\\Adafruit BusIO\\CMakeLists.txt"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": ".pio\\libdeps\\due\\Adafruit BusIO\\component.mk"
+                },
+                {
+                    "blank": 5,
+                    "code": 16,
+                    "comment": 0,
+                    "filename": ".pio\\libdeps\\due\\Adafruit BusIO\\examples\\i2c_address_detect\\i2c_address_detect.ino"
+                },
+                {
+                    "blank": 8,
+                    "code": 31,
+                    "comment": 3,
+                    "filename": ".pio\\libdeps\\due\\Adafruit BusIO\\examples\\i2c_readwrite\\i2c_readwrite.ino"
+                },
+                {
+                    "blank": 10,
+                    "code": 28,
+                    "comment": 0,
+                    "filename": ".pio\\libdeps\\due\\Adafruit BusIO\\examples\\i2c_registers\\i2c_registers.ino"
+                },
+                {
+                    "blank": 9,
+                    "code": 28,
+                    "comment": 2,
+                    "filename": ".pio\\libdeps\\due\\Adafruit BusIO\\examples\\i2corspi_register\\i2corspi_register.ino"
+                },
+                {
+                    "blank": 5,
+                    "code": 23,
+                    "comment": 1,
+                    "filename": ".pio\\libdeps\\due\\Adafruit BusIO\\examples\\spi_modetest\\spi_modetest.ino"
+                },
+                {
+                    "blank": 9,
+                    "code": 28,
+                    "comment": 3,
+                    "filename": ".pio\\libdeps\\due\\Adafruit BusIO\\examples\\spi_readwrite\\spi_readwrite.ino"
+                },
+                {
+                    "blank": 28,
+                    "code": 120,
+                    "comment": 55,
+                    "filename": ".pio\\libdeps\\due\\Adafruit BusIO\\examples\\spi_register_bits\\spi_register_bits.ino"
+                },
+                {
+                    "blank": 9,
+                    "code": 25,
+                    "comment": 0,
+                    "filename": ".pio\\libdeps\\due\\Adafruit BusIO\\examples\\spi_registers\\spi_registers.ino"
+                },
+                {
+                    "blank": 0,
+                    "code": 9,
+                    "comment": 1,
+                    "filename": ".pio\\libdeps\\due\\Adafruit BusIO\\library.properties"
+                },
+                {
+                    "blank": 4,
+                    "code": 17,
+                    "comment": 0,
+                    "filename": ".pio\\libdeps\\due\\Adafruit BusIO\\LICENSE"
+                },
+                {
+                    "blank": 4,
+                    "code": 4,
+                    "comment": 1,
+                    "filename": ".pio\\libdeps\\due\\Adafruit BusIO\\README.md"
+                },
+                {
+                    "blank": 7,
+                    "code": 21,
+                    "comment": 2,
+                    "filename": ".pio\\libdeps\\due\\Adafruit GFX Library\\.github\\ISSUE_TEMPLATE.md"
+                },
+                {
+                    "blank": 3,
+                    "code": 10,
+                    "comment": 0,
+                    "filename": ".pio\\libdeps\\due\\Adafruit GFX Library\\.github\\PULL_REQUEST_TEMPLATE.md"
+                },
+                {
+                    "blank": 8,
+                    "code": 28,
+                    "comment": 1,
+                    "filename": ".pio\\libdeps\\due\\Adafruit GFX Library\\.github\\workflows\\githubci.yml"
+                },
+                {
+                    "blank": 0,
+                    "code": 6,
+                    "comment": 0,
+                    "filename": ".pio\\libdeps\\due\\Adafruit GFX Library\\.gitignore"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": ".pio\\libdeps\\due\\Adafruit GFX Library\\.piopm"
+                },
+                {
+                    "blank": 201,
+                    "code": 1459,
+                    "comment": 1101,
+                    "filename": ".pio\\libdeps\\due\\Adafruit GFX Library\\Adafruit_GFX.cpp"
+                },
+                {
+                    "blank": 37,
+                    "code": 218,
+                    "comment": 156,
+                    "filename": ".pio\\libdeps\\due\\Adafruit GFX Library\\Adafruit_GFX.h"
+                },
+                {
+                    "blank": 34,
+                    "code": 178,
+                    "comment": 228,
+                    "filename": ".pio\\libdeps\\due\\Adafruit GFX Library\\Adafruit_GrayOLED.cpp"
+                },
+                {
+                    "blank": 15,
+                    "code": 55,
+                    "comment": 53,
+                    "filename": ".pio\\libdeps\\due\\Adafruit GFX Library\\Adafruit_GrayOLED.h"
+                },
+                {
+                    "blank": 132,
+                    "code": 1721,
+                    "comment": 1081,
+                    "filename": ".pio\\libdeps\\due\\Adafruit GFX Library\\Adafruit_SPITFT.cpp"
+                },
+                {
+                    "blank": 43,
+                    "code": 310,
+                    "comment": 341,
+                    "filename": ".pio\\libdeps\\due\\Adafruit GFX Library\\Adafruit_SPITFT.h"
+                },
+                {
+                    "blank": 1,
+                    "code": 0,
+                    "comment": 5,
+                    "filename": ".pio\\libdeps\\due\\Adafruit GFX Library\\Adafruit_SPITFT_Macros.h"
+                },
+                {
+                    "blank": 3,
+                    "code": 8,
+                    "comment": 1,
+                    "filename": ".pio\\libdeps\\due\\Adafruit GFX Library\\CMakeLists.txt"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": ".pio\\libdeps\\due\\Adafruit GFX Library\\component.mk"
+                },
+                {
+                    "blank": 18,
+                    "code": 68,
+                    "comment": 28,
+                    "filename": ".pio\\libdeps\\due\\Adafruit GFX Library\\examples\\GFXcanvas\\GFXcanvas.ino"
+                },
+                {
+                    "blank": 12,
+                    "code": 80,
+                    "comment": 0,
+                    "filename": ".pio\\libdeps\\due\\Adafruit GFX Library\\examples\\GFXcanvas\\GFXcanvasSerialDemo.cpp"
+                },
+                {
+                    "blank": 7,
+                    "code": 19,
+                    "comment": 40,
+                    "filename": ".pio\\libdeps\\due\\Adafruit GFX Library\\examples\\GFXcanvas\\GFXcanvasSerialDemo.h"
+                },
+                {
+                    "blank": 62,
+                    "code": 281,
+                    "comment": 26,
+                    "filename": ".pio\\libdeps\\due\\Adafruit GFX Library\\examples\\mock_ili9341\\mock_ili9341.ino"
+                },
+                {
+                    "blank": 15,
+                    "code": 83,
+                    "comment": 39,
+                    "filename": ".pio\\libdeps\\due\\Adafruit GFX Library\\fontconvert\\bdf2adafruit.py"
+                },
+                {
+                    "blank": 33,
+                    "code": 157,
+                    "comment": 123,
+                    "filename": ".pio\\libdeps\\due\\Adafruit GFX Library\\fontconvert\\fontconvert.c"
+                },
+                {
+                    "blank": 7,
+                    "code": 35,
+                    "comment": 4,
+                    "filename": ".pio\\libdeps\\due\\Adafruit GFX Library\\fontconvert\\fontconvert_win.md"
+                },
+                {
+                    "blank": 3,
+                    "code": 9,
+                    "comment": 0,
+                    "filename": ".pio\\libdeps\\due\\Adafruit GFX Library\\fontconvert\\Makefile"
+                },
+                {
+                    "blank": 4,
+                    "code": 22,
+                    "comment": 12,
+                    "filename": ".pio\\libdeps\\due\\Adafruit GFX Library\\fontconvert\\makefonts.sh"
+                },
+                {
+                    "blank": 3,
+                    "code": 222,
+                    "comment": 96,
+                    "filename": ".pio\\libdeps\\due\\Adafruit GFX Library\\Fonts\\FreeMono12pt7b.h"
+                },
+                {
+                    "blank": 3,
+                    "code": 358,
+                    "comment": 96,
+                    "filename": ".pio\\libdeps\\due\\Adafruit GFX Library\\Fonts\\FreeMono18pt7b.h"
+                },
+                {
+                    "blank": 3,
+                    "code": 572,
+                    "comment": 96,
+                    "filename": ".pio\\libdeps\\due\\Adafruit GFX Library\\Fonts\\FreeMono24pt7b.h"
+                },
+                {
+                    "blank": 3,
+                    "code": 171,
+                    "comment": 96,
+                    "filename": ".pio\\libdeps\\due\\Adafruit GFX Library\\Fonts\\FreeMono9pt7b.h"
+                },
+                {
+                    "blank": 3,
+                    "code": 245,
+                    "comment": 96,
+                    "filename": ".pio\\libdeps\\due\\Adafruit GFX Library\\Fonts\\FreeMonoBold12pt7b.h"
+                },
+                {
+                    "blank": 3,
+                    "code": 418,
+                    "comment": 96,
+                    "filename": ".pio\\libdeps\\due\\Adafruit GFX Library\\Fonts\\FreeMonoBold18pt7b.h"
+                },
+                {
+                    "blank": 3,
+                    "code": 667,
+                    "comment": 96,
+                    "filename": ".pio\\libdeps\\due\\Adafruit GFX Library\\Fonts\\FreeMonoBold24pt7b.h"
+                },
+                {
+                    "blank": 3,
+                    "code": 184,
+                    "comment": 96,
+                    "filename": ".pio\\libdeps\\due\\Adafruit GFX Library\\Fonts\\FreeMonoBold9pt7b.h"
+                },
+                {
+                    "blank": 3,
+                    "code": 264,
+                    "comment": 96,
+                    "filename": ".pio\\libdeps\\due\\Adafruit GFX Library\\Fonts\\FreeMonoBoldOblique12pt7b.h"
+                },
+                {
+                    "blank": 3,
+                    "code": 455,
+                    "comment": 96,
+                    "filename": ".pio\\libdeps\\due\\Adafruit GFX Library\\Fonts\\FreeMonoBoldOblique18pt7b.h"
+                },
+                {
+                    "blank": 3,
+                    "code": 737,
+                    "comment": 96,
+                    "filename": ".pio\\libdeps\\due\\Adafruit GFX Library\\Fonts\\FreeMonoBoldOblique24pt7b.h"
+                },
+                {
+                    "blank": 3,
+                    "code": 198,
+                    "comment": 96,
+                    "filename": ".pio\\libdeps\\due\\Adafruit GFX Library\\Fonts\\FreeMonoBoldOblique9pt7b.h"
+                },
+                {
+                    "blank": 3,
+                    "code": 243,
+                    "comment": 96,
+                    "filename": ".pio\\libdeps\\due\\Adafruit GFX Library\\Fonts\\FreeMonoOblique12pt7b.h"
+                },
+                {
+                    "blank": 3,
+                    "code": 393,
+                    "comment": 96,
+                    "filename": ".pio\\libdeps\\due\\Adafruit GFX Library\\Fonts\\FreeMonoOblique18pt7b.h"
+                },
+                {
+                    "blank": 3,
+                    "code": 638,
+                    "comment": 96,
+                    "filename": ".pio\\libdeps\\due\\Adafruit GFX Library\\Fonts\\FreeMonoOblique24pt7b.h"
+                },
+                {
+                    "blank": 3,
+                    "code": 182,
+                    "comment": 96,
+                    "filename": ".pio\\libdeps\\due\\Adafruit GFX Library\\Fonts\\FreeMonoOblique9pt7b.h"
+                },
+                {
+                    "blank": 3,
+                    "code": 265,
+                    "comment": 96,
+                    "filename": ".pio\\libdeps\\due\\Adafruit GFX Library\\Fonts\\FreeSans12pt7b.h"
+                },
+                {
+                    "blank": 3,
+                    "code": 447,
+                    "comment": 96,
+                    "filename": ".pio\\libdeps\\due\\Adafruit GFX Library\\Fonts\\FreeSans18pt7b.h"
+                },
+                {
+                    "blank": 3,
+                    "code": 722,
+                    "comment": 96,
+                    "filename": ".pio\\libdeps\\due\\Adafruit GFX Library\\Fonts\\FreeSans24pt7b.h"
+                },
+                {
+                    "blank": 3,
+                    "code": 196,
+                    "comment": 96,
+                    "filename": ".pio\\libdeps\\due\\Adafruit GFX Library\\Fonts\\FreeSans9pt7b.h"
+                },
+                {
+                    "blank": 3,
+                    "code": 283,
+                    "comment": 96,
+                    "filename": ".pio\\libdeps\\due\\Adafruit GFX Library\\Fonts\\FreeSansBold12pt7b.h"
+                },
+                {
+                    "blank": 3,
+                    "code": 476,
+                    "comment": 96,
+                    "filename": ".pio\\libdeps\\due\\Adafruit GFX Library\\Fonts\\FreeSansBold18pt7b.h"
+                },
+                {
+                    "blank": 3,
+                    "code": 779,
+                    "comment": 96,
+                    "filename": ".pio\\libdeps\\due\\Adafruit GFX Library\\Fonts\\FreeSansBold24pt7b.h"
+                },
+                {
+                    "blank": 3,
+                    "code": 203,
+                    "comment": 96,
+                    "filename": ".pio\\libdeps\\due\\Adafruit GFX Library\\Fonts\\FreeSansBold9pt7b.h"
+                },
+                {
+                    "blank": 3,
+                    "code": 312,
+                    "comment": 96,
+                    "filename": ".pio\\libdeps\\due\\Adafruit GFX Library\\Fonts\\FreeSansBoldOblique12pt7b.h"
+                },
+                {
+                    "blank": 3,
+                    "code": 540,
+                    "comment": 96,
+                    "filename": ".pio\\libdeps\\due\\Adafruit GFX Library\\Fonts\\FreeSansBoldOblique18pt7b.h"
+                },
+                {
+                    "blank": 3,
+                    "code": 888,
+                    "comment": 96,
+                    "filename": ".pio\\libdeps\\due\\Adafruit GFX Library\\Fonts\\FreeSansBoldOblique24pt7b.h"
+                },
+                {
+                    "blank": 3,
+                    "code": 222,
+                    "comment": 96,
+                    "filename": ".pio\\libdeps\\due\\Adafruit GFX Library\\Fonts\\FreeSansBoldOblique9pt7b.h"
+                },
+                {
+                    "blank": 3,
+                    "code": 297,
+                    "comment": 96,
+                    "filename": ".pio\\libdeps\\due\\Adafruit GFX Library\\Fonts\\FreeSansOblique12pt7b.h"
+                },
+                {
+                    "blank": 3,
+                    "code": 513,
+                    "comment": 96,
+                    "filename": ".pio\\libdeps\\due\\Adafruit GFX Library\\Fonts\\FreeSansOblique18pt7b.h"
+                },
+                {
+                    "blank": 3,
+                    "code": 835,
+                    "comment": 96,
+                    "filename": ".pio\\libdeps\\due\\Adafruit GFX Library\\Fonts\\FreeSansOblique24pt7b.h"
+                },
+                {
+                    "blank": 3,
+                    "code": 215,
+                    "comment": 96,
+                    "filename": ".pio\\libdeps\\due\\Adafruit GFX Library\\Fonts\\FreeSansOblique9pt7b.h"
+                },
+                {
+                    "blank": 3,
+                    "code": 254,
+                    "comment": 96,
+                    "filename": ".pio\\libdeps\\due\\Adafruit GFX Library\\Fonts\\FreeSerif12pt7b.h"
+                },
+                {
+                    "blank": 3,
+                    "code": 424,
+                    "comment": 96,
+                    "filename": ".pio\\libdeps\\due\\Adafruit GFX Library\\Fonts\\FreeSerif18pt7b.h"
+                },
+                {
+                    "blank": 3,
+                    "code": 685,
+                    "comment": 96,
+                    "filename": ".pio\\libdeps\\due\\Adafruit GFX Library\\Fonts\\FreeSerif24pt7b.h"
+                },
+                {
+                    "blank": 3,
+                    "code": 190,
+                    "comment": 96,
+                    "filename": ".pio\\libdeps\\due\\Adafruit GFX Library\\Fonts\\FreeSerif9pt7b.h"
+                },
+                {
+                    "blank": 3,
+                    "code": 266,
+                    "comment": 96,
+                    "filename": ".pio\\libdeps\\due\\Adafruit GFX Library\\Fonts\\FreeSerifBold12pt7b.h"
+                },
+                {
+                    "blank": 3,
+                    "code": 457,
+                    "comment": 96,
+                    "filename": ".pio\\libdeps\\due\\Adafruit GFX Library\\Fonts\\FreeSerifBold18pt7b.h"
+                },
+                {
+                    "blank": 3,
+                    "code": 754,
+                    "comment": 96,
+                    "filename": ".pio\\libdeps\\due\\Adafruit GFX Library\\Fonts\\FreeSerifBold24pt7b.h"
+                },
+                {
+                    "blank": 3,
+                    "code": 197,
+                    "comment": 96,
+                    "filename": ".pio\\libdeps\\due\\Adafruit GFX Library\\Fonts\\FreeSerifBold9pt7b.h"
+                },
+                {
+                    "blank": 3,
+                    "code": 287,
+                    "comment": 96,
+                    "filename": ".pio\\libdeps\\due\\Adafruit GFX Library\\Fonts\\FreeSerifBoldItalic12pt7b.h"
+                },
+                {
+                    "blank": 3,
+                    "code": 495,
+                    "comment": 96,
+                    "filename": ".pio\\libdeps\\due\\Adafruit GFX Library\\Fonts\\FreeSerifBoldItalic18pt7b.h"
+                },
+                {
+                    "blank": 3,
+                    "code": 788,
+                    "comment": 96,
+                    "filename": ".pio\\libdeps\\due\\Adafruit GFX Library\\Fonts\\FreeSerifBoldItalic24pt7b.h"
+                },
+                {
+                    "blank": 3,
+                    "code": 210,
+                    "comment": 96,
+                    "filename": ".pio\\libdeps\\due\\Adafruit GFX Library\\Fonts\\FreeSerifBoldItalic9pt7b.h"
+                },
+                {
+                    "blank": 3,
+                    "code": 266,
+                    "comment": 96,
+                    "filename": ".pio\\libdeps\\due\\Adafruit GFX Library\\Fonts\\FreeSerifItalic12pt7b.h"
+                },
+                {
+                    "blank": 3,
+                    "code": 445,
+                    "comment": 96,
+                    "filename": ".pio\\libdeps\\due\\Adafruit GFX Library\\Fonts\\FreeSerifItalic18pt7b.h"
+                },
+                {
+                    "blank": 3,
+                    "code": 732,
+                    "comment": 96,
+                    "filename": ".pio\\libdeps\\due\\Adafruit GFX Library\\Fonts\\FreeSerifItalic24pt7b.h"
+                },
+                {
+                    "blank": 3,
+                    "code": 197,
+                    "comment": 96,
+                    "filename": ".pio\\libdeps\\due\\Adafruit GFX Library\\Fonts\\FreeSerifItalic9pt7b.h"
+                },
+                {
+                    "blank": 4,
+                    "code": 121,
+                    "comment": 98,
+                    "filename": ".pio\\libdeps\\due\\Adafruit GFX Library\\Fonts\\Org_01.h"
+                },
+                {
+                    "blank": 4,
+                    "code": 113,
+                    "comment": 98,
+                    "filename": ".pio\\libdeps\\due\\Adafruit GFX Library\\Fonts\\Picopixel.h"
+                },
+                {
+                    "blank": 4,
+                    "code": 112,
+                    "comment": 109,
+                    "filename": ".pio\\libdeps\\due\\Adafruit GFX Library\\Fonts\\Tiny3x3a2pt7b.h"
+                },
+                {
+                    "blank": 4,
+                    "code": 419,
+                    "comment": 51,
+                    "filename": ".pio\\libdeps\\due\\Adafruit GFX Library\\Fonts\\TomThumb.h"
+                },
+                {
+                    "blank": 4,
+                    "code": 18,
+                    "comment": 19,
+                    "filename": ".pio\\libdeps\\due\\Adafruit GFX Library\\gfxfont.h"
+                },
+                {
+                    "blank": 6,
+                    "code": 131,
+                    "comment": 16,
+                    "filename": ".pio\\libdeps\\due\\Adafruit GFX Library\\glcdfont.c"
+                },
+                {
+                    "blank": 0,
+                    "code": 10,
+                    "comment": 1,
+                    "filename": ".pio\\libdeps\\due\\Adafruit GFX Library\\library.properties"
+                },
+                {
+                    "blank": 4,
+                    "code": 20,
+                    "comment": 0,
+                    "filename": ".pio\\libdeps\\due\\Adafruit GFX Library\\license.txt"
+                },
+                {
+                    "blank": 11,
+                    "code": 14,
+                    "comment": 2,
+                    "filename": ".pio\\libdeps\\due\\Adafruit GFX Library\\README.md"
+                },
+                {
+                    "blank": 7,
+                    "code": 21,
+                    "comment": 2,
+                    "filename": ".pio\\libdeps\\due\\Adafruit seesaw Library\\.github\\ISSUE_TEMPLATE.md"
+                },
+                {
+                    "blank": 3,
+                    "code": 10,
+                    "comment": 0,
+                    "filename": ".pio\\libdeps\\due\\Adafruit seesaw Library\\.github\\PULL_REQUEST_TEMPLATE.md"
+                },
+                {
+                    "blank": 12,
+                    "code": 43,
+                    "comment": 0,
+                    "filename": ".pio\\libdeps\\due\\Adafruit seesaw Library\\.github\\workflows\\githubci.yml"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": ".pio\\libdeps\\due\\Adafruit seesaw Library\\.piopm"
+                },
+                {
+                    "blank": 9,
+                    "code": 54,
+                    "comment": 2,
+                    "filename": ".pio\\libdeps\\due\\Adafruit seesaw Library\\Adafruit_Crickit.cpp"
+                },
+                {
+                    "blank": 9,
+                    "code": 38,
+                    "comment": 6,
+                    "filename": ".pio\\libdeps\\due\\Adafruit seesaw Library\\Adafruit_Crickit.h"
+                },
+                {
+                    "blank": 6,
+                    "code": 23,
+                    "comment": 33,
+                    "filename": ".pio\\libdeps\\due\\Adafruit seesaw Library\\Adafruit_miniTFTWing.cpp"
+                },
+                {
+                    "blank": 15,
+                    "code": 36,
+                    "comment": 8,
+                    "filename": ".pio\\libdeps\\due\\Adafruit seesaw Library\\Adafruit_miniTFTWing.h"
+                },
+                {
+                    "blank": 38,
+                    "code": 160,
+                    "comment": 146,
+                    "filename": ".pio\\libdeps\\due\\Adafruit seesaw Library\\Adafruit_NeoKey_1x4.cpp"
+                },
+                {
+                    "blank": 23,
+                    "code": 58,
+                    "comment": 23,
+                    "filename": ".pio\\libdeps\\due\\Adafruit seesaw Library\\Adafruit_NeoKey_1x4.h"
+                },
+                {
+                    "blank": 35,
+                    "code": 154,
+                    "comment": 164,
+                    "filename": ".pio\\libdeps\\due\\Adafruit seesaw Library\\Adafruit_NeoTrellis.cpp"
+                },
+                {
+                    "blank": 25,
+                    "code": 57,
+                    "comment": 20,
+                    "filename": ".pio\\libdeps\\due\\Adafruit seesaw Library\\Adafruit_NeoTrellis.h"
+                },
+                {
+                    "blank": 81,
+                    "code": 458,
+                    "comment": 443,
+                    "filename": ".pio\\libdeps\\due\\Adafruit seesaw Library\\Adafruit_seesaw.cpp"
+                },
+                {
+                    "blank": 54,
+                    "code": 204,
+                    "comment": 106,
+                    "filename": ".pio\\libdeps\\due\\Adafruit seesaw Library\\Adafruit_seesaw.h"
+                },
+                {
+                    "blank": 6,
+                    "code": 23,
+                    "comment": 36,
+                    "filename": ".pio\\libdeps\\due\\Adafruit seesaw Library\\Adafruit_TFTShield18.cpp"
+                },
+                {
+                    "blank": 16,
+                    "code": 38,
+                    "comment": 6,
+                    "filename": ".pio\\libdeps\\due\\Adafruit seesaw Library\\Adafruit_TFTShield18.h"
+                },
+                {
+                    "blank": 1,
+                    "code": 15,
+                    "comment": 0,
+                    "filename": ".pio\\libdeps\\due\\Adafruit seesaw Library\\Doxyfile"
+                },
+                {
+                    "blank": 7,
+                    "code": 16,
+                    "comment": 7,
+                    "filename": ".pio\\libdeps\\due\\Adafruit seesaw Library\\examples\\analog\\analogRead\\analogRead.ino"
+                },
+                {
+                    "blank": 9,
+                    "code": 21,
+                    "comment": 21,
+                    "filename": ".pio\\libdeps\\due\\Adafruit seesaw Library\\examples\\analog\\Fade\\Fade.ino"
+                },
+                {
+                    "blank": 7,
+                    "code": 21,
+                    "comment": 19,
+                    "filename": ".pio\\libdeps\\due\\Adafruit seesaw Library\\examples\\audio_spectrum\\Audio_Spectrum\\Audio_Spectrum.ino"
+                },
+                {
+                    "blank": 7,
+                    "code": 21,
+                    "comment": 5,
+                    "filename": ".pio\\libdeps\\due\\Adafruit seesaw Library\\examples\\communication\\UART_loopback\\UART_loopback.ino"
+                },
+                {
+                    "blank": 9,
+                    "code": 21,
+                    "comment": 4,
+                    "filename": ".pio\\libdeps\\due\\Adafruit seesaw Library\\examples\\Crickit\\basic\\basic.ino"
+                },
+                {
+                    "blank": 7,
+                    "code": 25,
+                    "comment": 15,
+                    "filename": ".pio\\libdeps\\due\\Adafruit seesaw Library\\examples\\Crickit\\cap_touch_demo\\cap_touch_demo.ino"
+                },
+                {
+                    "blank": 8,
+                    "code": 23,
+                    "comment": 3,
+                    "filename": ".pio\\libdeps\\due\\Adafruit seesaw Library\\examples\\Crickit\\drive\\more_drivers\\more_drivers.ino"
+                },
+                {
+                    "blank": 6,
+                    "code": 18,
+                    "comment": 3,
+                    "filename": ".pio\\libdeps\\due\\Adafruit seesaw Library\\examples\\Crickit\\drive\\test_drive\\test_drive.ino"
+                },
+                {
+                    "blank": 19,
+                    "code": 88,
+                    "comment": 1,
+                    "filename": ".pio\\libdeps\\due\\Adafruit seesaw Library\\examples\\Crickit\\fulltest\\fulltest.ino"
+                },
+                {
+                    "blank": 13,
+                    "code": 36,
+                    "comment": 2,
+                    "filename": ".pio\\libdeps\\due\\Adafruit seesaw Library\\examples\\Crickit\\motor\\dual_motor\\dual_motor.ino"
+                },
+                {
+                    "blank": 9,
+                    "code": 31,
+                    "comment": 6,
+                    "filename": ".pio\\libdeps\\due\\Adafruit seesaw Library\\examples\\Crickit\\servo\\more_servos\\more_servos.ino"
+                },
+                {
+                    "blank": 6,
+                    "code": 23,
+                    "comment": 2,
+                    "filename": ".pio\\libdeps\\due\\Adafruit seesaw Library\\examples\\Crickit\\servo\\test_servo\\test_servo.ino"
+                },
+                {
+                    "blank": 8,
+                    "code": 30,
+                    "comment": 2,
+                    "filename": ".pio\\libdeps\\due\\Adafruit seesaw Library\\examples\\Crickit\\signal\\test_signal\\test_signal.ino"
+                },
+                {
+                    "blank": 9,
+                    "code": 19,
+                    "comment": 8,
+                    "filename": ".pio\\libdeps\\due\\Adafruit seesaw Library\\examples\\digital\\attiny_blink\\attiny_blink.ino"
+                },
+                {
+                    "blank": 9,
+                    "code": 19,
+                    "comment": 9,
+                    "filename": ".pio\\libdeps\\due\\Adafruit seesaw Library\\examples\\digital\\blink\\blink.ino"
+                },
+                {
+                    "blank": 11,
+                    "code": 22,
+                    "comment": 6,
+                    "filename": ".pio\\libdeps\\due\\Adafruit seesaw Library\\examples\\digital\\gpio_interrupts\\gpio_interrupts.ino"
+                },
+                {
+                    "blank": 7,
+                    "code": 18,
+                    "comment": 9,
+                    "filename": ".pio\\libdeps\\due\\Adafruit seesaw Library\\examples\\digital\\multiblink\\multiblink.ino"
+                },
+                {
+                    "blank": 7,
+                    "code": 16,
+                    "comment": 4,
+                    "filename": ".pio\\libdeps\\due\\Adafruit seesaw Library\\examples\\digital\\multiread\\multiread.ino"
+                },
+                {
+                    "blank": 11,
+                    "code": 21,
+                    "comment": 7,
+                    "filename": ".pio\\libdeps\\due\\Adafruit seesaw Library\\examples\\EEPROM\\EEPROM.ino"
+                },
+                {
+                    "blank": 18,
+                    "code": 58,
+                    "comment": 17,
+                    "filename": ".pio\\libdeps\\due\\Adafruit seesaw Library\\examples\\encoder\\encoder_basic\\encoder_basic.ino"
+                },
+                {
+                    "blank": 32,
+                    "code": 112,
+                    "comment": 23,
+                    "filename": ".pio\\libdeps\\due\\Adafruit seesaw Library\\examples\\encoder\\multiple_encoders\\multiple_encoders.ino"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": ".pio\\libdeps\\due\\Adafruit seesaw Library\\examples\\joy_featherwing\\joy_featherwing_ESP32\\.esp32.test.only"
+                },
+                {
+                    "blank": 41,
+                    "code": 212,
+                    "comment": 47,
+                    "filename": ".pio\\libdeps\\due\\Adafruit seesaw Library\\examples\\joy_featherwing\\joy_featherwing_ESP32\\joy_featherwing_ESP32.ino"
+                },
+                {
+                    "blank": 16,
+                    "code": 67,
+                    "comment": 3,
+                    "filename": ".pio\\libdeps\\due\\Adafruit seesaw Library\\examples\\joy_featherwing\\joy_featherwing_example\\joy_featherwing_example.ino"
+                },
+                {
+                    "blank": 21,
+                    "code": 122,
+                    "comment": 9,
+                    "filename": ".pio\\libdeps\\due\\Adafruit seesaw Library\\examples\\joy_featherwing\\joy_wing_oled\\joy_wing_oled.ino"
+                },
+                {
+                    "blank": 18,
+                    "code": 75,
+                    "comment": 12,
+                    "filename": ".pio\\libdeps\\due\\Adafruit seesaw Library\\examples\\LEDArcade_1x4\\LEDArcade_1x4.ino"
+                },
+                {
+                    "blank": 17,
+                    "code": 63,
+                    "comment": 13,
+                    "filename": ".pio\\libdeps\\due\\Adafruit seesaw Library\\examples\\NeoKey_1x4\\basic\\basic.ino"
+                },
+                {
+                    "blank": 18,
+                    "code": 55,
+                    "comment": 12,
+                    "filename": ".pio\\libdeps\\due\\Adafruit seesaw Library\\examples\\NeoKey_1x4\\basic_callback\\basic_callback.ino"
+                },
+                {
+                    "blank": 19,
+                    "code": 63,
+                    "comment": 15,
+                    "filename": ".pio\\libdeps\\due\\Adafruit seesaw Library\\examples\\NeoKey_1x4\\basic_multikey\\basic_multikey.ino"
+                },
+                {
+                    "blank": 19,
+                    "code": 64,
+                    "comment": 6,
+                    "filename": ".pio\\libdeps\\due\\Adafruit seesaw Library\\examples\\NeoKey_1x4\\basic_neoswirl\\basic_neoswirl.ino"
+                },
+                {
+                    "blank": 21,
+                    "code": 91,
+                    "comment": 36,
+                    "filename": ".pio\\libdeps\\due\\Adafruit seesaw Library\\examples\\NeoPixel\\NeoPixel_strandtest\\NeoPixel_strandtest.ino"
+                },
+                {
+                    "blank": 21,
+                    "code": 65,
+                    "comment": 14,
+                    "filename": ".pio\\libdeps\\due\\Adafruit seesaw Library\\examples\\NeoSlider\\Dual_NeoSlider\\Dual_NeoSlider.ino"
+                },
+                {
+                    "blank": 21,
+                    "code": 56,
+                    "comment": 12,
+                    "filename": ".pio\\libdeps\\due\\Adafruit seesaw Library\\examples\\NeoSlider\\NeoSlider\\NeoSlider.ino"
+                },
+                {
+                    "blank": 14,
+                    "code": 51,
+                    "comment": 18,
+                    "filename": ".pio\\libdeps\\due\\Adafruit seesaw Library\\examples\\NeoTrellis\\basic\\basic.ino"
+                },
+                {
+                    "blank": 13,
+                    "code": 54,
+                    "comment": 12,
+                    "filename": ".pio\\libdeps\\due\\Adafruit seesaw Library\\examples\\NeoTrellis\\interrupt\\interrupt.ino"
+                },
+                {
+                    "blank": 17,
+                    "code": 53,
+                    "comment": 39,
+                    "filename": ".pio\\libdeps\\due\\Adafruit seesaw Library\\examples\\NeoTrellis\\multitrellis\\basic\\basic.ino"
+                },
+                {
+                    "blank": 25,
+                    "code": 112,
+                    "comment": 24,
+                    "filename": ".pio\\libdeps\\due\\Adafruit seesaw Library\\examples\\NeoTrellis\\pattern_game\\pattern_game.ino"
+                },
+                {
+                    "blank": 39,
+                    "code": 129,
+                    "comment": 12,
+                    "filename": ".pio\\libdeps\\due\\Adafruit seesaw Library\\examples\\NeoTrellis\\ripples\\ripples.ino"
+                },
+                {
+                    "blank": 6,
+                    "code": 20,
+                    "comment": 0,
+                    "filename": ".pio\\libdeps\\due\\Adafruit seesaw Library\\examples\\soil_sensor\\soilsensor_example\\soilsensor_example.ino"
+                },
+                {
+                    "blank": 0,
+                    "code": 10,
+                    "comment": 1,
+                    "filename": ".pio\\libdeps\\due\\Adafruit seesaw Library\\library.properties"
+                },
+                {
+                    "blank": 2,
+                    "code": 3,
+                    "comment": 2,
+                    "filename": ".pio\\libdeps\\due\\Adafruit seesaw Library\\README.md"
+                },
+                {
+                    "blank": 10,
+                    "code": 40,
+                    "comment": 32,
+                    "filename": ".pio\\libdeps\\due\\Adafruit seesaw Library\\seesaw_motor.h"
+                },
+                {
+                    "blank": 44,
+                    "code": 193,
+                    "comment": 86,
+                    "filename": ".pio\\libdeps\\due\\Adafruit seesaw Library\\seesaw_neopixel.cpp"
+                },
+                {
+                    "blank": 18,
+                    "code": 72,
+                    "comment": 58,
+                    "filename": ".pio\\libdeps\\due\\Adafruit seesaw Library\\seesaw_neopixel.h"
+                },
+                {
+                    "blank": 8,
+                    "code": 35,
+                    "comment": 48,
+                    "filename": ".pio\\libdeps\\due\\Adafruit seesaw Library\\seesaw_servo.cpp"
+                },
+                {
+                    "blank": 10,
+                    "code": 28,
+                    "comment": 28,
+                    "filename": ".pio\\libdeps\\due\\Adafruit seesaw Library\\seesaw_servo.h"
+                },
+                {
+                    "blank": 5,
+                    "code": 17,
+                    "comment": 31,
+                    "filename": ".pio\\libdeps\\due\\Adafruit seesaw Library\\seesaw_spectrum.cpp"
+                },
+                {
+                    "blank": 9,
+                    "code": 26,
+                    "comment": 42,
+                    "filename": ".pio\\libdeps\\due\\Adafruit seesaw Library\\seesaw_spectrum.h"
+                },
+                {
+                    "blank": 7,
+                    "code": 21,
+                    "comment": 2,
+                    "filename": ".pio\\libdeps\\due\\Adafruit SSD1306\\.github\\ISSUE_TEMPLATE.md"
+                },
+                {
+                    "blank": 3,
+                    "code": 10,
+                    "comment": 0,
+                    "filename": ".pio\\libdeps\\due\\Adafruit SSD1306\\.github\\PULL_REQUEST_TEMPLATE.md"
+                },
+                {
+                    "blank": 7,
+                    "code": 25,
+                    "comment": 0,
+                    "filename": ".pio\\libdeps\\due\\Adafruit SSD1306\\.github\\workflows\\githubci.yml"
+                },
+                {
+                    "blank": 0,
+                    "code": 4,
+                    "comment": 0,
+                    "filename": ".pio\\libdeps\\due\\Adafruit SSD1306\\.gitignore"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": ".pio\\libdeps\\due\\Adafruit SSD1306\\.piopm"
+                },
+                {
+                    "blank": 73,
+                    "code": 609,
+                    "comment": 595,
+                    "filename": ".pio\\libdeps\\due\\Adafruit SSD1306\\Adafruit_SSD1306.cpp"
+                },
+                {
+                    "blank": 20,
+                    "code": 139,
+                    "comment": 107,
+                    "filename": ".pio\\libdeps\\due\\Adafruit SSD1306\\Adafruit_SSD1306.h"
+                },
+                {
+                    "blank": 3,
+                    "code": 8,
+                    "comment": 1,
+                    "filename": ".pio\\libdeps\\due\\Adafruit SSD1306\\CMakeLists.txt"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": ".pio\\libdeps\\due\\Adafruit SSD1306\\component.mk"
+                },
+                {
+                    "blank": 11,
+                    "code": 72,
+                    "comment": 11,
+                    "filename": ".pio\\libdeps\\due\\Adafruit SSD1306\\examples\\OLED_featherwing\\OLED_featherwing.ino"
+                },
+                {
+                    "blank": 82,
+                    "code": 285,
+                    "comment": 91,
+                    "filename": ".pio\\libdeps\\due\\Adafruit SSD1306\\examples\\ssd1306_128x32_i2c\\ssd1306_128x32_i2c.ino"
+                },
+                {
+                    "blank": 83,
+                    "code": 289,
+                    "comment": 92,
+                    "filename": ".pio\\libdeps\\due\\Adafruit SSD1306\\examples\\ssd1306_128x32_spi\\ssd1306_128x32_spi.ino"
+                },
+                {
+                    "blank": 82,
+                    "code": 285,
+                    "comment": 91,
+                    "filename": ".pio\\libdeps\\due\\Adafruit SSD1306\\examples\\ssd1306_128x64_i2c\\ssd1306_128x64_i2c.ino"
+                },
+                {
+                    "blank": 84,
+                    "code": 289,
+                    "comment": 92,
+                    "filename": ".pio\\libdeps\\due\\Adafruit SSD1306\\examples\\ssd1306_128x64_spi\\ssd1306_128x64_spi.ino"
+                },
+                {
+                    "blank": 0,
+                    "code": 10,
+                    "comment": 1,
+                    "filename": ".pio\\libdeps\\due\\Adafruit SSD1306\\library.properties"
+                },
+                {
+                    "blank": 3,
+                    "code": 23,
+                    "comment": 0,
+                    "filename": ".pio\\libdeps\\due\\Adafruit SSD1306\\license.txt"
+                },
+                {
+                    "blank": 11,
+                    "code": 40,
+                    "comment": 3,
+                    "filename": ".pio\\libdeps\\due\\Adafruit SSD1306\\README.md"
+                },
+                {
+                    "blank": 9,
+                    "code": 27,
+                    "comment": 2,
+                    "filename": ".pio\\libdeps\\due\\Adafruit SSD1306\\scripts\\make_splash.py"
+                },
+                {
+                    "blank": 8,
+                    "code": 16,
+                    "comment": 9,
+                    "filename": ".pio\\libdeps\\due\\Adafruit SSD1306\\scripts\\Makefile"
+                },
+                {
+                    "blank": 5,
+                    "code": 106,
+                    "comment": 9,
+                    "filename": ".pio\\libdeps\\due\\Adafruit SSD1306\\splash.h"
+                },
+                {
+                    "blank": 7,
+                    "code": 21,
+                    "comment": 2,
+                    "filename": ".pio\\libdeps\\due\\Adafruit ST7735 and ST7789 Library\\.github\\ISSUE_TEMPLATE.md"
+                },
+                {
+                    "blank": 3,
+                    "code": 10,
+                    "comment": 0,
+                    "filename": ".pio\\libdeps\\due\\Adafruit ST7735 and ST7789 Library\\.github\\PULL_REQUEST_TEMPLATE.md"
+                },
+                {
+                    "blank": 7,
+                    "code": 29,
+                    "comment": 0,
+                    "filename": ".pio\\libdeps\\due\\Adafruit ST7735 and ST7789 Library\\.github\\workflows\\githubci.yml"
+                },
+                {
+                    "blank": 0,
+                    "code": 8,
+                    "comment": 0,
+                    "filename": ".pio\\libdeps\\due\\Adafruit ST7735 and ST7789 Library\\.gitignore"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": ".pio\\libdeps\\due\\Adafruit ST7735 and ST7789 Library\\.piopm"
+                },
+                {
+                    "blank": 29,
+                    "code": 301,
+                    "comment": 195,
+                    "filename": ".pio\\libdeps\\due\\Adafruit ST7735 and ST7789 Library\\Adafruit_ST7735.cpp"
+                },
+                {
+                    "blank": 13,
+                    "code": 52,
+                    "comment": 10,
+                    "filename": ".pio\\libdeps\\due\\Adafruit ST7735 and ST7789 Library\\Adafruit_ST7735.h"
+                },
+                {
+                    "blank": 17,
+                    "code": 95,
+                    "comment": 86,
+                    "filename": ".pio\\libdeps\\due\\Adafruit ST7735 and ST7789 Library\\Adafruit_ST7789.cpp"
+                },
+                {
+                    "blank": 6,
+                    "code": 21,
+                    "comment": 5,
+                    "filename": ".pio\\libdeps\\due\\Adafruit ST7735 and ST7789 Library\\Adafruit_ST7789.h"
+                },
+                {
+                    "blank": 27,
+                    "code": 106,
+                    "comment": 240,
+                    "filename": ".pio\\libdeps\\due\\Adafruit ST7735 and ST7789 Library\\Adafruit_ST77xx.cpp"
+                },
+                {
+                    "blank": 16,
+                    "code": 76,
+                    "comment": 35,
+                    "filename": ".pio\\libdeps\\due\\Adafruit ST7735 and ST7789 Library\\Adafruit_ST77xx.h"
+                },
+                {
+                    "blank": 64,
+                    "code": 104,
+                    "comment": 90,
+                    "filename": ".pio\\libdeps\\due\\Adafruit ST7735 and ST7789 Library\\examples\\displayOnOffTest\\displayOnOffTest.ino"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": ".pio\\libdeps\\due\\Adafruit ST7735 and ST7789 Library\\examples\\graphicstest\\.cpb.test.skip"
+                },
+                {
+                    "blank": 54,
+                    "code": 233,
+                    "comment": 91,
+                    "filename": ".pio\\libdeps\\due\\Adafruit ST7735 and ST7789 Library\\examples\\graphicstest\\graphicstest.ino"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": ".pio\\libdeps\\due\\Adafruit ST7735 and ST7789 Library\\examples\\graphicstest_feather_esp32s2_tft\\.feather_esp32s2_tft.test.only"
+                },
+                {
+                    "blank": 42,
+                    "code": 231,
+                    "comment": 33,
+                    "filename": ".pio\\libdeps\\due\\Adafruit ST7735 and ST7789 Library\\examples\\graphicstest_feather_esp32s2_tft\\graphicstest_feather_esp32s2_tft.ino"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": ".pio\\libdeps\\due\\Adafruit ST7735 and ST7789 Library\\examples\\graphicstest_hallowing_m0\\.hallowing_m0.test.only"
+                },
+                {
+                    "blank": 38,
+                    "code": 225,
+                    "comment": 41,
+                    "filename": ".pio\\libdeps\\due\\Adafruit ST7735 and ST7789 Library\\examples\\graphicstest_hallowing_m0\\graphicstest_hallowing_m0.ino"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": ".pio\\libdeps\\due\\Adafruit ST7735 and ST7789 Library\\examples\\graphicstest_hallowing_m4\\.hallowing_m4.test.only"
+                },
+                {
+                    "blank": 39,
+                    "code": 225,
+                    "comment": 41,
+                    "filename": ".pio\\libdeps\\due\\Adafruit ST7735 and ST7789 Library\\examples\\graphicstest_hallowing_m4\\graphicstest_hallowing_m4.ino"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": ".pio\\libdeps\\due\\Adafruit ST7735 and ST7789 Library\\examples\\graphicstest_pybadge_pygamer\\.pybadge.test.only"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": ".pio\\libdeps\\due\\Adafruit ST7735 and ST7789 Library\\examples\\graphicstest_pybadge_pygamer\\.pygamer.test.only"
+                },
+                {
+                    "blank": 38,
+                    "code": 226,
+                    "comment": 44,
+                    "filename": ".pio\\libdeps\\due\\Adafruit ST7735 and ST7789 Library\\examples\\graphicstest_pybadge_pygamer\\graphicstest_pybadge_pygamer.ino"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": ".pio\\libdeps\\due\\Adafruit ST7735 and ST7789 Library\\examples\\graphicstest_st7789\\.cpb.test.skip"
+                },
+                {
+                    "blank": 47,
+                    "code": 232,
+                    "comment": 72,
+                    "filename": ".pio\\libdeps\\due\\Adafruit ST7735 and ST7789 Library\\examples\\graphicstest_st7789\\graphicstest_st7789.ino"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": ".pio\\libdeps\\due\\Adafruit ST7735 and ST7789 Library\\examples\\graphicstest_tft_gizmo\\.cplayClassic.test.skip"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": ".pio\\libdeps\\due\\Adafruit ST7735 and ST7789 Library\\examples\\graphicstest_tft_gizmo\\.due.test.skip"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": ".pio\\libdeps\\due\\Adafruit ST7735 and ST7789 Library\\examples\\graphicstest_tft_gizmo\\.esp32.test.skip"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": ".pio\\libdeps\\due\\Adafruit ST7735 and ST7789 Library\\examples\\graphicstest_tft_gizmo\\.esp8266.test.skip"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": ".pio\\libdeps\\due\\Adafruit ST7735 and ST7789 Library\\examples\\graphicstest_tft_gizmo\\.leonardo.test.skip"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": ".pio\\libdeps\\due\\Adafruit ST7735 and ST7789 Library\\examples\\graphicstest_tft_gizmo\\.mega2560.test.skip"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": ".pio\\libdeps\\due\\Adafruit ST7735 and ST7789 Library\\examples\\graphicstest_tft_gizmo\\.uno.test.skip"
+                },
+                {
+                    "blank": 39,
+                    "code": 231,
+                    "comment": 44,
+                    "filename": ".pio\\libdeps\\due\\Adafruit ST7735 and ST7789 Library\\examples\\graphicstest_tft_gizmo\\graphicstest_tft_gizmo.ino"
+                },
+                {
+                    "blank": 20,
+                    "code": 96,
+                    "comment": 10,
+                    "filename": ".pio\\libdeps\\due\\Adafruit ST7735 and ST7789 Library\\examples\\miniTFTWing\\basic\\basic.ino"
+                },
+                {
+                    "blank": 43,
+                    "code": 238,
+                    "comment": 28,
+                    "filename": ".pio\\libdeps\\due\\Adafruit ST7735 and ST7789 Library\\examples\\miniTFTWing\\graphicstest\\graphicstest.ino"
+                },
+                {
+                    "blank": 71,
+                    "code": 231,
+                    "comment": 101,
+                    "filename": ".pio\\libdeps\\due\\Adafruit ST7735 and ST7789 Library\\examples\\rotationtest\\rotationtest.ino"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": ".pio\\libdeps\\due\\Adafruit ST7735 and ST7789 Library\\examples\\seesaw_shield18_test\\.leonardo.test.skip"
+                },
+                {
+                    "blank": 43,
+                    "code": 236,
+                    "comment": 94,
+                    "filename": ".pio\\libdeps\\due\\Adafruit ST7735 and ST7789 Library\\examples\\seesaw_shield18_test\\seesaw_shield18_test.ino"
+                },
+                {
+                    "blank": 35,
+                    "code": 179,
+                    "comment": 81,
+                    "filename": ".pio\\libdeps\\due\\Adafruit ST7735 and ST7789 Library\\examples\\shieldtest\\shieldtest.ino"
+                },
+                {
+                    "blank": 0,
+                    "code": 10,
+                    "comment": 1,
+                    "filename": ".pio\\libdeps\\due\\Adafruit ST7735 and ST7789 Library\\library.properties"
+                },
+                {
+                    "blank": 6,
+                    "code": 15,
+                    "comment": 2,
+                    "filename": ".pio\\libdeps\\due\\Adafruit ST7735 and ST7789 Library\\README.txt"
+                },
+                {
+                    "blank": 3,
+                    "code": 14,
+                    "comment": 0,
+                    "filename": ".pio\\libdeps\\due\\Adafruit Unified Sensor\\.gitignore"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": ".pio\\libdeps\\due\\Adafruit Unified Sensor\\.piopm"
+                },
+                {
+                    "blank": 2,
+                    "code": 110,
+                    "comment": 5,
+                    "filename": ".pio\\libdeps\\due\\Adafruit Unified Sensor\\Adafruit_Sensor.cpp"
+                },
+                {
+                    "blank": 16,
+                    "code": 146,
+                    "comment": 76,
+                    "filename": ".pio\\libdeps\\due\\Adafruit Unified Sensor\\Adafruit_Sensor.h"
+                },
+                {
+                    "blank": 13,
+                    "code": 126,
+                    "comment": 14,
+                    "filename": ".pio\\libdeps\\due\\Adafruit Unified Sensor\\examples\\sensortest\\sensortest.ino"
+                },
+                {
+                    "blank": 1,
+                    "code": 10,
+                    "comment": 1,
+                    "filename": ".pio\\libdeps\\due\\Adafruit Unified Sensor\\library.properties"
+                },
+                {
+                    "blank": 29,
+                    "code": 154,
+                    "comment": 1,
+                    "filename": ".pio\\libdeps\\due\\Adafruit Unified Sensor\\LICENSE.txt"
+                },
+                {
+                    "blank": 31,
+                    "code": 136,
+                    "comment": 20,
+                    "filename": ".pio\\libdeps\\due\\Adafruit Unified Sensor\\README.md"
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 0,
+                    "filename": ".pio\\libdeps\\due\\BH1750\\.clang-format"
+                },
+                {
+                    "blank": 0,
+                    "code": 68,
+                    "comment": 0,
+                    "filename": ".pio\\libdeps\\due\\BH1750\\.github\\workflows\\ci.yml"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": ".pio\\libdeps\\due\\BH1750\\.gitignore"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": ".pio\\libdeps\\due\\BH1750\\.piopm"
+                },
+                {
+                    "blank": 5,
+                    "code": 37,
+                    "comment": 0,
+                    "filename": ".pio\\libdeps\\due\\BH1750\\ci\\code-format.bash"
+                },
+                {
+                    "blank": 3,
+                    "code": 27,
+                    "comment": 4,
+                    "filename": ".pio\\libdeps\\due\\BH1750\\ci\\compile-examples.bash"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": ".pio\\libdeps\\due\\BH1750\\component.mk"
+                },
+                {
+                    "blank": 8,
+                    "code": 20,
+                    "comment": 65,
+                    "filename": ".pio\\libdeps\\due\\BH1750\\examples\\BH1750advanced\\BH1750advanced.ino"
+                },
+                {
+                    "blank": 9,
+                    "code": 52,
+                    "comment": 37,
+                    "filename": ".pio\\libdeps\\due\\BH1750\\examples\\BH1750autoadjust\\BH1750autoadjust.ino"
+                },
+                {
+                    "blank": 9,
+                    "code": 19,
+                    "comment": 14,
+                    "filename": ".pio\\libdeps\\due\\BH1750\\examples\\BH1750onetime\\BH1750onetime.ino"
+                },
+                {
+                    "blank": 7,
+                    "code": 16,
+                    "comment": 27,
+                    "filename": ".pio\\libdeps\\due\\BH1750\\examples\\BH1750test\\BH1750test.ino"
+                },
+                {
+                    "blank": 6,
+                    "code": 41,
+                    "comment": 30,
+                    "filename": ".pio\\libdeps\\due\\BH1750\\examples\\BH1750two_i2c\\BH1750two_i2c.ino"
+                },
+                {
+                    "blank": 6,
+                    "code": 28,
+                    "comment": 0,
+                    "filename": ".pio\\libdeps\\due\\BH1750\\keywords.txt"
+                },
+                {
+                    "blank": 0,
+                    "code": 12,
+                    "comment": 0,
+                    "filename": ".pio\\libdeps\\due\\BH1750\\library.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 10,
+                    "comment": 1,
+                    "filename": ".pio\\libdeps\\due\\BH1750\\library.properties"
+                },
+                {
+                    "blank": 4,
+                    "code": 17,
+                    "comment": 0,
+                    "filename": ".pio\\libdeps\\due\\BH1750\\LICENSE"
+                },
+                {
+                    "blank": 45,
+                    "code": 91,
+                    "comment": 7,
+                    "filename": ".pio\\libdeps\\due\\BH1750\\README.md"
+                },
+                {
+                    "blank": 34,
+                    "code": 174,
+                    "comment": 91,
+                    "filename": ".pio\\libdeps\\due\\BH1750\\src\\BH1750.cpp"
+                },
+                {
+                    "blank": 13,
+                    "code": 41,
+                    "comment": 30,
+                    "filename": ".pio\\libdeps\\due\\BH1750\\src\\BH1750.h"
+                },
+                {
+                    "blank": 2,
+                    "code": 27,
+                    "comment": 1,
+                    "filename": ".pio\\libdeps\\due\\CRC\\.arduino-ci.yml"
+                },
+                {
+                    "blank": 2,
+                    "code": 2,
+                    "comment": 0,
+                    "filename": ".pio\\libdeps\\due\\CRC\\.github\\FUNDING.yml"
+                },
+                {
+                    "blank": 2,
+                    "code": 11,
+                    "comment": 0,
+                    "filename": ".pio\\libdeps\\due\\CRC\\.github\\workflows\\arduino-lint.yml"
+                },
+                {
+                    "blank": 3,
+                    "code": 14,
+                    "comment": 0,
+                    "filename": ".pio\\libdeps\\due\\CRC\\.github\\workflows\\arduino_test_runner.yml"
+                },
+                {
+                    "blank": 3,
+                    "code": 15,
+                    "comment": 0,
+                    "filename": ".pio\\libdeps\\due\\CRC\\.github\\workflows\\jsoncheck.yml"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": ".pio\\libdeps\\due\\CRC\\.piopm"
+                },
+                {
+                    "blank": 13,
+                    "code": 30,
+                    "comment": 2,
+                    "filename": ".pio\\libdeps\\due\\CRC\\CHANGELOG.md"
+                },
+                {
+                    "blank": 30,
+                    "code": 187,
+                    "comment": 27,
+                    "filename": ".pio\\libdeps\\due\\CRC\\CRC.cpp"
+                },
+                {
+                    "blank": 22,
+                    "code": 15,
+                    "comment": 23,
+                    "filename": ".pio\\libdeps\\due\\CRC\\CRC.h"
+                },
+                {
+                    "blank": 25,
+                    "code": 90,
+                    "comment": 7,
+                    "filename": ".pio\\libdeps\\due\\CRC\\CRC12.cpp"
+                },
+                {
+                    "blank": 16,
+                    "code": 40,
+                    "comment": 14,
+                    "filename": ".pio\\libdeps\\due\\CRC\\CRC12.h"
+                },
+                {
+                    "blank": 25,
+                    "code": 90,
+                    "comment": 6,
+                    "filename": ".pio\\libdeps\\due\\CRC\\CRC16.cpp"
+                },
+                {
+                    "blank": 16,
+                    "code": 40,
+                    "comment": 13,
+                    "filename": ".pio\\libdeps\\due\\CRC\\CRC16.h"
+                },
+                {
+                    "blank": 25,
+                    "code": 91,
+                    "comment": 6,
+                    "filename": ".pio\\libdeps\\due\\CRC\\CRC32.cpp"
+                },
+                {
+                    "blank": 16,
+                    "code": 40,
+                    "comment": 13,
+                    "filename": ".pio\\libdeps\\due\\CRC\\CRC32.h"
+                },
+                {
+                    "blank": 25,
+                    "code": 92,
+                    "comment": 6,
+                    "filename": ".pio\\libdeps\\due\\CRC\\CRC64.cpp"
+                },
+                {
+                    "blank": 15,
+                    "code": 40,
+                    "comment": 13,
+                    "filename": ".pio\\libdeps\\due\\CRC\\CRC64.h"
+                },
+                {
+                    "blank": 23,
+                    "code": 80,
+                    "comment": 6,
+                    "filename": ".pio\\libdeps\\due\\CRC\\CRC8.cpp"
+                },
+                {
+                    "blank": 16,
+                    "code": 39,
+                    "comment": 13,
+                    "filename": ".pio\\libdeps\\due\\CRC\\CRC8.h"
+                },
+                {
+                    "blank": 14,
+                    "code": 41,
+                    "comment": 16,
+                    "filename": ".pio\\libdeps\\due\\CRC\\CRC_polynomes.h"
+                },
+                {
+                    "blank": 22,
+                    "code": 70,
+                    "comment": 11,
+                    "filename": ".pio\\libdeps\\due\\CRC\\examples\\CRC12_test\\CRC12_test.ino"
+                },
+                {
+                    "blank": 18,
+                    "code": 41,
+                    "comment": 8,
+                    "filename": ".pio\\libdeps\\due\\CRC\\examples\\CRC16_test\\CRC16_test.ino"
+                },
+                {
+                    "blank": 18,
+                    "code": 43,
+                    "comment": 7,
+                    "filename": ".pio\\libdeps\\due\\CRC\\examples\\CRC32_performance\\CRC32_performance.ino"
+                },
+                {
+                    "blank": 4,
+                    "code": 9,
+                    "comment": 0,
+                    "filename": ".pio\\libdeps\\due\\CRC\\examples\\CRC32_performance\\performance_0.2.0.txt"
+                },
+                {
+                    "blank": 17,
+                    "code": 37,
+                    "comment": 8,
+                    "filename": ".pio\\libdeps\\due\\CRC\\examples\\CRC32_test\\CRC32_test.ino"
+                },
+                {
+                    "blank": 17,
+                    "code": 38,
+                    "comment": 9,
+                    "filename": ".pio\\libdeps\\due\\CRC\\examples\\CRC64_test\\CRC64_test.ino"
+                },
+                {
+                    "blank": 19,
+                    "code": 39,
+                    "comment": 8,
+                    "filename": ".pio\\libdeps\\due\\CRC\\examples\\CRC8_test\\CRC8_test.ino"
+                },
+                {
+                    "blank": 7,
+                    "code": 17,
+                    "comment": 5,
+                    "filename": ".pio\\libdeps\\due\\CRC\\examples\\CRC_include_test\\CRC_include_test.ino"
+                },
+                {
+                    "blank": 2,
+                    "code": 7,
+                    "comment": 0,
+                    "filename": ".pio\\libdeps\\due\\CRC\\examples\\CRC_include_test\\foo.cpp"
+                },
+                {
+                    "blank": 4,
+                    "code": 3,
+                    "comment": 7,
+                    "filename": ".pio\\libdeps\\due\\CRC\\examples\\CRC_include_test\\foo.h"
+                },
+                {
+                    "blank": 24,
+                    "code": 86,
+                    "comment": 8,
+                    "filename": ".pio\\libdeps\\due\\CRC\\examples\\CRC_performance\\CRC_performance.ino"
+                },
+                {
+                    "blank": 22,
+                    "code": 67,
+                    "comment": 9,
+                    "filename": ".pio\\libdeps\\due\\CRC\\examples\\CRC_reference_test\\CRC_reference_test.ino"
+                },
+                {
+                    "blank": 13,
+                    "code": 22,
+                    "comment": 12,
+                    "filename": ".pio\\libdeps\\due\\CRC\\examples\\CRC_test2\\CRC_test2.ino"
+                },
+                {
+                    "blank": 13,
+                    "code": 22,
+                    "comment": 12,
+                    "filename": ".pio\\libdeps\\due\\CRC\\examples\\CRC_test\\CRC_test.ino"
+                },
+                {
+                    "blank": 14,
+                    "code": 34,
+                    "comment": 0,
+                    "filename": ".pio\\libdeps\\due\\CRC\\keywords.txt"
+                },
+                {
+                    "blank": 0,
+                    "code": 23,
+                    "comment": 0,
+                    "filename": ".pio\\libdeps\\due\\CRC\\library.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 11,
+                    "comment": 1,
+                    "filename": ".pio\\libdeps\\due\\CRC\\library.properties"
+                },
+                {
+                    "blank": 4,
+                    "code": 17,
+                    "comment": 0,
+                    "filename": ".pio\\libdeps\\due\\CRC\\LICENSE"
+                },
+                {
+                    "blank": 72,
+                    "code": 138,
+                    "comment": 14,
+                    "filename": ".pio\\libdeps\\due\\CRC\\README.md"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": ".pio\\libdeps\\due\\DueFlashStorage\\.piopm"
+                },
+                {
+                    "blank": 5,
+                    "code": 21,
+                    "comment": 5,
+                    "filename": ".pio\\libdeps\\due\\DueFlashStorage\\examples\\DueFlashStorageExample\\DueFlashStorageExample.ino"
+                },
+                {
+                    "blank": 25,
+                    "code": 58,
+                    "comment": 26,
+                    "filename": ".pio\\libdeps\\due\\DueFlashStorage\\examples\\DueFlashStorageStructExample\\DueFlashStorageStructExample.ino"
+                },
+                {
+                    "blank": 4,
+                    "code": 14,
+                    "comment": 0,
+                    "filename": ".pio\\libdeps\\due\\DueFlashStorage\\keywords.txt"
+                },
+                {
+                    "blank": 0,
+                    "code": 10,
+                    "comment": 1,
+                    "filename": ".pio\\libdeps\\due\\DueFlashStorage\\library.properties"
+                },
+                {
+                    "blank": 4,
+                    "code": 17,
+                    "comment": 0,
+                    "filename": ".pio\\libdeps\\due\\DueFlashStorage\\licence (MIT).txt"
+                },
+                {
+                    "blank": 10,
+                    "code": 28,
+                    "comment": 2,
+                    "filename": ".pio\\libdeps\\due\\DueFlashStorage\\README.adoc"
+                },
+                {
+                    "blank": 12,
+                    "code": 42,
+                    "comment": 13,
+                    "filename": ".pio\\libdeps\\due\\DueFlashStorage\\README.md"
+                },
+                {
+                    "blank": 28,
+                    "code": 98,
+                    "comment": 10,
+                    "filename": ".pio\\libdeps\\due\\DueFlashStorage\\src\\DueFlashStorage.cpp"
+                },
+                {
+                    "blank": 11,
+                    "code": 24,
+                    "comment": 19,
+                    "filename": ".pio\\libdeps\\due\\DueFlashStorage\\src\\DueFlashStorage.h"
+                },
+                {
+                    "blank": 41,
+                    "code": 122,
+                    "comment": 177,
+                    "filename": ".pio\\libdeps\\due\\DueFlashStorage\\src\\efc.cpp"
+                },
+                {
+                    "blank": 11,
+                    "code": 68,
+                    "comment": 88,
+                    "filename": ".pio\\libdeps\\due\\DueFlashStorage\\src\\efc.h"
+                },
+                {
+                    "blank": 123,
+                    "code": 439,
+                    "comment": 354,
+                    "filename": ".pio\\libdeps\\due\\DueFlashStorage\\src\\flash_efc.cpp"
+                },
+                {
+                    "blank": 15,
+                    "code": 67,
+                    "comment": 75,
+                    "filename": ".pio\\libdeps\\due\\DueFlashStorage\\src\\flash_efc.h"
+                },
+                {
+                    "blank": 0,
+                    "code": 6,
+                    "comment": 0,
+                    "filename": ".pio\\libdeps\\due\\integrity.dat"
+                },
+                {
+                    "blank": 7,
+                    "code": 21,
+                    "comment": 2,
+                    "filename": ".pio\\libdeps\\due\\SD\\.github\\ISSUE_TEMPLATE.md"
+                },
+                {
+                    "blank": 3,
+                    "code": 10,
+                    "comment": 0,
+                    "filename": ".pio\\libdeps\\due\\SD\\.github\\PULL_REQUEST_TEMPLATE.md"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": ".pio\\libdeps\\due\\SD\\.piopm"
+                },
+                {
+                    "blank": 18,
+                    "code": 59,
+                    "comment": 41,
+                    "filename": ".pio\\libdeps\\due\\SD\\examples\\CardInfo\\CardInfo.ino"
+                },
+                {
+                    "blank": 23,
+                    "code": 38,
+                    "comment": 43,
+                    "filename": ".pio\\libdeps\\due\\SD\\examples\\Datalogger\\Datalogger.ino"
+                },
+                {
+                    "blank": 10,
+                    "code": 30,
+                    "comment": 34,
+                    "filename": ".pio\\libdeps\\due\\SD\\examples\\DumpFile\\DumpFile.ino"
+                },
+                {
+                    "blank": 15,
+                    "code": 44,
+                    "comment": 34,
+                    "filename": ".pio\\libdeps\\due\\SD\\examples\\Files\\Files.ino"
+                },
+                {
+                    "blank": 15,
+                    "code": 45,
+                    "comment": 37,
+                    "filename": ".pio\\libdeps\\due\\SD\\examples\\listfiles\\listfiles.ino"
+                },
+                {
+                    "blank": 14,
+                    "code": 40,
+                    "comment": 39,
+                    "filename": ".pio\\libdeps\\due\\SD\\examples\\ReadWrite\\ReadWrite.ino"
+                },
+                {
+                    "blank": 28,
+                    "code": 88,
+                    "comment": 34,
+                    "filename": ".pio\\libdeps\\due\\SD\\File.cpp"
+                },
+                {
+                    "blank": 4,
+                    "code": 26,
+                    "comment": 0,
+                    "filename": ".pio\\libdeps\\due\\SD\\keywords.txt"
+                },
+                {
+                    "blank": 0,
+                    "code": 12,
+                    "comment": 0,
+                    "filename": ".pio\\libdeps\\due\\SD\\library.json"
+                },
+                {
+                    "blank": 9,
+                    "code": 10,
+                    "comment": 0,
+                    "filename": ".pio\\libdeps\\due\\SD\\README.txt"
+                },
+                {
+                    "blank": 106,
+                    "code": 213,
+                    "comment": 310,
+                    "filename": ".pio\\libdeps\\due\\SD\\SD.cpp"
+                },
+                {
+                    "blank": 23,
+                    "code": 65,
+                    "comment": 35,
+                    "filename": ".pio\\libdeps\\due\\SD\\SD.h"
+                },
+                {
+                    "blank": 1,
+                    "code": 111,
+                    "comment": 307,
+                    "filename": ".pio\\libdeps\\due\\SD\\utility\\FatStructs.h"
+                },
+                {
+                    "blank": 55,
+                    "code": 511,
+                    "comment": 248,
+                    "filename": ".pio\\libdeps\\due\\SD\\utility\\Sd2Card.cpp"
+                },
+                {
+                    "blank": 4,
+                    "code": 116,
+                    "comment": 129,
+                    "filename": ".pio\\libdeps\\due\\SD\\utility\\Sd2Card.h"
+                },
+                {
+                    "blank": 25,
+                    "code": 304,
+                    "comment": 241,
+                    "filename": ".pio\\libdeps\\due\\SD\\utility\\Sd2PinMap.h"
+                },
+                {
+                    "blank": 14,
+                    "code": 291,
+                    "comment": 289,
+                    "filename": ".pio\\libdeps\\due\\SD\\utility\\SdFat.h"
+                },
+                {
+                    "blank": 1,
+                    "code": 0,
+                    "comment": 201,
+                    "filename": ".pio\\libdeps\\due\\SD\\utility\\SdFatmainpage.h"
+                },
+                {
+                    "blank": 0,
+                    "code": 33,
+                    "comment": 44,
+                    "filename": ".pio\\libdeps\\due\\SD\\utility\\SdFatUtil.h"
+                },
+                {
+                    "blank": 101,
+                    "code": 590,
+                    "comment": 580,
+                    "filename": ".pio\\libdeps\\due\\SD\\utility\\SdFile.cpp"
+                },
+                {
+                    "blank": 0,
+                    "code": 127,
+                    "comment": 112,
+                    "filename": ".pio\\libdeps\\due\\SD\\utility\\SdInfo.h"
+                },
+                {
+                    "blank": 28,
+                    "code": 174,
+                    "comment": 97,
+                    "filename": ".pio\\libdeps\\due\\SD\\utility\\SdVolume.cpp"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": ".pio\\libdeps\\dueUSB\\integrity.dat"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": ".pio\\libdeps\\dueUSB\\LC_baseTools\\.piopm"
+                },
+                {
+                    "blank": 12,
+                    "code": 21,
+                    "comment": 7,
+                    "filename": ".pio\\libdeps\\dueUSB\\LC_baseTools\\autoPOT.cpp"
+                },
+                {
+                    "blank": 9,
+                    "code": 15,
+                    "comment": 20,
+                    "filename": ".pio\\libdeps\\dueUSB\\LC_baseTools\\autoPOT.h"
+                },
+                {
+                    "blank": 19,
+                    "code": 27,
+                    "comment": 8,
+                    "filename": ".pio\\libdeps\\dueUSB\\LC_baseTools\\blinker.cpp"
+                },
+                {
+                    "blank": 8,
+                    "code": 20,
+                    "comment": 3,
+                    "filename": ".pio\\libdeps\\dueUSB\\LC_baseTools\\blinker.h"
+                },
+                {
+                    "blank": 102,
+                    "code": 274,
+                    "comment": 44,
+                    "filename": ".pio\\libdeps\\dueUSB\\LC_baseTools\\colorObj.cpp"
+                },
+                {
+                    "blank": 34,
+                    "code": 95,
+                    "comment": 12,
+                    "filename": ".pio\\libdeps\\dueUSB\\LC_baseTools\\colorObj.h"
+                },
+                {
+                    "blank": 22,
+                    "code": 75,
+                    "comment": 80,
+                    "filename": ".pio\\libdeps\\dueUSB\\LC_baseTools\\examples\\auto_blinkers\\auto_blinkers.ino"
+                },
+                {
+                    "blank": 7,
+                    "code": 8,
+                    "comment": 11,
+                    "filename": ".pio\\libdeps\\dueUSB\\LC_baseTools\\examples\\blink_basic_example\\blink_basic_example.ino"
+                },
+                {
+                    "blank": 9,
+                    "code": 21,
+                    "comment": 16,
+                    "filename": ".pio\\libdeps\\dueUSB\\LC_baseTools\\examples\\blinkWithoutDelay\\blinkWithoutDelay.ino"
+                },
+                {
+                    "blank": 7,
+                    "code": 8,
+                    "comment": 5,
+                    "filename": ".pio\\libdeps\\dueUSB\\LC_baseTools\\examples\\blinkWithoutDelay_2\\blinkWithoutDelay_2.ino"
+                },
+                {
+                    "blank": 7,
+                    "code": 12,
+                    "comment": 8,
+                    "filename": ".pio\\libdeps\\dueUSB\\LC_baseTools\\examples\\mechButton_Beginner\\mechButton_Beginner.ino"
+                },
+                {
+                    "blank": 11,
+                    "code": 23,
+                    "comment": 17,
+                    "filename": ".pio\\libdeps\\dueUSB\\LC_baseTools\\examples\\mechButton_Intermediate\\mechButton_Intermediate.ino"
+                },
+                {
+                    "blank": 36,
+                    "code": 59,
+                    "comment": 29,
+                    "filename": ".pio\\libdeps\\dueUSB\\LC_baseTools\\examples\\mechButton_Pro\\mechButton_Pro.ino"
+                },
+                {
+                    "blank": 12,
+                    "code": 37,
+                    "comment": 26,
+                    "filename": ".pio\\libdeps\\dueUSB\\LC_baseTools\\examples\\oneShot\\oneShot.cpp"
+                },
+                {
+                    "blank": 9,
+                    "code": 20,
+                    "comment": 16,
+                    "filename": ".pio\\libdeps\\dueUSB\\LC_baseTools\\examples\\oneShot\\oneShot.h"
+                },
+                {
+                    "blank": 10,
+                    "code": 8,
+                    "comment": 10,
+                    "filename": ".pio\\libdeps\\dueUSB\\LC_baseTools\\examples\\oneShot\\oneShot.ino"
+                },
+                {
+                    "blank": 10,
+                    "code": 47,
+                    "comment": 51,
+                    "filename": ".pio\\libdeps\\dueUSB\\LC_baseTools\\examples\\runningAvg\\runningAvg.ino"
+                },
+                {
+                    "blank": 5,
+                    "code": 11,
+                    "comment": 31,
+                    "filename": ".pio\\libdeps\\dueUSB\\LC_baseTools\\examples\\runningAvgSimple\\runningAvgSimple.ino"
+                },
+                {
+                    "blank": 13,
+                    "code": 23,
+                    "comment": 20,
+                    "filename": ".pio\\libdeps\\dueUSB\\LC_baseTools\\examples\\serialStr\\serialStr.ino"
+                },
+                {
+                    "blank": 30,
+                    "code": 36,
+                    "comment": 25,
+                    "filename": ".pio\\libdeps\\dueUSB\\LC_baseTools\\idlers.cpp"
+                },
+                {
+                    "blank": 11,
+                    "code": 22,
+                    "comment": 0,
+                    "filename": ".pio\\libdeps\\dueUSB\\LC_baseTools\\idlers.h"
+                },
+                {
+                    "blank": 125,
+                    "code": 396,
+                    "comment": 0,
+                    "filename": ".pio\\libdeps\\dueUSB\\LC_baseTools\\keywords.txt"
+                },
+                {
+                    "blank": 0,
+                    "code": 10,
+                    "comment": 1,
+                    "filename": ".pio\\libdeps\\dueUSB\\LC_baseTools\\library.properties"
+                },
+                {
+                    "blank": 162,
+                    "code": 284,
+                    "comment": 212,
+                    "filename": ".pio\\libdeps\\dueUSB\\LC_baseTools\\lists.cpp"
+                },
+                {
+                    "blank": 38,
+                    "code": 76,
+                    "comment": 44,
+                    "filename": ".pio\\libdeps\\dueUSB\\LC_baseTools\\lists.h"
+                },
+                {
+                    "blank": 26,
+                    "code": 27,
+                    "comment": 36,
+                    "filename": ".pio\\libdeps\\dueUSB\\LC_baseTools\\mapper.cpp"
+                },
+                {
+                    "blank": 10,
+                    "code": 23,
+                    "comment": 15,
+                    "filename": ".pio\\libdeps\\dueUSB\\LC_baseTools\\mapper.h"
+                },
+                {
+                    "blank": 19,
+                    "code": 45,
+                    "comment": 35,
+                    "filename": ".pio\\libdeps\\dueUSB\\LC_baseTools\\mechButton.cpp"
+                },
+                {
+                    "blank": 8,
+                    "code": 22,
+                    "comment": 19,
+                    "filename": ".pio\\libdeps\\dueUSB\\LC_baseTools\\mechButton.h"
+                },
+                {
+                    "blank": 56,
+                    "code": 124,
+                    "comment": 79,
+                    "filename": ".pio\\libdeps\\dueUSB\\LC_baseTools\\multiMap.cpp"
+                },
+                {
+                    "blank": 22,
+                    "code": 34,
+                    "comment": 38,
+                    "filename": ".pio\\libdeps\\dueUSB\\LC_baseTools\\multiMap.h"
+                },
+                {
+                    "blank": 14,
+                    "code": 16,
+                    "comment": 1,
+                    "filename": ".pio\\libdeps\\dueUSB\\LC_baseTools\\README.md"
+                },
+                {
+                    "blank": 23,
+                    "code": 26,
+                    "comment": 34,
+                    "filename": ".pio\\libdeps\\dueUSB\\LC_baseTools\\resizeBuff.cpp"
+                },
+                {
+                    "blank": 17,
+                    "code": 16,
+                    "comment": 97,
+                    "filename": ".pio\\libdeps\\dueUSB\\LC_baseTools\\resizeBuff.h"
+                },
+                {
+                    "blank": 48,
+                    "code": 90,
+                    "comment": 24,
+                    "filename": ".pio\\libdeps\\dueUSB\\LC_baseTools\\runningAvg.cpp"
+                },
+                {
+                    "blank": 11,
+                    "code": 32,
+                    "comment": 26,
+                    "filename": ".pio\\libdeps\\dueUSB\\LC_baseTools\\runningAvg.h"
+                },
+                {
+                    "blank": 15,
+                    "code": 37,
+                    "comment": 23,
+                    "filename": ".pio\\libdeps\\dueUSB\\LC_baseTools\\serialStr.cpp"
+                },
+                {
+                    "blank": 10,
+                    "code": 20,
+                    "comment": 13,
+                    "filename": ".pio\\libdeps\\dueUSB\\LC_baseTools\\serialStr.h"
+                },
+                {
+                    "blank": 49,
+                    "code": 115,
+                    "comment": 95,
+                    "filename": ".pio\\libdeps\\dueUSB\\LC_baseTools\\squareWave.cpp"
+                },
+                {
+                    "blank": 14,
+                    "code": 37,
+                    "comment": 23,
+                    "filename": ".pio\\libdeps\\dueUSB\\LC_baseTools\\squareWave.h"
+                },
+                {
+                    "blank": 35,
+                    "code": 45,
+                    "comment": 48,
+                    "filename": ".pio\\libdeps\\dueUSB\\LC_baseTools\\strTools.cpp"
+                },
+                {
+                    "blank": 28,
+                    "code": 18,
+                    "comment": 55,
+                    "filename": ".pio\\libdeps\\dueUSB\\LC_baseTools\\strTools.h"
+                },
+                {
+                    "blank": 41,
+                    "code": 90,
+                    "comment": 66,
+                    "filename": ".pio\\libdeps\\dueUSB\\LC_baseTools\\textBuff.cpp"
+                },
+                {
+                    "blank": 12,
+                    "code": 27,
+                    "comment": 18,
+                    "filename": ".pio\\libdeps\\dueUSB\\LC_baseTools\\textBuff.h"
+                },
+                {
+                    "blank": 29,
+                    "code": 90,
+                    "comment": 95,
+                    "filename": ".pio\\libdeps\\dueUSB\\LC_baseTools\\timeObj.cpp"
+                },
+                {
+                    "blank": 11,
+                    "code": 22,
+                    "comment": 16,
+                    "filename": ".pio\\libdeps\\dueUSB\\LC_baseTools\\timeObj.h"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": ".pio\\libdeps\\dueUSB\\LC_lilParser\\.piopm"
+                },
+                {
+                    "blank": 33,
+                    "code": 131,
+                    "comment": 134,
+                    "filename": ".pio\\libdeps\\dueUSB\\LC_lilParser\\examples\\parser_test\\parser_test.ino"
+                },
+                {
+                    "blank": 11,
+                    "code": 29,
+                    "comment": 34,
+                    "filename": ".pio\\libdeps\\dueUSB\\LC_lilParser\\examples\\simple_parser_example\\simple_parser_example.ino"
+                },
+                {
+                    "blank": 6,
+                    "code": 22,
+                    "comment": 0,
+                    "filename": ".pio\\libdeps\\dueUSB\\LC_lilParser\\keywords.txt"
+                },
+                {
+                    "blank": 0,
+                    "code": 11,
+                    "comment": 1,
+                    "filename": ".pio\\libdeps\\dueUSB\\LC_lilParser\\library.properties"
+                },
+                {
+                    "blank": 11,
+                    "code": 50,
+                    "comment": 21,
+                    "filename": ".pio\\libdeps\\dueUSB\\LC_lilParser\\README.md"
+                },
+                {
+                    "blank": 61,
+                    "code": 207,
+                    "comment": 102,
+                    "filename": ".pio\\libdeps\\dueUSB\\LC_lilParser\\src\\lilParser.cpp"
+                },
+                {
+                    "blank": 16,
+                    "code": 43,
+                    "comment": 26,
+                    "filename": ".pio\\libdeps\\dueUSB\\LC_lilParser\\src\\lilParser.h"
+                },
+                {
+                    "blank": 0,
+                    "code": 237,
+                    "comment": 0,
+                    "filename": "compile_commands.json"
+                },
+                {
+                    "blank": 5,
+                    "code": 13,
+                    "comment": 1,
+                    "filename": "include\\README"
+                },
+                {
+                    "blank": 5,
+                    "code": 66,
+                    "comment": 3,
+                    "filename": "lib\\commands.h"
+                },
+                {
+                    "blank": 1,
+                    "code": 23,
+                    "comment": 14,
+                    "filename": "lib\\macros.h"
+                },
+                {
+                    "blank": 32,
+                    "code": 307,
+                    "comment": 86,
+                    "filename": "lib\\parser.h"
+                },
+                {
+                    "blank": 9,
+                    "code": 37,
+                    "comment": 2,
+                    "filename": "lib\\README"
+                },
+                {
+                    "blank": 6,
+                    "code": 42,
+                    "comment": 10,
+                    "filename": "lib\\sensors.h"
+                },
+                {
+                    "blank": 1,
+                    "code": 12,
+                    "comment": 9,
+                    "filename": "platformio.ini"
+                },
+                {
+                    "filename": "README.md",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 6,
+                    "code": 57,
+                    "comment": 4,
+                    "filename": "src\\main.cpp"
+                },
+                {
+                    "blank": 3,
+                    "code": 8,
+                    "comment": 1,
+                    "filename": "test\\README"
+                }
+            ]
+        }
+    ]
+}

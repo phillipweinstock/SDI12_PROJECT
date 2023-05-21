@@ -1,0 +1,529 @@
+===============================================================================
+EXTENSION NAME : linecounter
+EXTENSION VERSION : 0.2.7
+-------------------------------------------------------------------------------
+count time : 2023-05-21 17:06:21
+count workspace : c:\Users\pip43\OneDrive\Documents\PlatformIO\Projects\SDI12_IMPLEMENTATION2
+total files : 493
+total code lines : 49587
+total comment lines : 20596
+total blank lines : 7037
+
+    statistics
+   |      extension|     total code|  total comment|    total blank|percent|
+   -------------------------------------------------------------------------
+   |           .ini|             12|              9|              1|  0.024|
+   |           .cpp|          11523|           7993|           2396|     23|
+   |             .h|          25405|           9155|           1434|     51|
+   |               |            211|             13|             45|   0.43|
+   |            .md|            836|            108|            314|    1.7|
+   |    .properties|            121|             12|              1|   0.24|
+   |           .txt|            792|              6|            227|    1.6|
+   |           .ino|           8271|           2784|           2235|     17|
+   |          .json|            286|              0|              0|   0.58|
+   |           .dat|              7|              0|              0|  0.014|
+   |          .adoc|             28|              2|             10|  0.056|
+   |           .yml|            312|              2|             61|   0.63|
+   |            .mk|              4|              0|              0| 0.0081|
+   |          .bash|             64|              4|              8|   0.13|
+   |          .skip|              0|              0|              0|    0.0|
+   |          .only|              0|              0|              0|    0.0|
+   |            .py|            110|             41|             24|   0.22|
+   |      .checksum|              1|              0|              0| 0.0020|
+   |             .c|           1582|            455|            277|    3.2|
+   |            .sh|             22|             12|              4|  0.044|
+   -------------------------------------------------------------------------
+.gitignore, code is 5, comment is 0, blank is 0.
+.pio\build\due\.sconsign39.dblite, it is a binary file.
+.pio\build\due\firmware.bin, it is a binary file.
+.pio\build\due\firmware.elf, it is a binary file.
+.pio\build\due\FrameworkArduino\abi.cpp.o, it is a binary file.
+.pio\build\due\FrameworkArduino\avr\dtostrf.c.o, it is a binary file.
+.pio\build\due\FrameworkArduino\cortex_handlers.c.o, it is a binary file.
+.pio\build\due\FrameworkArduino\hooks.c.o, it is a binary file.
+.pio\build\due\FrameworkArduino\iar_calls_sam3.c.o, it is a binary file.
+.pio\build\due\FrameworkArduino\IPAddress.cpp.o, it is a binary file.
+.pio\build\due\FrameworkArduino\itoa.c.o, it is a binary file.
+.pio\build\due\FrameworkArduino\main.cpp.o, it is a binary file.
+.pio\build\due\FrameworkArduino\new.cpp.o, it is a binary file.
+.pio\build\due\FrameworkArduino\Print.cpp.o, it is a binary file.
+.pio\build\due\FrameworkArduino\Reset.cpp.o, it is a binary file.
+.pio\build\due\FrameworkArduino\RingBuffer.cpp.o, it is a binary file.
+.pio\build\due\FrameworkArduino\Stream.cpp.o, it is a binary file.
+.pio\build\due\FrameworkArduino\syscalls_sam3.c.o, it is a binary file.
+.pio\build\due\FrameworkArduino\UARTClass.cpp.o, it is a binary file.
+.pio\build\due\FrameworkArduino\USARTClass.cpp.o, it is a binary file.
+.pio\build\due\FrameworkArduino\USB\CDC.cpp.o, it is a binary file.
+.pio\build\due\FrameworkArduino\USB\PluggableUSB.cpp.o, it is a binary file.
+.pio\build\due\FrameworkArduino\USB\USBCore.cpp.o, it is a binary file.
+.pio\build\due\FrameworkArduino\watchdog.cpp.o, it is a binary file.
+.pio\build\due\FrameworkArduino\WInterrupts.c.o, it is a binary file.
+.pio\build\due\FrameworkArduino\wiring.c.o, it is a binary file.
+.pio\build\due\FrameworkArduino\wiring_analog.c.o, it is a binary file.
+.pio\build\due\FrameworkArduino\wiring_digital.c.o, it is a binary file.
+.pio\build\due\FrameworkArduino\wiring_pulse.cpp.o, it is a binary file.
+.pio\build\due\FrameworkArduino\wiring_pulse_asm.S.o, it is a binary file.
+.pio\build\due\FrameworkArduino\wiring_shift.c.o, it is a binary file.
+.pio\build\due\FrameworkArduino\WMath.cpp.o, it is a binary file.
+.pio\build\due\FrameworkArduino\WString.cpp.o, it is a binary file.
+.pio\build\due\FrameworkArduinoVariant\variant.cpp.o, it is a binary file.
+.pio\build\due\idedata.json, code is 1, comment is 0, blank is 0.
+.pio\build\due\lib020\CRC\CRC.cpp.o, it is a binary file.
+.pio\build\due\lib020\CRC\CRC12.cpp.o, it is a binary file.
+.pio\build\due\lib020\CRC\CRC16.cpp.o, it is a binary file.
+.pio\build\due\lib020\CRC\CRC32.cpp.o, it is a binary file.
+.pio\build\due\lib020\CRC\CRC64.cpp.o, it is a binary file.
+.pio\build\due\lib020\CRC\CRC8.cpp.o, it is a binary file.
+.pio\build\due\lib020\libCRC.a, it is a binary file.
+.pio\build\due\lib0b7\Adafruit ST7735 and ST7789 Library\Adafruit_ST7735.cpp.o, it is a binary file.
+.pio\build\due\lib0b7\Adafruit ST7735 and ST7789 Library\Adafruit_ST7789.cpp.o, it is a binary file.
+.pio\build\due\lib0b7\Adafruit ST7735 and ST7789 Library\Adafruit_ST77xx.cpp.o, it is a binary file.
+.pio\build\due\lib0b7\libAdafruit ST7735 and ST7789 Library.a, it is a binary file.
+.pio\build\due\lib121\Adafruit GFX Library\Adafruit_GFX.cpp.o, it is a binary file.
+.pio\build\due\lib121\Adafruit GFX Library\Adafruit_GrayOLED.cpp.o, it is a binary file.
+.pio\build\due\lib121\Adafruit GFX Library\Adafruit_SPITFT.cpp.o, it is a binary file.
+.pio\build\due\lib121\Adafruit GFX Library\glcdfont.c.o, it is a binary file.
+.pio\build\due\lib121\libAdafruit GFX Library.a, it is a binary file.
+.pio\build\due\lib1f7\DueFlashStorage\DueFlashStorage.cpp.o, it is a binary file.
+.pio\build\due\lib1f7\DueFlashStorage\efc.cpp.o, it is a binary file.
+.pio\build\due\lib1f7\DueFlashStorage\flash_efc.cpp.o, it is a binary file.
+.pio\build\due\lib1f7\libDueFlashStorage.a, it is a binary file.
+.pio\build\due\libb31\libSPI.a, it is a binary file.
+.pio\build\due\libb31\SPI\SPI.cpp.o, it is a binary file.
+.pio\build\due\libd08\Adafruit BusIO\Adafruit_BusIO_Register.cpp.o, it is a binary file.
+.pio\build\due\libd08\Adafruit BusIO\Adafruit_I2CDevice.cpp.o, it is a binary file.
+.pio\build\due\libd08\Adafruit BusIO\Adafruit_SPIDevice.cpp.o, it is a binary file.
+.pio\build\due\libd08\libAdafruit BusIO.a, it is a binary file.
+.pio\build\due\libdbd\libWire.a, it is a binary file.
+.pio\build\due\libdbd\Wire\Wire.cpp.o, it is a binary file.
+.pio\build\due\libdeb\Adafruit BME680 Library\Adafruit_BME680.cpp.o, it is a binary file.
+.pio\build\due\libdeb\Adafruit BME680 Library\bme68x.c.o, it is a binary file.
+.pio\build\due\libdeb\libAdafruit BME680 Library.a, it is a binary file.
+.pio\build\due\libea1\Adafruit Unified Sensor\Adafruit_Sensor.cpp.o, it is a binary file.
+.pio\build\due\libea1\libAdafruit Unified Sensor.a, it is a binary file.
+.pio\build\due\libf49\BH1750\BH1750.cpp.o, it is a binary file.
+.pio\build\due\libf49\libBH1750.a, it is a binary file.
+.pio\build\due\libFrameworkArduino.a, it is a binary file.
+.pio\build\due\libFrameworkArduinoVariant.a, it is a binary file.
+.pio\build\due\sizedata.json, code is 1, comment is 0, blank is 0.
+.pio\build\due\src\main.cpp.o, it is a binary file.
+.pio\build\project.checksum, code is 1, comment is 0, blank is 0.
+.pio\libdeps\due\Adafruit BME680 Library\.github\ISSUE_TEMPLATE.md, code is 21, comment is 2, blank is 7.
+.pio\libdeps\due\Adafruit BME680 Library\.github\PULL_REQUEST_TEMPLATE.md, code is 10, comment is 0, blank is 3.
+.pio\libdeps\due\Adafruit BME680 Library\.github\workflows\githubci.yml, code is 25, comment is 0, blank is 7.
+.pio\libdeps\due\Adafruit BME680 Library\.gitignore, code is 8, comment is 0, blank is 1.
+.pio\libdeps\due\Adafruit BME680 Library\.piopm, code is 1, comment is 0, blank is 0.
+.pio\libdeps\due\Adafruit BME680 Library\Adafruit_BME680.cpp, code is 342, comment is 192, blank is 78.
+.pio\libdeps\due\Adafruit BME680 Library\Adafruit_BME680.h, code is 71, comment is 54, blank is 19.
+.pio\libdeps\due\Adafruit BME680 Library\bme68x.c, code is 1294, comment is 316, blank is 238.
+.pio\libdeps\due\Adafruit BME680 Library\bme68x.h, code is 23, comment is 276, blank is 24.
+.pio\libdeps\due\Adafruit BME680 Library\bme68x_defs.h, code is 319, comment is 388, blank is 265.
+.pio\libdeps\due\Adafruit BME680 Library\examples\bme680async\bme680async.ino, code is 60, comment is 28, blank is 16.
+.pio\libdeps\due\Adafruit BME680 Library\examples\bme680oled\bme680oled.ino, code is 52, comment is 24, blank is 15.
+.pio\libdeps\due\Adafruit BME680 Library\examples\bme680test\bme680test.ino, code is 47, comment is 21, blank is 13.
+.pio\libdeps\due\Adafruit BME680 Library\library.properties, code is 10, comment is 1, blank is 0.
+.pio\libdeps\due\Adafruit BME680 Library\README.md, code is 20, comment is 4, blank is 11.
+.pio\libdeps\due\Adafruit BusIO\.github\ISSUE_TEMPLATE.md, code is 21, comment is 2, blank is 7.
+.pio\libdeps\due\Adafruit BusIO\.github\PULL_REQUEST_TEMPLATE.md, code is 10, comment is 0, blank is 3.
+.pio\libdeps\due\Adafruit BusIO\.github\workflows\githubci.yml, code is 25, comment is 0, blank is 8.
+.pio\libdeps\due\Adafruit BusIO\.piopm, code is 1, comment is 0, blank is 0.
+.pio\libdeps\due\Adafruit BusIO\Adafruit_BusIO_Register.cpp, code is 189, comment is 144, blank is 37.
+.pio\libdeps\due\Adafruit BusIO\Adafruit_BusIO_Register.h, code is 61, comment is 29, blank is 18.
+.pio\libdeps\due\Adafruit BusIO\Adafruit_I2CDevice.cpp, code is 205, comment is 82, blank is 29.
+.pio\libdeps\due\Adafruit BusIO\Adafruit_I2CDevice.h, code is 27, comment is 4, blank is 6.
+.pio\libdeps\due\Adafruit BusIO\Adafruit_I2CRegister.h, code is 7, comment is 0, blank is 3.
+.pio\libdeps\due\Adafruit BusIO\Adafruit_SPIDevice.cpp, code is 333, comment is 133, blank is 49.
+.pio\libdeps\due\Adafruit BusIO\Adafruit_SPIDevice.h, code is 103, comment is 19, blank is 18.
+.pio\libdeps\due\Adafruit BusIO\CMakeLists.txt, code is 8, comment is 1, blank is 3.
+.pio\libdeps\due\Adafruit BusIO\component.mk, code is 1, comment is 0, blank is 0.
+.pio\libdeps\due\Adafruit BusIO\examples\i2c_address_detect\i2c_address_detect.ino, code is 16, comment is 0, blank is 5.
+.pio\libdeps\due\Adafruit BusIO\examples\i2c_readwrite\i2c_readwrite.ino, code is 31, comment is 3, blank is 8.
+.pio\libdeps\due\Adafruit BusIO\examples\i2c_registers\i2c_registers.ino, code is 28, comment is 0, blank is 10.
+.pio\libdeps\due\Adafruit BusIO\examples\i2corspi_register\i2corspi_register.ino, code is 28, comment is 2, blank is 9.
+.pio\libdeps\due\Adafruit BusIO\examples\spi_modetest\spi_modetest.ino, code is 23, comment is 1, blank is 5.
+.pio\libdeps\due\Adafruit BusIO\examples\spi_readwrite\spi_readwrite.ino, code is 28, comment is 3, blank is 9.
+.pio\libdeps\due\Adafruit BusIO\examples\spi_register_bits\spi_register_bits.ino, code is 120, comment is 55, blank is 28.
+.pio\libdeps\due\Adafruit BusIO\examples\spi_registers\spi_registers.ino, code is 25, comment is 0, blank is 9.
+.pio\libdeps\due\Adafruit BusIO\library.properties, code is 9, comment is 1, blank is 0.
+.pio\libdeps\due\Adafruit BusIO\LICENSE, code is 17, comment is 0, blank is 4.
+.pio\libdeps\due\Adafruit BusIO\README.md, code is 4, comment is 1, blank is 4.
+.pio\libdeps\due\Adafruit GFX Library\.github\ISSUE_TEMPLATE.md, code is 21, comment is 2, blank is 7.
+.pio\libdeps\due\Adafruit GFX Library\.github\PULL_REQUEST_TEMPLATE.md, code is 10, comment is 0, blank is 3.
+.pio\libdeps\due\Adafruit GFX Library\.github\workflows\githubci.yml, code is 28, comment is 1, blank is 8.
+.pio\libdeps\due\Adafruit GFX Library\.gitignore, code is 6, comment is 0, blank is 0.
+.pio\libdeps\due\Adafruit GFX Library\.piopm, code is 1, comment is 0, blank is 0.
+.pio\libdeps\due\Adafruit GFX Library\Adafruit_GFX.cpp, code is 1459, comment is 1101, blank is 201.
+.pio\libdeps\due\Adafruit GFX Library\Adafruit_GFX.h, code is 218, comment is 156, blank is 37.
+.pio\libdeps\due\Adafruit GFX Library\Adafruit_GrayOLED.cpp, code is 178, comment is 228, blank is 34.
+.pio\libdeps\due\Adafruit GFX Library\Adafruit_GrayOLED.h, code is 55, comment is 53, blank is 15.
+.pio\libdeps\due\Adafruit GFX Library\Adafruit_SPITFT.cpp, code is 1721, comment is 1081, blank is 132.
+.pio\libdeps\due\Adafruit GFX Library\Adafruit_SPITFT.h, code is 310, comment is 341, blank is 43.
+.pio\libdeps\due\Adafruit GFX Library\Adafruit_SPITFT_Macros.h, code is 0, comment is 5, blank is 1.
+.pio\libdeps\due\Adafruit GFX Library\CMakeLists.txt, code is 8, comment is 1, blank is 3.
+.pio\libdeps\due\Adafruit GFX Library\component.mk, code is 1, comment is 0, blank is 0.
+.pio\libdeps\due\Adafruit GFX Library\examples\GFXcanvas\GFXcanvas.ino, code is 68, comment is 28, blank is 18.
+.pio\libdeps\due\Adafruit GFX Library\examples\GFXcanvas\GFXcanvasSerialDemo.cpp, code is 80, comment is 0, blank is 12.
+.pio\libdeps\due\Adafruit GFX Library\examples\GFXcanvas\GFXcanvasSerialDemo.h, code is 19, comment is 40, blank is 7.
+.pio\libdeps\due\Adafruit GFX Library\examples\mock_ili9341\mock_ili9341.ino, code is 281, comment is 26, blank is 62.
+.pio\libdeps\due\Adafruit GFX Library\fontconvert\bdf2adafruit.py, code is 83, comment is 39, blank is 15.
+.pio\libdeps\due\Adafruit GFX Library\fontconvert\fontconvert.c, code is 157, comment is 123, blank is 33.
+.pio\libdeps\due\Adafruit GFX Library\fontconvert\fontconvert_win.md, code is 35, comment is 4, blank is 7.
+.pio\libdeps\due\Adafruit GFX Library\fontconvert\Makefile, code is 9, comment is 0, blank is 3.
+.pio\libdeps\due\Adafruit GFX Library\fontconvert\makefonts.sh, code is 22, comment is 12, blank is 4.
+.pio\libdeps\due\Adafruit GFX Library\Fonts\FreeMono12pt7b.h, code is 222, comment is 96, blank is 3.
+.pio\libdeps\due\Adafruit GFX Library\Fonts\FreeMono18pt7b.h, code is 358, comment is 96, blank is 3.
+.pio\libdeps\due\Adafruit GFX Library\Fonts\FreeMono24pt7b.h, code is 572, comment is 96, blank is 3.
+.pio\libdeps\due\Adafruit GFX Library\Fonts\FreeMono9pt7b.h, code is 171, comment is 96, blank is 3.
+.pio\libdeps\due\Adafruit GFX Library\Fonts\FreeMonoBold12pt7b.h, code is 245, comment is 96, blank is 3.
+.pio\libdeps\due\Adafruit GFX Library\Fonts\FreeMonoBold18pt7b.h, code is 418, comment is 96, blank is 3.
+.pio\libdeps\due\Adafruit GFX Library\Fonts\FreeMonoBold24pt7b.h, code is 667, comment is 96, blank is 3.
+.pio\libdeps\due\Adafruit GFX Library\Fonts\FreeMonoBold9pt7b.h, code is 184, comment is 96, blank is 3.
+.pio\libdeps\due\Adafruit GFX Library\Fonts\FreeMonoBoldOblique12pt7b.h, code is 264, comment is 96, blank is 3.
+.pio\libdeps\due\Adafruit GFX Library\Fonts\FreeMonoBoldOblique18pt7b.h, code is 455, comment is 96, blank is 3.
+.pio\libdeps\due\Adafruit GFX Library\Fonts\FreeMonoBoldOblique24pt7b.h, code is 737, comment is 96, blank is 3.
+.pio\libdeps\due\Adafruit GFX Library\Fonts\FreeMonoBoldOblique9pt7b.h, code is 198, comment is 96, blank is 3.
+.pio\libdeps\due\Adafruit GFX Library\Fonts\FreeMonoOblique12pt7b.h, code is 243, comment is 96, blank is 3.
+.pio\libdeps\due\Adafruit GFX Library\Fonts\FreeMonoOblique18pt7b.h, code is 393, comment is 96, blank is 3.
+.pio\libdeps\due\Adafruit GFX Library\Fonts\FreeMonoOblique24pt7b.h, code is 638, comment is 96, blank is 3.
+.pio\libdeps\due\Adafruit GFX Library\Fonts\FreeMonoOblique9pt7b.h, code is 182, comment is 96, blank is 3.
+.pio\libdeps\due\Adafruit GFX Library\Fonts\FreeSans12pt7b.h, code is 265, comment is 96, blank is 3.
+.pio\libdeps\due\Adafruit GFX Library\Fonts\FreeSans18pt7b.h, code is 447, comment is 96, blank is 3.
+.pio\libdeps\due\Adafruit GFX Library\Fonts\FreeSans24pt7b.h, code is 722, comment is 96, blank is 3.
+.pio\libdeps\due\Adafruit GFX Library\Fonts\FreeSans9pt7b.h, code is 196, comment is 96, blank is 3.
+.pio\libdeps\due\Adafruit GFX Library\Fonts\FreeSansBold12pt7b.h, code is 283, comment is 96, blank is 3.
+.pio\libdeps\due\Adafruit GFX Library\Fonts\FreeSansBold18pt7b.h, code is 476, comment is 96, blank is 3.
+.pio\libdeps\due\Adafruit GFX Library\Fonts\FreeSansBold24pt7b.h, code is 779, comment is 96, blank is 3.
+.pio\libdeps\due\Adafruit GFX Library\Fonts\FreeSansBold9pt7b.h, code is 203, comment is 96, blank is 3.
+.pio\libdeps\due\Adafruit GFX Library\Fonts\FreeSansBoldOblique12pt7b.h, code is 312, comment is 96, blank is 3.
+.pio\libdeps\due\Adafruit GFX Library\Fonts\FreeSansBoldOblique18pt7b.h, code is 540, comment is 96, blank is 3.
+.pio\libdeps\due\Adafruit GFX Library\Fonts\FreeSansBoldOblique24pt7b.h, code is 888, comment is 96, blank is 3.
+.pio\libdeps\due\Adafruit GFX Library\Fonts\FreeSansBoldOblique9pt7b.h, code is 222, comment is 96, blank is 3.
+.pio\libdeps\due\Adafruit GFX Library\Fonts\FreeSansOblique12pt7b.h, code is 297, comment is 96, blank is 3.
+.pio\libdeps\due\Adafruit GFX Library\Fonts\FreeSansOblique18pt7b.h, code is 513, comment is 96, blank is 3.
+.pio\libdeps\due\Adafruit GFX Library\Fonts\FreeSansOblique24pt7b.h, code is 835, comment is 96, blank is 3.
+.pio\libdeps\due\Adafruit GFX Library\Fonts\FreeSansOblique9pt7b.h, code is 215, comment is 96, blank is 3.
+.pio\libdeps\due\Adafruit GFX Library\Fonts\FreeSerif12pt7b.h, code is 254, comment is 96, blank is 3.
+.pio\libdeps\due\Adafruit GFX Library\Fonts\FreeSerif18pt7b.h, code is 424, comment is 96, blank is 3.
+.pio\libdeps\due\Adafruit GFX Library\Fonts\FreeSerif24pt7b.h, code is 685, comment is 96, blank is 3.
+.pio\libdeps\due\Adafruit GFX Library\Fonts\FreeSerif9pt7b.h, code is 190, comment is 96, blank is 3.
+.pio\libdeps\due\Adafruit GFX Library\Fonts\FreeSerifBold12pt7b.h, code is 266, comment is 96, blank is 3.
+.pio\libdeps\due\Adafruit GFX Library\Fonts\FreeSerifBold18pt7b.h, code is 457, comment is 96, blank is 3.
+.pio\libdeps\due\Adafruit GFX Library\Fonts\FreeSerifBold24pt7b.h, code is 754, comment is 96, blank is 3.
+.pio\libdeps\due\Adafruit GFX Library\Fonts\FreeSerifBold9pt7b.h, code is 197, comment is 96, blank is 3.
+.pio\libdeps\due\Adafruit GFX Library\Fonts\FreeSerifBoldItalic12pt7b.h, code is 287, comment is 96, blank is 3.
+.pio\libdeps\due\Adafruit GFX Library\Fonts\FreeSerifBoldItalic18pt7b.h, code is 495, comment is 96, blank is 3.
+.pio\libdeps\due\Adafruit GFX Library\Fonts\FreeSerifBoldItalic24pt7b.h, code is 788, comment is 96, blank is 3.
+.pio\libdeps\due\Adafruit GFX Library\Fonts\FreeSerifBoldItalic9pt7b.h, code is 210, comment is 96, blank is 3.
+.pio\libdeps\due\Adafruit GFX Library\Fonts\FreeSerifItalic12pt7b.h, code is 266, comment is 96, blank is 3.
+.pio\libdeps\due\Adafruit GFX Library\Fonts\FreeSerifItalic18pt7b.h, code is 445, comment is 96, blank is 3.
+.pio\libdeps\due\Adafruit GFX Library\Fonts\FreeSerifItalic24pt7b.h, code is 732, comment is 96, blank is 3.
+.pio\libdeps\due\Adafruit GFX Library\Fonts\FreeSerifItalic9pt7b.h, code is 197, comment is 96, blank is 3.
+.pio\libdeps\due\Adafruit GFX Library\Fonts\Org_01.h, code is 121, comment is 98, blank is 4.
+.pio\libdeps\due\Adafruit GFX Library\Fonts\Picopixel.h, code is 113, comment is 98, blank is 4.
+.pio\libdeps\due\Adafruit GFX Library\Fonts\Tiny3x3a2pt7b.h, code is 112, comment is 109, blank is 4.
+.pio\libdeps\due\Adafruit GFX Library\Fonts\TomThumb.h, code is 419, comment is 51, blank is 4.
+.pio\libdeps\due\Adafruit GFX Library\gfxfont.h, code is 18, comment is 19, blank is 4.
+.pio\libdeps\due\Adafruit GFX Library\glcdfont.c, code is 131, comment is 16, blank is 6.
+.pio\libdeps\due\Adafruit GFX Library\library.properties, code is 10, comment is 1, blank is 0.
+.pio\libdeps\due\Adafruit GFX Library\license.txt, code is 20, comment is 0, blank is 4.
+.pio\libdeps\due\Adafruit GFX Library\README.md, code is 14, comment is 2, blank is 11.
+.pio\libdeps\due\Adafruit seesaw Library\.github\ISSUE_TEMPLATE.md, code is 21, comment is 2, blank is 7.
+.pio\libdeps\due\Adafruit seesaw Library\.github\PULL_REQUEST_TEMPLATE.md, code is 10, comment is 0, blank is 3.
+.pio\libdeps\due\Adafruit seesaw Library\.github\workflows\githubci.yml, code is 43, comment is 0, blank is 12.
+.pio\libdeps\due\Adafruit seesaw Library\.piopm, code is 1, comment is 0, blank is 0.
+.pio\libdeps\due\Adafruit seesaw Library\Adafruit_Crickit.cpp, code is 54, comment is 2, blank is 9.
+.pio\libdeps\due\Adafruit seesaw Library\Adafruit_Crickit.h, code is 38, comment is 6, blank is 9.
+.pio\libdeps\due\Adafruit seesaw Library\Adafruit_miniTFTWing.cpp, code is 23, comment is 33, blank is 6.
+.pio\libdeps\due\Adafruit seesaw Library\Adafruit_miniTFTWing.h, code is 36, comment is 8, blank is 15.
+.pio\libdeps\due\Adafruit seesaw Library\Adafruit_NeoKey_1x4.cpp, code is 160, comment is 146, blank is 38.
+.pio\libdeps\due\Adafruit seesaw Library\Adafruit_NeoKey_1x4.h, code is 58, comment is 23, blank is 23.
+.pio\libdeps\due\Adafruit seesaw Library\Adafruit_NeoTrellis.cpp, code is 154, comment is 164, blank is 35.
+.pio\libdeps\due\Adafruit seesaw Library\Adafruit_NeoTrellis.h, code is 57, comment is 20, blank is 25.
+.pio\libdeps\due\Adafruit seesaw Library\Adafruit_seesaw.cpp, code is 458, comment is 443, blank is 81.
+.pio\libdeps\due\Adafruit seesaw Library\Adafruit_seesaw.h, code is 204, comment is 106, blank is 54.
+.pio\libdeps\due\Adafruit seesaw Library\Adafruit_TFTShield18.cpp, code is 23, comment is 36, blank is 6.
+.pio\libdeps\due\Adafruit seesaw Library\Adafruit_TFTShield18.h, code is 38, comment is 6, blank is 16.
+.pio\libdeps\due\Adafruit seesaw Library\Doxyfile, code is 15, comment is 0, blank is 1.
+.pio\libdeps\due\Adafruit seesaw Library\examples\analog\analogRead\analogRead.ino, code is 16, comment is 7, blank is 7.
+.pio\libdeps\due\Adafruit seesaw Library\examples\analog\Fade\Fade.ino, code is 21, comment is 21, blank is 9.
+.pio\libdeps\due\Adafruit seesaw Library\examples\audio_spectrum\Audio_Spectrum\Audio_Spectrum.ino, code is 21, comment is 19, blank is 7.
+.pio\libdeps\due\Adafruit seesaw Library\examples\communication\UART_loopback\UART_loopback.ino, code is 21, comment is 5, blank is 7.
+.pio\libdeps\due\Adafruit seesaw Library\examples\Crickit\basic\basic.ino, code is 21, comment is 4, blank is 9.
+.pio\libdeps\due\Adafruit seesaw Library\examples\Crickit\cap_touch_demo\cap_touch_demo.ino, code is 25, comment is 15, blank is 7.
+.pio\libdeps\due\Adafruit seesaw Library\examples\Crickit\drive\more_drivers\more_drivers.ino, code is 23, comment is 3, blank is 8.
+.pio\libdeps\due\Adafruit seesaw Library\examples\Crickit\drive\test_drive\test_drive.ino, code is 18, comment is 3, blank is 6.
+.pio\libdeps\due\Adafruit seesaw Library\examples\Crickit\fulltest\fulltest.ino, code is 88, comment is 1, blank is 19.
+.pio\libdeps\due\Adafruit seesaw Library\examples\Crickit\motor\dual_motor\dual_motor.ino, code is 36, comment is 2, blank is 13.
+.pio\libdeps\due\Adafruit seesaw Library\examples\Crickit\servo\more_servos\more_servos.ino, code is 31, comment is 6, blank is 9.
+.pio\libdeps\due\Adafruit seesaw Library\examples\Crickit\servo\test_servo\test_servo.ino, code is 23, comment is 2, blank is 6.
+.pio\libdeps\due\Adafruit seesaw Library\examples\Crickit\signal\test_signal\test_signal.ino, code is 30, comment is 2, blank is 8.
+.pio\libdeps\due\Adafruit seesaw Library\examples\digital\attiny_blink\attiny_blink.ino, code is 19, comment is 8, blank is 9.
+.pio\libdeps\due\Adafruit seesaw Library\examples\digital\blink\blink.ino, code is 19, comment is 9, blank is 9.
+.pio\libdeps\due\Adafruit seesaw Library\examples\digital\gpio_interrupts\gpio_interrupts.ino, code is 22, comment is 6, blank is 11.
+.pio\libdeps\due\Adafruit seesaw Library\examples\digital\multiblink\multiblink.ino, code is 18, comment is 9, blank is 7.
+.pio\libdeps\due\Adafruit seesaw Library\examples\digital\multiread\multiread.ino, code is 16, comment is 4, blank is 7.
+.pio\libdeps\due\Adafruit seesaw Library\examples\EEPROM\EEPROM.ino, code is 21, comment is 7, blank is 11.
+.pio\libdeps\due\Adafruit seesaw Library\examples\encoder\encoder_basic\encoder_basic.ino, code is 58, comment is 17, blank is 18.
+.pio\libdeps\due\Adafruit seesaw Library\examples\encoder\multiple_encoders\multiple_encoders.ino, code is 112, comment is 23, blank is 32.
+.pio\libdeps\due\Adafruit seesaw Library\examples\joy_featherwing\joy_featherwing_ESP32\.esp32.test.only, code is 0, comment is 0, blank is 0.
+.pio\libdeps\due\Adafruit seesaw Library\examples\joy_featherwing\joy_featherwing_ESP32\joy_featherwing_ESP32.ino, code is 212, comment is 47, blank is 41.
+.pio\libdeps\due\Adafruit seesaw Library\examples\joy_featherwing\joy_featherwing_example\joy_featherwing_example.ino, code is 67, comment is 3, blank is 16.
+.pio\libdeps\due\Adafruit seesaw Library\examples\joy_featherwing\joy_wing_oled\joy_wing_oled.ino, code is 122, comment is 9, blank is 21.
+.pio\libdeps\due\Adafruit seesaw Library\examples\LEDArcade_1x4\LEDArcade_1x4.ino, code is 75, comment is 12, blank is 18.
+.pio\libdeps\due\Adafruit seesaw Library\examples\NeoKey_1x4\basic\basic.ino, code is 63, comment is 13, blank is 17.
+.pio\libdeps\due\Adafruit seesaw Library\examples\NeoKey_1x4\basic_callback\basic_callback.ino, code is 55, comment is 12, blank is 18.
+.pio\libdeps\due\Adafruit seesaw Library\examples\NeoKey_1x4\basic_multikey\basic_multikey.ino, code is 63, comment is 15, blank is 19.
+.pio\libdeps\due\Adafruit seesaw Library\examples\NeoKey_1x4\basic_neoswirl\basic_neoswirl.ino, code is 64, comment is 6, blank is 19.
+.pio\libdeps\due\Adafruit seesaw Library\examples\NeoPixel\NeoPixel_strandtest\NeoPixel_strandtest.ino, code is 91, comment is 36, blank is 21.
+.pio\libdeps\due\Adafruit seesaw Library\examples\NeoSlider\Dual_NeoSlider\Dual_NeoSlider.ino, code is 65, comment is 14, blank is 21.
+.pio\libdeps\due\Adafruit seesaw Library\examples\NeoSlider\NeoSlider\NeoSlider.ino, code is 56, comment is 12, blank is 21.
+.pio\libdeps\due\Adafruit seesaw Library\examples\NeoTrellis\basic\basic.ino, code is 51, comment is 18, blank is 14.
+.pio\libdeps\due\Adafruit seesaw Library\examples\NeoTrellis\interrupt\interrupt.ino, code is 54, comment is 12, blank is 13.
+.pio\libdeps\due\Adafruit seesaw Library\examples\NeoTrellis\multitrellis\basic\basic.ino, code is 53, comment is 39, blank is 17.
+.pio\libdeps\due\Adafruit seesaw Library\examples\NeoTrellis\pattern_game\pattern_game.ino, code is 112, comment is 24, blank is 25.
+.pio\libdeps\due\Adafruit seesaw Library\examples\NeoTrellis\ripples\ripples.ino, code is 129, comment is 12, blank is 39.
+.pio\libdeps\due\Adafruit seesaw Library\examples\soil_sensor\soilsensor_example\soilsensor_example.ino, code is 20, comment is 0, blank is 6.
+.pio\libdeps\due\Adafruit seesaw Library\library.properties, code is 10, comment is 1, blank is 0.
+.pio\libdeps\due\Adafruit seesaw Library\README.md, code is 3, comment is 2, blank is 2.
+.pio\libdeps\due\Adafruit seesaw Library\seesaw_motor.h, code is 40, comment is 32, blank is 10.
+.pio\libdeps\due\Adafruit seesaw Library\seesaw_neopixel.cpp, code is 193, comment is 86, blank is 44.
+.pio\libdeps\due\Adafruit seesaw Library\seesaw_neopixel.h, code is 72, comment is 58, blank is 18.
+.pio\libdeps\due\Adafruit seesaw Library\seesaw_servo.cpp, code is 35, comment is 48, blank is 8.
+.pio\libdeps\due\Adafruit seesaw Library\seesaw_servo.h, code is 28, comment is 28, blank is 10.
+.pio\libdeps\due\Adafruit seesaw Library\seesaw_spectrum.cpp, code is 17, comment is 31, blank is 5.
+.pio\libdeps\due\Adafruit seesaw Library\seesaw_spectrum.h, code is 26, comment is 42, blank is 9.
+.pio\libdeps\due\Adafruit SSD1306\.github\ISSUE_TEMPLATE.md, code is 21, comment is 2, blank is 7.
+.pio\libdeps\due\Adafruit SSD1306\.github\PULL_REQUEST_TEMPLATE.md, code is 10, comment is 0, blank is 3.
+.pio\libdeps\due\Adafruit SSD1306\.github\workflows\githubci.yml, code is 25, comment is 0, blank is 7.
+.pio\libdeps\due\Adafruit SSD1306\.gitignore, code is 4, comment is 0, blank is 0.
+.pio\libdeps\due\Adafruit SSD1306\.piopm, code is 1, comment is 0, blank is 0.
+.pio\libdeps\due\Adafruit SSD1306\Adafruit_SSD1306.cpp, code is 609, comment is 595, blank is 73.
+.pio\libdeps\due\Adafruit SSD1306\Adafruit_SSD1306.h, code is 139, comment is 107, blank is 20.
+.pio\libdeps\due\Adafruit SSD1306\CMakeLists.txt, code is 8, comment is 1, blank is 3.
+.pio\libdeps\due\Adafruit SSD1306\component.mk, code is 1, comment is 0, blank is 0.
+.pio\libdeps\due\Adafruit SSD1306\examples\OLED_featherwing\OLED_featherwing.ino, code is 72, comment is 11, blank is 11.
+.pio\libdeps\due\Adafruit SSD1306\examples\ssd1306_128x32_i2c\ssd1306_128x32_i2c.ino, code is 285, comment is 91, blank is 82.
+.pio\libdeps\due\Adafruit SSD1306\examples\ssd1306_128x32_spi\ssd1306_128x32_spi.ino, code is 289, comment is 92, blank is 83.
+.pio\libdeps\due\Adafruit SSD1306\examples\ssd1306_128x64_i2c\ssd1306_128x64_i2c.ino, code is 285, comment is 91, blank is 82.
+.pio\libdeps\due\Adafruit SSD1306\examples\ssd1306_128x64_spi\ssd1306_128x64_spi.ino, code is 289, comment is 92, blank is 84.
+.pio\libdeps\due\Adafruit SSD1306\library.properties, code is 10, comment is 1, blank is 0.
+.pio\libdeps\due\Adafruit SSD1306\license.txt, code is 23, comment is 0, blank is 3.
+.pio\libdeps\due\Adafruit SSD1306\README.md, code is 40, comment is 3, blank is 11.
+.pio\libdeps\due\Adafruit SSD1306\scripts\make_splash.py, code is 27, comment is 2, blank is 9.
+.pio\libdeps\due\Adafruit SSD1306\scripts\Makefile, code is 16, comment is 9, blank is 8.
+.pio\libdeps\due\Adafruit SSD1306\splash.h, code is 106, comment is 9, blank is 5.
+.pio\libdeps\due\Adafruit ST7735 and ST7789 Library\.github\ISSUE_TEMPLATE.md, code is 21, comment is 2, blank is 7.
+.pio\libdeps\due\Adafruit ST7735 and ST7789 Library\.github\PULL_REQUEST_TEMPLATE.md, code is 10, comment is 0, blank is 3.
+.pio\libdeps\due\Adafruit ST7735 and ST7789 Library\.github\workflows\githubci.yml, code is 29, comment is 0, blank is 7.
+.pio\libdeps\due\Adafruit ST7735 and ST7789 Library\.gitignore, code is 8, comment is 0, blank is 0.
+.pio\libdeps\due\Adafruit ST7735 and ST7789 Library\.piopm, code is 1, comment is 0, blank is 0.
+.pio\libdeps\due\Adafruit ST7735 and ST7789 Library\Adafruit_ST7735.cpp, code is 301, comment is 195, blank is 29.
+.pio\libdeps\due\Adafruit ST7735 and ST7789 Library\Adafruit_ST7735.h, code is 52, comment is 10, blank is 13.
+.pio\libdeps\due\Adafruit ST7735 and ST7789 Library\Adafruit_ST7789.cpp, code is 95, comment is 86, blank is 17.
+.pio\libdeps\due\Adafruit ST7735 and ST7789 Library\Adafruit_ST7789.h, code is 21, comment is 5, blank is 6.
+.pio\libdeps\due\Adafruit ST7735 and ST7789 Library\Adafruit_ST77xx.cpp, code is 106, comment is 240, blank is 27.
+.pio\libdeps\due\Adafruit ST7735 and ST7789 Library\Adafruit_ST77xx.h, code is 76, comment is 35, blank is 16.
+.pio\libdeps\due\Adafruit ST7735 and ST7789 Library\examples\displayOnOffTest\displayOnOffTest.ino, code is 104, comment is 90, blank is 64.
+.pio\libdeps\due\Adafruit ST7735 and ST7789 Library\examples\graphicstest\.cpb.test.skip, code is 0, comment is 0, blank is 0.
+.pio\libdeps\due\Adafruit ST7735 and ST7789 Library\examples\graphicstest\graphicstest.ino, code is 233, comment is 91, blank is 54.
+.pio\libdeps\due\Adafruit ST7735 and ST7789 Library\examples\graphicstest_feather_esp32s2_tft\.feather_esp32s2_tft.test.only, code is 0, comment is 0, blank is 0.
+.pio\libdeps\due\Adafruit ST7735 and ST7789 Library\examples\graphicstest_feather_esp32s2_tft\graphicstest_feather_esp32s2_tft.ino, code is 231, comment is 33, blank is 42.
+.pio\libdeps\due\Adafruit ST7735 and ST7789 Library\examples\graphicstest_hallowing_m0\.hallowing_m0.test.only, code is 0, comment is 0, blank is 0.
+.pio\libdeps\due\Adafruit ST7735 and ST7789 Library\examples\graphicstest_hallowing_m0\graphicstest_hallowing_m0.ino, code is 225, comment is 41, blank is 38.
+.pio\libdeps\due\Adafruit ST7735 and ST7789 Library\examples\graphicstest_hallowing_m4\.hallowing_m4.test.only, code is 0, comment is 0, blank is 0.
+.pio\libdeps\due\Adafruit ST7735 and ST7789 Library\examples\graphicstest_hallowing_m4\graphicstest_hallowing_m4.ino, code is 225, comment is 41, blank is 39.
+.pio\libdeps\due\Adafruit ST7735 and ST7789 Library\examples\graphicstest_pybadge_pygamer\.pybadge.test.only, code is 0, comment is 0, blank is 0.
+.pio\libdeps\due\Adafruit ST7735 and ST7789 Library\examples\graphicstest_pybadge_pygamer\.pygamer.test.only, code is 0, comment is 0, blank is 0.
+.pio\libdeps\due\Adafruit ST7735 and ST7789 Library\examples\graphicstest_pybadge_pygamer\graphicstest_pybadge_pygamer.ino, code is 226, comment is 44, blank is 38.
+.pio\libdeps\due\Adafruit ST7735 and ST7789 Library\examples\graphicstest_st7789\.cpb.test.skip, code is 0, comment is 0, blank is 0.
+.pio\libdeps\due\Adafruit ST7735 and ST7789 Library\examples\graphicstest_st7789\graphicstest_st7789.ino, code is 232, comment is 72, blank is 47.
+.pio\libdeps\due\Adafruit ST7735 and ST7789 Library\examples\graphicstest_tft_gizmo\.cplayClassic.test.skip, code is 0, comment is 0, blank is 0.
+.pio\libdeps\due\Adafruit ST7735 and ST7789 Library\examples\graphicstest_tft_gizmo\.due.test.skip, code is 0, comment is 0, blank is 0.
+.pio\libdeps\due\Adafruit ST7735 and ST7789 Library\examples\graphicstest_tft_gizmo\.esp32.test.skip, code is 0, comment is 0, blank is 0.
+.pio\libdeps\due\Adafruit ST7735 and ST7789 Library\examples\graphicstest_tft_gizmo\.esp8266.test.skip, code is 0, comment is 0, blank is 0.
+.pio\libdeps\due\Adafruit ST7735 and ST7789 Library\examples\graphicstest_tft_gizmo\.leonardo.test.skip, code is 0, comment is 0, blank is 0.
+.pio\libdeps\due\Adafruit ST7735 and ST7789 Library\examples\graphicstest_tft_gizmo\.mega2560.test.skip, code is 0, comment is 0, blank is 0.
+.pio\libdeps\due\Adafruit ST7735 and ST7789 Library\examples\graphicstest_tft_gizmo\.uno.test.skip, code is 0, comment is 0, blank is 0.
+.pio\libdeps\due\Adafruit ST7735 and ST7789 Library\examples\graphicstest_tft_gizmo\graphicstest_tft_gizmo.ino, code is 231, comment is 44, blank is 39.
+.pio\libdeps\due\Adafruit ST7735 and ST7789 Library\examples\miniTFTWing\basic\basic.ino, code is 96, comment is 10, blank is 20.
+.pio\libdeps\due\Adafruit ST7735 and ST7789 Library\examples\miniTFTWing\graphicstest\graphicstest.ino, code is 238, comment is 28, blank is 43.
+.pio\libdeps\due\Adafruit ST7735 and ST7789 Library\examples\rotationtest\rotationtest.ino, code is 231, comment is 101, blank is 71.
+.pio\libdeps\due\Adafruit ST7735 and ST7789 Library\examples\seesaw_shield18_test\.leonardo.test.skip, code is 0, comment is 0, blank is 0.
+.pio\libdeps\due\Adafruit ST7735 and ST7789 Library\examples\seesaw_shield18_test\seesaw_shield18_test.ino, code is 236, comment is 94, blank is 43.
+.pio\libdeps\due\Adafruit ST7735 and ST7789 Library\examples\shieldtest\shieldtest.ino, code is 179, comment is 81, blank is 35.
+.pio\libdeps\due\Adafruit ST7735 and ST7789 Library\library.properties, code is 10, comment is 1, blank is 0.
+.pio\libdeps\due\Adafruit ST7735 and ST7789 Library\README.txt, code is 15, comment is 2, blank is 6.
+.pio\libdeps\due\Adafruit Unified Sensor\.gitignore, code is 14, comment is 0, blank is 3.
+.pio\libdeps\due\Adafruit Unified Sensor\.piopm, code is 1, comment is 0, blank is 0.
+.pio\libdeps\due\Adafruit Unified Sensor\Adafruit_Sensor.cpp, code is 110, comment is 5, blank is 2.
+.pio\libdeps\due\Adafruit Unified Sensor\Adafruit_Sensor.h, code is 146, comment is 76, blank is 16.
+.pio\libdeps\due\Adafruit Unified Sensor\examples\sensortest\sensortest.ino, code is 126, comment is 14, blank is 13.
+.pio\libdeps\due\Adafruit Unified Sensor\library.properties, code is 10, comment is 1, blank is 1.
+.pio\libdeps\due\Adafruit Unified Sensor\LICENSE.txt, code is 154, comment is 1, blank is 29.
+.pio\libdeps\due\Adafruit Unified Sensor\README.md, code is 136, comment is 20, blank is 31.
+.pio\libdeps\due\BH1750\.clang-format, code is 3, comment is 0, blank is 0.
+.pio\libdeps\due\BH1750\.github\workflows\ci.yml, code is 68, comment is 0, blank is 0.
+.pio\libdeps\due\BH1750\.gitignore, code is 1, comment is 0, blank is 0.
+.pio\libdeps\due\BH1750\.piopm, code is 1, comment is 0, blank is 0.
+.pio\libdeps\due\BH1750\ci\code-format.bash, code is 37, comment is 0, blank is 5.
+.pio\libdeps\due\BH1750\ci\compile-examples.bash, code is 27, comment is 4, blank is 3.
+.pio\libdeps\due\BH1750\component.mk, code is 1, comment is 0, blank is 0.
+.pio\libdeps\due\BH1750\examples\BH1750advanced\BH1750advanced.ino, code is 20, comment is 65, blank is 8.
+.pio\libdeps\due\BH1750\examples\BH1750autoadjust\BH1750autoadjust.ino, code is 52, comment is 37, blank is 9.
+.pio\libdeps\due\BH1750\examples\BH1750onetime\BH1750onetime.ino, code is 19, comment is 14, blank is 9.
+.pio\libdeps\due\BH1750\examples\BH1750test\BH1750test.ino, code is 16, comment is 27, blank is 7.
+.pio\libdeps\due\BH1750\examples\BH1750two_i2c\BH1750two_i2c.ino, code is 41, comment is 30, blank is 6.
+.pio\libdeps\due\BH1750\keywords.txt, code is 28, comment is 0, blank is 6.
+.pio\libdeps\due\BH1750\library.json, code is 12, comment is 0, blank is 0.
+.pio\libdeps\due\BH1750\library.properties, code is 10, comment is 1, blank is 0.
+.pio\libdeps\due\BH1750\LICENSE, code is 17, comment is 0, blank is 4.
+.pio\libdeps\due\BH1750\README.md, code is 91, comment is 7, blank is 45.
+.pio\libdeps\due\BH1750\src\BH1750.cpp, code is 174, comment is 91, blank is 34.
+.pio\libdeps\due\BH1750\src\BH1750.h, code is 41, comment is 30, blank is 13.
+.pio\libdeps\due\CRC\.arduino-ci.yml, code is 27, comment is 1, blank is 2.
+.pio\libdeps\due\CRC\.github\FUNDING.yml, code is 2, comment is 0, blank is 2.
+.pio\libdeps\due\CRC\.github\workflows\arduino-lint.yml, code is 11, comment is 0, blank is 2.
+.pio\libdeps\due\CRC\.github\workflows\arduino_test_runner.yml, code is 14, comment is 0, blank is 3.
+.pio\libdeps\due\CRC\.github\workflows\jsoncheck.yml, code is 15, comment is 0, blank is 3.
+.pio\libdeps\due\CRC\.piopm, code is 1, comment is 0, blank is 0.
+.pio\libdeps\due\CRC\CHANGELOG.md, code is 30, comment is 2, blank is 13.
+.pio\libdeps\due\CRC\CRC.cpp, code is 187, comment is 27, blank is 30.
+.pio\libdeps\due\CRC\CRC.h, code is 15, comment is 23, blank is 22.
+.pio\libdeps\due\CRC\CRC12.cpp, code is 90, comment is 7, blank is 25.
+.pio\libdeps\due\CRC\CRC12.h, code is 40, comment is 14, blank is 16.
+.pio\libdeps\due\CRC\CRC16.cpp, code is 90, comment is 6, blank is 25.
+.pio\libdeps\due\CRC\CRC16.h, code is 40, comment is 13, blank is 16.
+.pio\libdeps\due\CRC\CRC32.cpp, code is 91, comment is 6, blank is 25.
+.pio\libdeps\due\CRC\CRC32.h, code is 40, comment is 13, blank is 16.
+.pio\libdeps\due\CRC\CRC64.cpp, code is 92, comment is 6, blank is 25.
+.pio\libdeps\due\CRC\CRC64.h, code is 40, comment is 13, blank is 15.
+.pio\libdeps\due\CRC\CRC8.cpp, code is 80, comment is 6, blank is 23.
+.pio\libdeps\due\CRC\CRC8.h, code is 39, comment is 13, blank is 16.
+.pio\libdeps\due\CRC\CRC_polynomes.h, code is 41, comment is 16, blank is 14.
+.pio\libdeps\due\CRC\examples\CRC12_test\CRC12_test.ino, code is 70, comment is 11, blank is 22.
+.pio\libdeps\due\CRC\examples\CRC16_test\CRC16_test.ino, code is 41, comment is 8, blank is 18.
+.pio\libdeps\due\CRC\examples\CRC32_performance\CRC32_performance.ino, code is 43, comment is 7, blank is 18.
+.pio\libdeps\due\CRC\examples\CRC32_performance\performance_0.2.0.txt, code is 9, comment is 0, blank is 4.
+.pio\libdeps\due\CRC\examples\CRC32_test\CRC32_test.ino, code is 37, comment is 8, blank is 17.
+.pio\libdeps\due\CRC\examples\CRC64_test\CRC64_test.ino, code is 38, comment is 9, blank is 17.
+.pio\libdeps\due\CRC\examples\CRC8_test\CRC8_test.ino, code is 39, comment is 8, blank is 19.
+.pio\libdeps\due\CRC\examples\CRC_include_test\CRC_include_test.ino, code is 17, comment is 5, blank is 7.
+.pio\libdeps\due\CRC\examples\CRC_include_test\foo.cpp, code is 7, comment is 0, blank is 2.
+.pio\libdeps\due\CRC\examples\CRC_include_test\foo.h, code is 3, comment is 7, blank is 4.
+.pio\libdeps\due\CRC\examples\CRC_performance\CRC_performance.ino, code is 86, comment is 8, blank is 24.
+.pio\libdeps\due\CRC\examples\CRC_reference_test\CRC_reference_test.ino, code is 67, comment is 9, blank is 22.
+.pio\libdeps\due\CRC\examples\CRC_test2\CRC_test2.ino, code is 22, comment is 12, blank is 13.
+.pio\libdeps\due\CRC\examples\CRC_test\CRC_test.ino, code is 22, comment is 12, blank is 13.
+.pio\libdeps\due\CRC\keywords.txt, code is 34, comment is 0, blank is 14.
+.pio\libdeps\due\CRC\library.json, code is 23, comment is 0, blank is 0.
+.pio\libdeps\due\CRC\library.properties, code is 11, comment is 1, blank is 0.
+.pio\libdeps\due\CRC\LICENSE, code is 17, comment is 0, blank is 4.
+.pio\libdeps\due\CRC\README.md, code is 138, comment is 14, blank is 72.
+.pio\libdeps\due\DueFlashStorage\.piopm, code is 1, comment is 0, blank is 0.
+.pio\libdeps\due\DueFlashStorage\examples\DueFlashStorageExample\DueFlashStorageExample.ino, code is 21, comment is 5, blank is 5.
+.pio\libdeps\due\DueFlashStorage\examples\DueFlashStorageStructExample\DueFlashStorageStructExample.ino, code is 58, comment is 26, blank is 25.
+.pio\libdeps\due\DueFlashStorage\keywords.txt, code is 14, comment is 0, blank is 4.
+.pio\libdeps\due\DueFlashStorage\library.properties, code is 10, comment is 1, blank is 0.
+.pio\libdeps\due\DueFlashStorage\licence (MIT).txt, code is 17, comment is 0, blank is 4.
+.pio\libdeps\due\DueFlashStorage\README.adoc, code is 28, comment is 2, blank is 10.
+.pio\libdeps\due\DueFlashStorage\README.md, code is 42, comment is 13, blank is 12.
+.pio\libdeps\due\DueFlashStorage\src\DueFlashStorage.cpp, code is 98, comment is 10, blank is 28.
+.pio\libdeps\due\DueFlashStorage\src\DueFlashStorage.h, code is 24, comment is 19, blank is 11.
+.pio\libdeps\due\DueFlashStorage\src\efc.cpp, code is 122, comment is 177, blank is 41.
+.pio\libdeps\due\DueFlashStorage\src\efc.h, code is 68, comment is 88, blank is 11.
+.pio\libdeps\due\DueFlashStorage\src\flash_efc.cpp, code is 439, comment is 354, blank is 123.
+.pio\libdeps\due\DueFlashStorage\src\flash_efc.h, code is 67, comment is 75, blank is 15.
+.pio\libdeps\due\integrity.dat, code is 6, comment is 0, blank is 0.
+.pio\libdeps\due\SD\.github\ISSUE_TEMPLATE.md, code is 21, comment is 2, blank is 7.
+.pio\libdeps\due\SD\.github\PULL_REQUEST_TEMPLATE.md, code is 10, comment is 0, blank is 3.
+.pio\libdeps\due\SD\.piopm, code is 1, comment is 0, blank is 0.
+.pio\libdeps\due\SD\examples\CardInfo\CardInfo.ino, code is 59, comment is 41, blank is 18.
+.pio\libdeps\due\SD\examples\Datalogger\Datalogger.ino, code is 38, comment is 43, blank is 23.
+.pio\libdeps\due\SD\examples\DumpFile\DumpFile.ino, code is 30, comment is 34, blank is 10.
+.pio\libdeps\due\SD\examples\Files\Files.ino, code is 44, comment is 34, blank is 15.
+.pio\libdeps\due\SD\examples\listfiles\listfiles.ino, code is 45, comment is 37, blank is 15.
+.pio\libdeps\due\SD\examples\ReadWrite\ReadWrite.ino, code is 40, comment is 39, blank is 14.
+.pio\libdeps\due\SD\File.cpp, code is 88, comment is 34, blank is 28.
+.pio\libdeps\due\SD\keywords.txt, code is 26, comment is 0, blank is 4.
+.pio\libdeps\due\SD\library.json, code is 12, comment is 0, blank is 0.
+.pio\libdeps\due\SD\README.txt, code is 10, comment is 0, blank is 9.
+.pio\libdeps\due\SD\SD.cpp, code is 213, comment is 310, blank is 106.
+.pio\libdeps\due\SD\SD.h, code is 65, comment is 35, blank is 23.
+.pio\libdeps\due\SD\utility\FatStructs.h, code is 111, comment is 307, blank is 1.
+.pio\libdeps\due\SD\utility\Sd2Card.cpp, code is 511, comment is 248, blank is 55.
+.pio\libdeps\due\SD\utility\Sd2Card.h, code is 116, comment is 129, blank is 4.
+.pio\libdeps\due\SD\utility\Sd2PinMap.h, code is 304, comment is 241, blank is 25.
+.pio\libdeps\due\SD\utility\SdFat.h, code is 291, comment is 289, blank is 14.
+.pio\libdeps\due\SD\utility\SdFatmainpage.h, code is 0, comment is 201, blank is 1.
+.pio\libdeps\due\SD\utility\SdFatUtil.h, code is 33, comment is 44, blank is 0.
+.pio\libdeps\due\SD\utility\SdFile.cpp, code is 590, comment is 580, blank is 101.
+.pio\libdeps\due\SD\utility\SdInfo.h, code is 127, comment is 112, blank is 0.
+.pio\libdeps\due\SD\utility\SdVolume.cpp, code is 174, comment is 97, blank is 28.
+.pio\libdeps\dueUSB\integrity.dat, code is 1, comment is 0, blank is 0.
+.pio\libdeps\dueUSB\LC_baseTools\.piopm, code is 1, comment is 0, blank is 0.
+.pio\libdeps\dueUSB\LC_baseTools\autoPOT.cpp, code is 21, comment is 7, blank is 12.
+.pio\libdeps\dueUSB\LC_baseTools\autoPOT.h, code is 15, comment is 20, blank is 9.
+.pio\libdeps\dueUSB\LC_baseTools\blinker.cpp, code is 27, comment is 8, blank is 19.
+.pio\libdeps\dueUSB\LC_baseTools\blinker.h, code is 20, comment is 3, blank is 8.
+.pio\libdeps\dueUSB\LC_baseTools\colorObj.cpp, code is 274, comment is 44, blank is 102.
+.pio\libdeps\dueUSB\LC_baseTools\colorObj.h, code is 95, comment is 12, blank is 34.
+.pio\libdeps\dueUSB\LC_baseTools\examples\auto_blinkers\auto_blinkers.ino, code is 75, comment is 80, blank is 22.
+.pio\libdeps\dueUSB\LC_baseTools\examples\blink_basic_example\blink_basic_example.ino, code is 8, comment is 11, blank is 7.
+.pio\libdeps\dueUSB\LC_baseTools\examples\blinkWithoutDelay\blinkWithoutDelay.ino, code is 21, comment is 16, blank is 9.
+.pio\libdeps\dueUSB\LC_baseTools\examples\blinkWithoutDelay_2\blinkWithoutDelay_2.ino, code is 8, comment is 5, blank is 7.
+.pio\libdeps\dueUSB\LC_baseTools\examples\mechButton_Beginner\mechButton_Beginner.ino, code is 12, comment is 8, blank is 7.
+.pio\libdeps\dueUSB\LC_baseTools\examples\mechButton_Intermediate\mechButton_Intermediate.ino, code is 23, comment is 17, blank is 11.
+.pio\libdeps\dueUSB\LC_baseTools\examples\mechButton_Pro\mechButton_Pro.ino, code is 59, comment is 29, blank is 36.
+.pio\libdeps\dueUSB\LC_baseTools\examples\oneShot\oneShot.cpp, code is 37, comment is 26, blank is 12.
+.pio\libdeps\dueUSB\LC_baseTools\examples\oneShot\oneShot.h, code is 20, comment is 16, blank is 9.
+.pio\libdeps\dueUSB\LC_baseTools\examples\oneShot\oneShot.ino, code is 8, comment is 10, blank is 10.
+.pio\libdeps\dueUSB\LC_baseTools\examples\runningAvg\runningAvg.ino, code is 47, comment is 51, blank is 10.
+.pio\libdeps\dueUSB\LC_baseTools\examples\runningAvgSimple\runningAvgSimple.ino, code is 11, comment is 31, blank is 5.
+.pio\libdeps\dueUSB\LC_baseTools\examples\serialStr\serialStr.ino, code is 23, comment is 20, blank is 13.
+.pio\libdeps\dueUSB\LC_baseTools\idlers.cpp, code is 36, comment is 25, blank is 30.
+.pio\libdeps\dueUSB\LC_baseTools\idlers.h, code is 22, comment is 0, blank is 11.
+.pio\libdeps\dueUSB\LC_baseTools\keywords.txt, code is 396, comment is 0, blank is 125.
+.pio\libdeps\dueUSB\LC_baseTools\library.properties, code is 10, comment is 1, blank is 0.
+.pio\libdeps\dueUSB\LC_baseTools\lists.cpp, code is 284, comment is 212, blank is 162.
+.pio\libdeps\dueUSB\LC_baseTools\lists.h, code is 76, comment is 44, blank is 38.
+.pio\libdeps\dueUSB\LC_baseTools\mapper.cpp, code is 27, comment is 36, blank is 26.
+.pio\libdeps\dueUSB\LC_baseTools\mapper.h, code is 23, comment is 15, blank is 10.
+.pio\libdeps\dueUSB\LC_baseTools\mechButton.cpp, code is 45, comment is 35, blank is 19.
+.pio\libdeps\dueUSB\LC_baseTools\mechButton.h, code is 22, comment is 19, blank is 8.
+.pio\libdeps\dueUSB\LC_baseTools\multiMap.cpp, code is 124, comment is 79, blank is 56.
+.pio\libdeps\dueUSB\LC_baseTools\multiMap.h, code is 34, comment is 38, blank is 22.
+.pio\libdeps\dueUSB\LC_baseTools\README.md, code is 16, comment is 1, blank is 14.
+.pio\libdeps\dueUSB\LC_baseTools\resizeBuff.cpp, code is 26, comment is 34, blank is 23.
+.pio\libdeps\dueUSB\LC_baseTools\resizeBuff.h, code is 16, comment is 97, blank is 17.
+.pio\libdeps\dueUSB\LC_baseTools\runningAvg.cpp, code is 90, comment is 24, blank is 48.
+.pio\libdeps\dueUSB\LC_baseTools\runningAvg.h, code is 32, comment is 26, blank is 11.
+.pio\libdeps\dueUSB\LC_baseTools\serialStr.cpp, code is 37, comment is 23, blank is 15.
+.pio\libdeps\dueUSB\LC_baseTools\serialStr.h, code is 20, comment is 13, blank is 10.
+.pio\libdeps\dueUSB\LC_baseTools\squareWave.cpp, code is 115, comment is 95, blank is 49.
+.pio\libdeps\dueUSB\LC_baseTools\squareWave.h, code is 37, comment is 23, blank is 14.
+.pio\libdeps\dueUSB\LC_baseTools\strTools.cpp, code is 45, comment is 48, blank is 35.
+.pio\libdeps\dueUSB\LC_baseTools\strTools.h, code is 18, comment is 55, blank is 28.
+.pio\libdeps\dueUSB\LC_baseTools\textBuff.cpp, code is 90, comment is 66, blank is 41.
+.pio\libdeps\dueUSB\LC_baseTools\textBuff.h, code is 27, comment is 18, blank is 12.
+.pio\libdeps\dueUSB\LC_baseTools\timeObj.cpp, code is 90, comment is 95, blank is 29.
+.pio\libdeps\dueUSB\LC_baseTools\timeObj.h, code is 22, comment is 16, blank is 11.
+.pio\libdeps\dueUSB\LC_lilParser\.piopm, code is 1, comment is 0, blank is 0.
+.pio\libdeps\dueUSB\LC_lilParser\examples\parser_test\parser_test.ino, code is 131, comment is 134, blank is 33.
+.pio\libdeps\dueUSB\LC_lilParser\examples\simple_parser_example\simple_parser_example.ino, code is 29, comment is 34, blank is 11.
+.pio\libdeps\dueUSB\LC_lilParser\keywords.txt, code is 22, comment is 0, blank is 6.
+.pio\libdeps\dueUSB\LC_lilParser\library.properties, code is 11, comment is 1, blank is 0.
+.pio\libdeps\dueUSB\LC_lilParser\README.md, code is 50, comment is 21, blank is 11.
+.pio\libdeps\dueUSB\LC_lilParser\src\lilParser.cpp, code is 207, comment is 102, blank is 61.
+.pio\libdeps\dueUSB\LC_lilParser\src\lilParser.h, code is 43, comment is 26, blank is 16.
+compile_commands.json, code is 237, comment is 0, blank is 0.
+include\README, code is 13, comment is 1, blank is 5.
+lib\commands.h, code is 66, comment is 3, blank is 5.
+lib\macros.h, code is 23, comment is 14, blank is 1.
+lib\parser.h, code is 307, comment is 86, blank is 32.
+lib\README, code is 37, comment is 2, blank is 9.
+lib\sensors.h, code is 42, comment is 10, blank is 6.
+platformio.ini, code is 12, comment is 9, blank is 1.
+README.md, it is a binary file.
+src\main.cpp, code is 57, comment is 4, blank is 6.
+test\README, code is 8, comment is 1, blank is 3.
+===============================================================================
