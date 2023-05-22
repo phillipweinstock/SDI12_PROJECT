@@ -42,7 +42,7 @@ void setup()
   sensors.init();
   Serial.begin(9600);
   sdi12.begin(1200, SERIAL_7E1);
-  //Menuinit();
+  Menuinit();
   // tft.initR(INITR_BLACKTAB);
   // tft.setRotation(3);
   // tft.fillScreen(ST77XX_BLACK);
