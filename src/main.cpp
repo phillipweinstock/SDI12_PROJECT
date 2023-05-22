@@ -4,6 +4,7 @@
 #include <Adafruit_ST7735.h>
 #include <SPI.h>
 #include <DueFlashStorage.h>
+//#include <Due
 #include "../lib/commands.h"
 #include "../lib/parser.h"
 #include "../lib/sensors.h"
@@ -41,7 +42,7 @@ void setup()
   sensors.init();
   Serial.begin(9600);
   sdi12.begin(1200, SERIAL_7E1);
-  Menuinit();
+  //Menuinit();
   // tft.initR(INITR_BLACKTAB);
   // tft.setRotation(3);
   // tft.fillScreen(ST77XX_BLACK);
@@ -62,10 +63,9 @@ void loop()
     RECEIVEF;
   }
 
-  if (sdiBuf.readchars == 0)
-  {
-    updateMenu(millis());
-  }
+ 
+    //updateMenu(millis());
+  
 
   // Serial.println(sensors.airreading().temp);
   ;

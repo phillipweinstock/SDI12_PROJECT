@@ -1,24 +1,28 @@
 #ifndef PARSER_H
 #define PARSER_H
+#include <malloc.h>
 #include <Arduino.h>
 #include <CRC16.h>
 #include <DueFlashStorage.h>
 #include "..\lib\macros.h"
 #include "..\lib\sensors.h"
-
-struct MetaData{
-    char shef[3];//Standard Hydrometeorological Exchange Format 
-    char units[20];
-
-};
-      
-MetaData paramdata[] =
+extern char _end;
+extern "C" char *sbrk(int i);
+char *ramstart=(char *)0x20070000;
+char *ramend=(char *)0x20088000;
+struct MetaData
 {
-    {"RP","1cd·sr/m2"},//LUX
-    {"TA","°C"},//TEMP
-    {"PA","Kpa"},//Pressure
-    {"XR","Humidity"},//Humidity
-    {"GR","Gas Resistance"}//Gas Resistance
+    char shef[3]; // Standard Hydrometeorological Exchange Format
+    char units[20];
+};
+
+MetaData paramdata[] =
+    {
+        {"RP", "1cd·sr/m2"},     // LUX
+        {"TA", "°C"},            // TEMP
+        {"PA", "Kpa"},           // Pressure
+        {"XR", "Humidity"},      // Humidity
+        {"GR", "Gas Resistance"} // Gas Resistance
 };
 
 class Parser
@@ -107,6 +111,19 @@ int Parser::parse(char *buffer, u_int8_t commandlength)
     {
         switch (buffer[1])
         {
+        case 'V':
+        {
+            struct mallinfo mi = mallinfo();
+
+            char *heapend = sbrk(0);
+            register char *stack_ptr asm("sp");
+            sprintf(outputbuf, "%s+RAMFREE+%d", sdi12add,stack_ptr - heapend + mi.fordblks);
+            SEND();
+            sdi12.println(outputbuf);
+
+            CLR12();
+        }
+        break;
 
         case 'R':
         {
@@ -361,9 +378,9 @@ int Parser::parse(char *buffer, u_int8_t commandlength)
             case 'M':
             case 'C':
             {
-                if (0 < param && param <=5)
+                if (0 < param && param <= 5)
                 {
-                    sprintf(outputbuf, "%s,%s,%s;", sdi12add,paramdata[param-1].shef,paramdata[param-1 ].units);
+                    sprintf(outputbuf, "%s,%s,%s;", sdi12add, paramdata[param - 1].shef, paramdata[param - 1].units);
                 }
                 else
                 {
