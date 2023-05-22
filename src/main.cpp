@@ -42,9 +42,9 @@ void setup()
   Serial.begin(9600);
   sdi12.begin(1200, SERIAL_7E1);
   Menuinit();
-  //tft.initR(INITR_BLACKTAB);
-  //tft.setRotation(3);
-  //tft.fillScreen(ST77XX_BLACK);
+  // tft.initR(INITR_BLACKTAB);
+  // tft.setRotation(3);
+  // tft.fillScreen(ST77XX_BLACK);
   SENDF;
   CLR12();
   RECEIVEF;
@@ -61,5 +61,12 @@ void loop()
     memset(sdi12buf, 0, sizeof(sdi12buf));
     RECEIVEF;
   }
-  updateMenu();
+
+  if (sdiBuf.readchars == 0)
+  {
+    updateMenu(millis());
+  }
+
+  // Serial.println(sensors.airreading().temp);
+  ;
 }
