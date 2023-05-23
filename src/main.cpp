@@ -77,7 +77,7 @@ void loop()
   }
   else
   {
-    eject_SD();
+    SD_eject();
   }
 
   // updateMenu(millis());
