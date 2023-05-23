@@ -89,6 +89,7 @@ void logsensordata()
     logfile.print(",");
     logfile.print(lightoutput.lux);
     logfile.println(); // End the line with a newline character
+    logfile.flush();
     //logfile.close();   // Close the file
     //Serial.println("Instance SD write");
 }
@@ -115,6 +116,7 @@ void SD_init()
     {
         Serial.println("Writing CSV header");
         logfile.println("EPOCH,Temperature,Humidity,Pressure,Light intensity");
+        logfile.flush();
     }
     rtc.begin();
 
