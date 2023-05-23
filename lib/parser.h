@@ -8,8 +8,8 @@
 #include "..\lib\sensors.h"
 extern char _end;
 extern "C" char *sbrk(int i);
-char *ramstart=(char *)0x20070000;
-char *ramend=(char *)0x20088000;
+char *ramstart = (char *)0x20070000;
+char *ramend = (char *)0x20088000;
 struct MetaData
 {
     char shef[3]; // Standard Hydrometeorological Exchange Format
@@ -18,12 +18,15 @@ struct MetaData
 
 MetaData paramdata[] =
     {
-        {"RP", "1cd·sr/m2"},     // LUX
-        {"TA", "°C"},            // TEMP
+        {"RP", "1cd*sr/m2"},     // LUX
+        {"TA", "C"},             // TEMP
         {"PA", "Kpa"},           // Pressure
         {"XR", "Humidity"},      // Humidity
         {"GR", "Gas Resistance"} // Gas Resistance
 };
+
+
+
 
 class Parser
 {
@@ -88,7 +91,8 @@ int Parser::parse(char *buffer, u_int8_t commandlength)
     /*
         Excluding the break command, we should have full SDI-12 Ver 1.4 Feb 20, 2023 compliance.
         Break command would end up doing nothing anyway, as it cancels a measurement, but this is only the case if a service request exists
-        additionally the device cannot sleep anyway due to it's other functions
+        additionally the device cannot sleep anyway due to it's other functions.
+        Service requests could be added by keeping a request stack.
         TODO: Fix this mess of returns
     */
     memset(outputbuf, 0, sizeof(outputbuf));
@@ -117,7 +121,8 @@ int Parser::parse(char *buffer, u_int8_t commandlength)
 
             char *heapend = sbrk(0);
             register char *stack_ptr asm("sp");
-            sprintf(outputbuf, "%s+RAMFREE+%d", sdi12add,stack_ptr - heapend + mi.fordblks);
+            sprintf(outputbuf, "%s+RAMFREE+%d", sdi12add, stack_ptr - heapend + mi.fordblks);
+            //sprintf(outputbuf, "%s+RAMFREE+%d", sdi12add, FreeRam());
             SEND();
             sdi12.println(outputbuf);
 
@@ -193,7 +198,7 @@ int Parser::parse(char *buffer, u_int8_t commandlength)
             return EXIT_SUCCESS;
         };
         case 'C':
-            cont_measure = true;
+            cont_measure = !cont_measure;
         case 'M':
         {
             // Supports Measurements + concurrent ones

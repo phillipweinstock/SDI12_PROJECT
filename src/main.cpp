@@ -1,14 +1,14 @@
 #include <Arduino.h>
 #include <Wire.h>
-#include <Adafruit_GFX.h>
+#include <Adafruit_GFX.h> //Required for function prototypes inpractise superceeded by Arduino_GFX
 #include <Adafruit_ST7735.h>
 #include <SPI.h>
 #include <DueFlashStorage.h>
-//#include <Due
 #include "../lib/commands.h"
 #include "../lib/parser.h"
 #include "../lib/sensors.h"
 #include "../lib/menus.h"
+#include "../lib/datalog.h"
 
 char sdi12buf[200];
 CommandLine sdiBuf = CommandLine(&sdi12, sdi12buf, sizeof(sdi12buf), 7);
@@ -33,15 +33,18 @@ void setup()
 
     commandHandler.flash.write(1, first_run.address);
     commandHandler.flash.write(0, 0);
+    rtc.setClock(__TIME__, __DATE__);
   }
   else
   {
     commandHandler.setadd(commandHandler.flash.read(1));
   }
   Wire1.begin();
+  Wire.begin();
   sensors.init();
   Serial.begin(9600);
   sdi12.begin(1200, SERIAL_7E1);
+  SD_init();
   Menuinit();
   // tft.initR(INITR_BLACKTAB);
   // tft.setRotation(3);
@@ -50,7 +53,7 @@ void setup()
   CLR12();
   RECEIVEF;
 }
-
+uint32_t last_log = 0;
 void loop()
 {
   if (sdiBuf.serialread() && sdiBuf.readchars != 0)
@@ -62,10 +65,22 @@ void loop()
     memset(sdi12buf, 0, sizeof(sdi12buf));
     RECEIVEF;
   }
+  if (!eject_sd)
+  {
+    if (last_log + 10000 <= millis())//Every 10 seconds
+    {
+      last_log = millis();
+      Serial.println("Sensor logged");
+      logsensordata();
+    }
+    
+  }
+  else
+  {
+    eject_SD();
+  }
 
- 
-    //updateMenu(millis());
-  
+  // updateMenu(millis());
 
   // Serial.println(sensors.airreading().temp);
   ;

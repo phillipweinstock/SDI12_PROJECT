@@ -62,7 +62,8 @@ char pressure[15];
 char humidity[15];
 char gas[15];
 char resistance[15];
-airoutput airinfo;
+airoutput airinfo = {0,0,0,0};
+bool eject_sd;// STUPID GLOBAL VARIABLE
 
 /* These two functions are responsible for writing sensor values to the TFT display.
 These functions provide a convenient way to display sensor readings on the TFT display
@@ -79,21 +80,24 @@ void WriteLightVal(uint16_t Color)
 }
 void WriteAirQVal(uint16_t Color)
 {
-    airinfo = sensors.airreading();
-    sprintf(pressure, "%u", airinfo.pressure);
-    sprintf(temperature, "%2.2f", airinfo.temp);
-    sprintf(humidity, "%2.2f", airinfo.humidity);
-    sprintf(resistance, "%lu", (unsigned long)airinfo.gasresistance);
-    tft->setTextSize(1);
-    tft->setCursor(80, 40);
-    tft->setTextColor(Color);
-    tft->print(temperature);
-    tft->setCursor(60, 60);
-    tft->print(pressure);
-    tft->setCursor(60, 80);
-    tft->print(humidity);
-    tft->setCursor(30, 100);
-    tft->print(resistance);
+    // airinfo = sensors.airreading();
+    //  Serial.print("Print pressure ");
+
+    // Serial.println(pressure);
+    // sprintf(pressure, "%u", airinfo.pressure);
+    // sprintf(temperature, "%2.2f", airinfo.temp);
+    // sprintf(humidity, "%2.2f", airinfo.humidity);
+    // sprintf(resistance, "%lu", (unsigned long)airinfo.gasresistance);
+    // tft->setTextSize(1);
+    // tft->setCursor(80, 40);
+    // tft->setTextColor(Color);
+    // tft->print(temperature);
+    // tft->setCursor(60, 60);
+    // tft->print(pressure);
+    // tft->setCursor(60, 80);
+    // tft->print(humidity);
+    // tft->setCursor(30, 100);
+    // tft->print(resistance);
 }
 
 /* These additional functions are related to displaying menu options and the
@@ -126,8 +130,30 @@ void static_AIRQ()
     tft->setCursor(100, 80);
     tft->print(F("%"));
     tft->setCursor(5, 100);
+    tft->print(F("Gas: "));
+    tft->setCursor(105, 100);
+    tft->print(F("kOhms"));
     tft->setTextColor(ST77XX_YELLOW);
     tft->setTextSize(1);
+    // sensors.airreading();//Calling an update
+    //void (*bs)(void);
+    //bs = par
+    //Feature not a bug, displays startup reading or updated reading after aM!
+    memcpy(&airinfo,&(sensors.menu_workaround),sizeof(airoutput));
+    sprintf(pressure, "%u", airinfo.pressure);
+    sprintf(temperature, "%2.2f", airinfo.temp);
+    sprintf(humidity, "%2.2f", airinfo.humidity);
+    sprintf(resistance, "%lu", (unsigned long)airinfo.gasresistance);
+    tft->setTextSize(1);
+    tft->setCursor(80, 40);
+    tft->setTextColor(ST7735_ORANGE);
+    tft->print(temperature);
+    tft->setCursor(60, 60);
+    tft->print(pressure);
+    tft->setCursor(60, 80);
+    tft->print(humidity);
+    tft->setCursor(30, 100);
+    tft->print(resistance);
 }
 
 void static_LightSensor()
@@ -162,11 +188,16 @@ void menu_options()
     tft->print(F("(4) Eject SD card  \n"));
 }
 
- void eject_SD()
+void eject_SD()
 {
-    //detachInterrupt(PB_4);
+    // detachInterrupt(PB_4);
     tft->fillScreen(ST77XX_RED);
-    //attachInterrupt(PB_4, eject_SD, LOW);
+    tft->setCursor(5, 60);
+    tft->setTextColor(ST77XX_WHITE);
+    tft->setTextSize(1);
+    tft->print(F("SD Card ejected \n"));
+    eject_sd = true;
+    // attachInterrupt(PB_4, eject_SD, LOW);
 }
 
 /* the following function is driven by the button interrupt
@@ -174,12 +205,12 @@ when the option to display the light sensor reading is chosen
 from the menu. the function additionally calls the static and
 dynamic part of the format displayed from the above functions */
 
- void Light_disp()
+void Light_disp()
 {
-    //detachInterrupt(PB_3);
+    // detachInterrupt(PB_3);
     static_LightSensor();
     WriteLightVal(ST7735_WHITE);
-    //attachInterrupt(PB_3, Light_disp, LOW);
+    // attachInterrupt(PB_3, Light_disp, LOW);
 }
 
 /* the following function is driven by the button interrupt
@@ -187,11 +218,11 @@ when the option to display the menu options is chosen.
 the function additionally calls the static menu options
 from the above functions */
 
- void Disp_menu()
+void Disp_menu()
 {
-    //detachInterrupt(PB_1);
+    // detachInterrupt(PB_1);
     menu_options();
-    //attachInterrupt(PB_1, Disp_menu, LOW);
+    // attachInterrupt(PB_1, Disp_menu, LOW);
 };
 
 /* the following function is driven by the button interrupt
@@ -201,10 +232,15 @@ dynamic part of the format displayed from the above functions */
 
 void Airq()
 {
-    //detachInterrupt(PB_2);
+    //Disappointing display of not usings a struct properly, 
+    //sensors.bme.performReading();
+    //airinfo.temp = sensors.bme.temperature;
+    //airinfo.pressure = sensors.bme.pressure;
+    //airinfo.gasresistance = sensors.bme.gas_resistance;
+    //airinfo.humidity = sensors.bme.humidity;
     static_AIRQ();
-    WriteAirQVal(ST7735_WHITE);
-    //attachInterrupt(PB_2, Airq, LOW);
+    //WriteAirQVal(ST7735_RED);
+    // attachInterrupt(PB_2, Airq, LOW);
 }
 
 void isr_workaround()
@@ -217,6 +253,7 @@ void isr_workaround()
     }
     if (!digitalRead(PB_2))
     {
+        //Serial.println(sensors.airreading().temp);
         tft->fillScreen(ST77XX_BLACK);
         Airq();
         return;
@@ -246,12 +283,13 @@ extern void Menuinit()
     pinMode(PB_2, INPUT_PULLUP);
     pinMode(PB_3, INPUT_PULLUP);
     pinMode(PB_4, INPUT_PULLUP);
-
+    eject_sd = false;
     tft->begin();
     tft->setRotation(3);
     tft->fillScreen(ST77XX_BLACK);
     menu_options();
     Timer3.attachInterrupt(isr_workaround).setFrequency(10).start();
+    
     // attachInterrupt(PB_1, Disp_menu, RISING);
     // attachInterrupt(PB_2, Airq, RISING);
     // attachInterrupt(PB_4, eject_SD, RISING);
