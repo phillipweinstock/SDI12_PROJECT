@@ -62,8 +62,8 @@ char pressure[15];
 char humidity[15];
 char gas[15];
 char resistance[15];
-airoutput airinfo = {0,0,0,0};
-bool eject_sd;// STUPID GLOBAL VARIABLE
+airoutput airinfo = {0, 0, 0, 0};
+bool eject_sd; // STUPID GLOBAL VARIABLE
 
 /* These two functions are responsible for writing sensor values to the TFT display.
 These functions provide a convenient way to display sensor readings on the TFT display
@@ -136,10 +136,10 @@ void static_AIRQ()
     tft->setTextColor(ST77XX_YELLOW);
     tft->setTextSize(1);
     // sensors.airreading();//Calling an update
-    //void (*bs)(void);
-    //bs = par
-    //Feature not a bug, displays startup reading or updated reading after aM!
-    memcpy(&airinfo,&(sensors.menu_workaround),sizeof(airoutput));
+    // void (*bs)(void);
+    // bs = par
+    // Feature not a bug, displays startup reading or updated reading after aM!
+    memcpy(&airinfo, &(sensors.menu_workaround), sizeof(airoutput));
     sprintf(pressure, "%u", airinfo.pressure);
     sprintf(temperature, "%2.2f", airinfo.temp);
     sprintf(humidity, "%2.2f", airinfo.humidity);
@@ -232,15 +232,15 @@ dynamic part of the format displayed from the above functions */
 
 void Airq()
 {
-    //Disappointing display of not usings a struct properly, 
-    //sensors.bme.performReading();
-    //airinfo.temp = sensors.bme.temperature;
-    //airinfo.pressure = sensors.bme.pressure;
-    //airinfo.gasresistance = sensors.bme.gas_resistance;
-    //airinfo.humidity = sensors.bme.humidity;
+    // Disappointing display of not usings a struct properly,
+    // sensors.bme.performReading();
+    // airinfo.temp = sensors.bme.temperature;
+    // airinfo.pressure = sensors.bme.pressure;
+    // airinfo.gasresistance = sensors.bme.gas_resistance;
+    // airinfo.humidity = sensors.bme.humidity;
     static_AIRQ();
-    //WriteAirQVal(ST7735_RED);
-    // attachInterrupt(PB_2, Airq, LOW);
+    // WriteAirQVal(ST7735_RED);
+    //  attachInterrupt(PB_2, Airq, LOW);
 }
 
 void isr_workaround()
@@ -253,7 +253,6 @@ void isr_workaround()
     }
     if (!digitalRead(PB_2))
     {
-        //Serial.println(sensors.airreading().temp);
         tft->fillScreen(ST77XX_BLACK);
         Airq();
         return;
@@ -289,11 +288,6 @@ extern void Menuinit()
     tft->fillScreen(ST77XX_BLACK);
     menu_options();
     Timer3.attachInterrupt(isr_workaround).setFrequency(10).start();
-    
-    // attachInterrupt(PB_1, Disp_menu, RISING);
-    // attachInterrupt(PB_2, Airq, RISING);
-    // attachInterrupt(PB_4, eject_SD, RISING);
-    // attachInterrupt(PB_3, Light_disp, RISING);
 }
 
 extern void updateMenu(uint32_t current_time)
@@ -568,7 +562,6 @@ extern void updateMenu(uint32_t current_time)
 //     //     return;
 //     // }
 //     // lastupdate = current_time;
-//     // tft.
 //     // if(loop_state != lastupdate){}else{return;}
 //     // switch (loop_state)
 //     // {

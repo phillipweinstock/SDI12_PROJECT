@@ -6,6 +6,13 @@
 #include <DueFlashStorage.h>
 #include "..\lib\macros.h"
 #include "..\lib\sensors.h"
+// https://forum.arduino.cc/t/due-software-reset/332764/5 Retrieved from post 6 for ARMv7_M SAM3X
+// Defines so the device can do a self reset
+#define SYSRESETREQ (1 << 2)
+#define VECTKEY (0x05fa0000UL)
+#define VECTKEY_MASK (0x0000ffffUL)
+#define AIRCR (*(uint32_t *)0xe000ed0cUL) // fixed arch-defined address
+#define REQUEST_EXTERNAL_RESET (AIRCR = (AIRCR & VECTKEY_MASK) | VECTKEY | SYSRESETREQ)
 extern char _end;
 extern "C" char *sbrk(int i);
 char *ramstart = (char *)0x20070000;
@@ -24,9 +31,6 @@ MetaData paramdata[] =
         {"XR", "Humidity"},      // Humidity
         {"GR", "Gas Resistance"} // Gas Resistance
 };
-
-
-
 
 class Parser
 {
@@ -53,6 +57,7 @@ private:
     bool reading_avaliable;
     bool cont_measure;
     void refresh_vals();
+    void sdi12print();
     char sdi12add[2];
     CRC16 crc;
     void calccrc();
@@ -62,6 +67,7 @@ private:
     airoutput air_reading;
     uint16_t lux_reading;
 };
+
 void Parser::refresh_vals()
 {
     lux_reading = sensors.lightmeter.readLightLevel(); // ick
@@ -86,6 +92,22 @@ void Parser::calccrc()
     crcASCII[2] = 0x40 | (crcraw & 0x3F);
     crc.restart();
 }
+void Parser::sdi12print()
+{
+    SEND();
+    if (crcreq)
+    {
+        sdi12.print(outputbuf);
+        calccrc();
+        sdi12.println(crcASCII);
+    }
+    else
+    {
+        sdi12.println(outputbuf);
+    }
+
+    CLR12();
+}
 int Parser::parse(char *buffer, u_int8_t commandlength)
 {
     /*
@@ -99,16 +121,15 @@ int Parser::parse(char *buffer, u_int8_t commandlength)
     target = buffer[0] == sdi12add[0];
     if (commandlength == 1 && target)
     {
-        SEND();
-        sdi12.println(sdi12add);
-        CLR12();
+
+        sprintf(outputbuf, "%s", sdi12add);
+        sdi12print();
         return EXIT_SUCCESS;
     }
     if (commandlength == 1 && buffer[0] == '?')
     {
-        SEND();
-        sdi12.println(sdi12add);
-        CLR12();
+        sprintf(outputbuf, "%s", sdi12add);
+        sdi12print();
         return EXIT_SUCCESS;
     }
     if (target && commandlength > 1)
@@ -122,11 +143,7 @@ int Parser::parse(char *buffer, u_int8_t commandlength)
             char *heapend = sbrk(0);
             register char *stack_ptr asm("sp");
             sprintf(outputbuf, "%s+RAMFREE+%d", sdi12add, stack_ptr - heapend + mi.fordblks);
-            //sprintf(outputbuf, "%s+RAMFREE+%d", sdi12add, FreeRam());
-            SEND();
-            sdi12.println(outputbuf);
-
-            CLR12();
+            sdi12print();
         }
         break;
 
@@ -151,50 +168,38 @@ int Parser::parse(char *buffer, u_int8_t commandlength)
             }
             switch (select)
             {
-            case 0:
+            case 1:
             {
                 sprintf(outputbuf, "%s+%u", sdi12add, lux_reading);
             }
             break;
-            case 1:
+            case 2:
             {
                 sprintf(outputbuf, "%s+%.2f", sdi12add, air_reading.temp);
             }
             break;
-            case 2:
+            case 3:
             {
                 sprintf(outputbuf, "%s+%lu", sdi12add, air_reading.pressure);
             }
             break;
-            case 3:
+            case 4:
             {
                 sprintf(outputbuf, "%s+%.2f", sdi12add, air_reading.humidity);
             }
             break;
-            case 4:
+            case 5:
             {
                 sprintf(outputbuf, "%s+%lu", sdi12add, air_reading.gasresistance);
             }
             break;
-
+            case 0: // Some sdi-12 dataloggers are indexed with zero.
             default:
             {
                 sprintf(outputbuf, "%s", sdi12add);
             }
             }
-
-            if (crcreq)
-            {
-                sdi12.print(outputbuf);
-                calccrc();
-                sdi12.println(crcASCII);
-            }
-            else
-            {
-                sdi12.println(outputbuf);
-            }
-
-            CLR12();
+            sdi12print();
             return EXIT_SUCCESS;
         };
         case 'C':
@@ -234,10 +239,7 @@ int Parser::parse(char *buffer, u_int8_t commandlength)
                 reading_avaliable = true; // double ick
                 sprintf(outputbuf, "%s0005", sdi12add);
             }
-            SEND();
-
-            sdi12.println(outputbuf);
-            CLR12();
+            sdi12print();
 
             if (commandlength == 3)
             {
@@ -254,6 +256,8 @@ int Parser::parse(char *buffer, u_int8_t commandlength)
                    We should check the page here but seeing as we have one page assume that it is 0.
                    This is technically non compliant,but this behaviour is acceptible due to one page existing.
                    Not implemented, not going to be, this will be optimised out as it is a dead branch. ╭( ๐ _๐)╮
+
+                   This can be implemented in the future when checks are given to students
                 */
             }
 
@@ -265,21 +269,9 @@ int Parser::parse(char *buffer, u_int8_t commandlength)
                     refresh_vals();
                     cont_measure = false;
                 }
-                SEND();
                 sprintf(outputbuf, "%s+%u+%.2f+%u+%.2f+%lu", sdi12add, lux_reading, air_reading.temp,
                         air_reading.pressure, air_reading.humidity, air_reading.gasresistance);
-                if (crcreq)
-                {
-                    sdi12.print(outputbuf);
-                    calccrc();
-                    sdi12.println(crcASCII);
-                }
-                else
-                {
-                    sdi12.println(outputbuf);
-                }
-
-                CLR12();
+                sdi12print();
             }
             return EXIT_SUCCESS;
         }
@@ -292,9 +284,7 @@ int Parser::parse(char *buffer, u_int8_t commandlength)
             */
 
             sprintf(outputbuf, "%s000000", sdi12add);
-            SEND();
-            sdi12.println(outputbuf);
-            CLR12();
+            sdi12print();
             return EXIT_SUCCESS;
         }
         break;
@@ -324,9 +314,13 @@ int Parser::parse(char *buffer, u_int8_t commandlength)
             retval = EXIT_FAILURE;
         }
         break;
+        case 'X':
+            rstc_start_software_reset(RSTC);
+            // REQUEST_EXTERNAL_RESET;
+            break;
         case 'I':
         {
-            // TODO: META DATA COMMANDS
+
             crcreq = buffer[3] == 'C';
             // adms = false;
             extra_param = false;
@@ -353,23 +347,16 @@ int Parser::parse(char *buffer, u_int8_t commandlength)
                 ((buffer[2] != 'R') && (buffer[2] != 'D')))
             {
                 sprintf(outputbuf, "%s0000", sdi12add);
-                // sprintf(outputbuf, "%s14SWINBURNSDIBRG001", sdi12add);
-                SEND();
-
-                sdi12.println(outputbuf);
-                CLR12();
+                sdi12print();
                 return EXIT_SUCCESS;
-                // Serial.println("Trigger me elmo");
-                // adms = !adms;
+
             }
             Serial.println(commandlength);
             if (commandlength == 2)
             {
                 // Stop early if it is not a metadata command
                 sprintf(outputbuf, "%s14SWINBURNSDIBRG001", sdi12add);
-                SEND();
-                sdi12.println(outputbuf);
-                CLR12();
+                sdi12print();
                 return EXIT_SUCCESS;
             }
 
@@ -393,26 +380,13 @@ int Parser::parse(char *buffer, u_int8_t commandlength)
                 }
             }
             break;
-
-                // case break;
             default:
             {
             }
             break;
             }
-            SEND();
-            //
-            if (crcreq)
-            {
-                sdi12.print(outputbuf);
-                calccrc();
-                sdi12.println(crcASCII);
-            }
-            else
-            {
-                sdi12.println(outputbuf);
-            }
-            CLR12();
+            sdi12print();
+
             return EXIT_SUCCESS;
         }
         break;

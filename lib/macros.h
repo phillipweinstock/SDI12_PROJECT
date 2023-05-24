@@ -35,4 +35,6 @@
         sdi12.end();                   \
         sdi12.begin(1200, SERIAL_7E1);\
     }
+
+#define DEBUG 0
 #endif
