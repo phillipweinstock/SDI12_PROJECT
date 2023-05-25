@@ -78,6 +78,14 @@ void logsensordata()
     logfile.println(logbuffer);
     logfile.flush();
 }
+
+
+
+/*
+The SD eject is needed so we can make sure no data is being written to the card Thus avoid corrupted files 
+Once The SD is ejected the board will need to reboot start the datalog again.
+*/
+
 void SD_eject()
 {
     if (eject_triggered_previously)
@@ -88,6 +96,7 @@ void SD_eject()
     sd.end();
     eject_triggered_previously = true;
 }
+
 void SD_init()
 {
     rtc.begin();
@@ -102,14 +111,14 @@ void SD_init()
     logfile = sd.open("sensor_log.CSV", O_RDWR | O_CREAT | O_SYNC);
     if (!logfile)
     {
-        sd.errorHalt(F("open failed"));
+        sd.errorHalt(F("open failed")); 
     }
     if (logfile.size() == 0)
     {
 #if DEBUG
         Serial.println(F("Writing CSV header"));
 #endif
-        logfile.println(F("EPOCH,Temperature,Humidity,Pressure,Light_intensity,Gas_Resistance"));
+        logfile.println(F("EPOCH,Temperature,Humidity,Pressure,Light_intensity,Gas_Resistance")); //make sure that the coloumbs headder are alawsys there
         logfile.flush();
         delay(10);
     }
