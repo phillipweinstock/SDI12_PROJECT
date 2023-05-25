@@ -2,6 +2,7 @@
 #define MACROS_H
 #include <Arduino.h>
 /*
+    Workaround for unrealiable hardware
     Hard coded for digital pin Seven, if desired a compile time lookup table could be used.
     The purpose of these macros is to switch the direction pin faster than the arduino lib
     It is roughy 300x faster.
@@ -38,3 +39,7 @@
 
 #define DEBUG 0
 #endif
+/*
+    Developed by Phillip Weinstock student ID 102101219
+    Copyright 2023© ALL RIGHTS RESERVED.
+*/

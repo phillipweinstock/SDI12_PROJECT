@@ -1,37 +1,37 @@
 #ifndef SENSORS_H
 #define SENSORS_H
-#include <Wire.h>
-#include <Adafruit_Sensor.h>
 #include <Adafruit_BME680.h>
+#include <Adafruit_Sensor.h>
 #include <BH1750.h>
+#include <Wire.h>
+
 /*
-  struct keeps all the data togher in an makeing to code more modualar and easer to use in many diffrent applactions
-  this same code is called out in both datalog, Screen and SDI12
+  struct keeps all the data togher in an makeing to code more modualar and easer
+  to use in many diffrent applactions this same code is called out in both
+  datalog, Screen and SDI12
 */
 
-struct airoutput
-{
+struct airoutput {
   float temp;
   uint32_t pressure;
   float humidity;
   uint32_t gasresistance;
 };
-struct Lightoutput
-{
+struct Lightoutput {
   uint16_t lux;
 };
 
-class SensorWrap
-{
+class SensorWrap {
 public:
-  void init()
-  {
+  void init() {
 
     i2cadd1 = 0x76; // scanI2C();
     bme.begin(i2cadd1, &Wire1);
     /*
       oversampling mode takes a Average of "x" number of measurments
-      wer're havent gotten any crazy outline looking data so we're not using it but it would defenetly somthing I would do for something out in the "outside"
+      wer're havent gotten any crazy outline looking data so we're not using it
+      but it would defenetly somthing I would do for something out in the
+      "outside"
 
       bme.setTemperatureOversampling(BME680_OS_8X);
       bme.setHumidityOversampling(BME680_OS_2X);
@@ -41,7 +41,8 @@ public:
     */
 
     lightmeter.begin(BH1750::CONTINUOUS_HIGH_RES_MODE, 0x23, &Wire1);
-    airreading(); // This is a workaround  to a  stupid allocation glitch w/h menu code,
+    airreading(); // This is a workaround  to a  stupid allocation glitch w/h
+                  // menu code,
     lightreading();
   }
   airoutput menu_workaround;
@@ -57,8 +58,7 @@ public:
   acutal functions are actioned here
  */
 
-  airoutput airreading()
-  {
+  airoutput airreading() {
     airoutput output;
     bme.performReading();
     // bme.beginReading();
@@ -67,11 +67,11 @@ public:
     output.pressure = bme.pressure / 1000;
     output.humidity = bme.humidity;
     output.gasresistance = bme.gas_resistance / 1000.0;
-    memcpy(&menu_workaround, &output, sizeof(airoutput)); // I am not needed when standalone is disabled
+    memcpy(&menu_workaround, &output,
+           sizeof(airoutput)); // I am not needed when standalone is disabled
     return output;
   }
-  Lightoutput lightreading()
-  {
+  Lightoutput lightreading() {
     Lightoutput output;
     output.lux = lightmeter.readLightLevel();
     return output;
@@ -85,8 +85,8 @@ private:
 SensorWrap sensors = SensorWrap();
 extern SensorWrap sensors;
 /*
-  turns out the entern sensorWrap is need to action the code in other bits of code great use of like 3-4days learing this
+  turns out the entern sensorWrap is need to action the code in other bits of
+  code great use of like 3-4days learing this
 */
-
 
 #endif
