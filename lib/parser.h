@@ -4,8 +4,8 @@
 #include <Arduino.h>
 #include <CRC16.h>
 #include <DueFlashStorage.h>
-#include "..\lib\macros.h"
-#include "..\lib\sensors.h"
+#include "macros.h"
+#include "sensors.h"
 extern char _end;
 extern "C" char *sbrk(int i);
 char *ramstart = (char *)0x20070000;

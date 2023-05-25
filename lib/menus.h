@@ -13,7 +13,7 @@ readings as part of the menu option */
 #include <SPI.h>
 #include <Arduino.h>
 #include <DueTimer.h>
-#include "..\lib\sensors.h"
+#include "sensors.h"
 
 /* the following section defines the required digital
 pins on the arduino to be used to trigger differnt menu

@@ -8,8 +8,8 @@
 #include <SdFatConfig.h>
 #include <Adafruit_I2CDevice.h>
 #include <SPI.h>
-#include "../lib/sensors.h"
 #include <RTCDue.h>
+#include "sensors.h"
 
 #if SPI_DRIVER_SELECT == 2 // Must be set in SdFat/SdFatConfig.h  <----DO--NOT--FORGET!!!!---------
 // DO THIS BEFORE YOU COMPILE, OTHERWISE THE PROJECT WON'T WORK
@@ -115,7 +115,7 @@ void SD_init()
 #if DEBUG
         Serial.println(F("Writing CSV header"));
 #endif
-        logfile.println(F("EPOCH,Temperature,Humidity,Pressure,Light_intensity,Gas_Resistance"));
+        logfile.println(F("EPOCH,Temperature,Humidity,Pressure,Light_intensity,Gas_Resistance"));//make sure that the coloumbs headder are alawsys there
         logfile.flush();
         delay(10);
     }
