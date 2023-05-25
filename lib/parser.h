@@ -6,13 +6,6 @@
 #include <DueFlashStorage.h>
 #include "..\lib\macros.h"
 #include "..\lib\sensors.h"
-// https://forum.arduino.cc/t/due-software-reset/332764/5 Retrieved from post 6 for ARMv7_M SAM3X
-// Defines so the device can do a self reset
-#define SYSRESETREQ (1 << 2)
-#define VECTKEY (0x05fa0000UL)
-#define VECTKEY_MASK (0x0000ffffUL)
-#define AIRCR (*(uint32_t *)0xe000ed0cUL) // fixed arch-defined address
-#define REQUEST_EXTERNAL_RESET (AIRCR = (AIRCR & VECTKEY_MASK) | VECTKEY | SYSRESETREQ)
 extern char _end;
 extern "C" char *sbrk(int i);
 char *ramstart = (char *)0x20070000;
@@ -135,7 +128,7 @@ int Parser::Parse(char *buffer, u_int8_t commandlength)
 
             char *heapend = sbrk(0);
             register char *stack_ptr asm("sp");
-            sprintf(outputbuf, "%s+RAMFREE+%d", sdi12add, stack_ptr - heapend + mi.fordblks);
+            sprintf(outputbuf, "%s+RAMFREE: %d", sdi12add, stack_ptr - heapend + mi.fordblks);
             flush_sdi12();
         }
         break;
