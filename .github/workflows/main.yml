@@ -34,4 +34,4 @@ jobs:
     - name: Run PlatformIO
       run: platformio run
       env:
-        PLATFORMIO_BUILD_FLAGS:  -I/lib
+        PLATFORMIO_BUILD_FLAGS:  -I "${platformio.workspace_dir}/../"
