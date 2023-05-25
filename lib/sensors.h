@@ -5,6 +5,12 @@
 #include <Adafruit_BME680.h>
 #include <BH1750.h>
 
+
+
+/*
+struct keeps all the data togher in an makeing to code more modualar and easer to use in many diffrent applactions
+this same code is called out in both datalog, Screen and SDI12
+*/
 struct airoutput
 {
   float temp;
@@ -25,9 +31,10 @@ public:
 
     i2cadd1 = 0x76; // scanI2C();
     bme.begin(i2cadd1, &Wire1);
-    /*Apparently this is needed for accuracy
-    Thank you Don for bringing this to my attention
-    TODO: Ask Saroj to investigate if code below is needed.
+    /*
+      oversampling mode takes a Average of "x" number of measurments
+      wer're havent gotten any crazy outline looking data so we're not using it but it would defenetly somthing I would do for something out in the "outside"
+
     bme.setTemperatureOversampling(BME680_OS_8X);
     bme.setHumidityOversampling(BME680_OS_2X);
     bme.setPressureOversampling(BME680_OS_4X);
@@ -46,6 +53,11 @@ public:
   // this is causing the sensors to crash when entering Parsas code
 
  //__attribute__((noinline))
+
+
+ /*
+ acutal functions are actioned here
+ */
   airoutput airreading()
   {
     airoutput output;
@@ -59,6 +71,7 @@ public:
     memcpy(&menu_workaround,&output,sizeof(airoutput));//I am not needed when standalone is disabled
     return output;
   }
+  
   Lightoutput lightreading()
     {
         Lightoutput output;
@@ -73,5 +86,9 @@ private:
 };
 SensorWrap sensors = SensorWrap();
 extern SensorWrap sensors;
+/*
+turns out the entern sensorWrap is need to action the code in other bits of code great use of like 3-4days learing this
+*/
+
 
 #endif
