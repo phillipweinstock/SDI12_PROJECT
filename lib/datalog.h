@@ -78,6 +78,12 @@ void logsensordata()
     logfile.println(logbuffer);
     logfile.flush();
 }
+
+/*
+    The SD eject is needed so we can make sure no data is being written to the card Thus avoid corrupted files 
+    Once The SD is ejected the board will need to reboot start the datalog again.
+*/
+
 void SD_eject()
 {
     if (eject_triggered_previously)
