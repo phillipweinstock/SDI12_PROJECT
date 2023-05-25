@@ -6,6 +6,7 @@
 #include <Wire.h>
 #include <SdFat.h>
 #include <SdFatConfig.h>
+#define SPI_DRIVER_SELECT 2
 #include <Adafruit_I2CDevice.h>
 #include <SPI.h>
 #include <RTCDue.h>
