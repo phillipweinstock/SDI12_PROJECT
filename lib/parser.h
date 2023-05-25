@@ -37,7 +37,7 @@ class Parser
 public:
     Parser(char address = '0')
     {
-        target = crcreq = adms = cont_measure = extra_param = false;
+        target = crcReq = adms = contMeasure = extraParam = false;
         sdi12add[0] = address;
         sdi12add[1] = crcASCII[3] = '\0';
 
@@ -45,40 +45,33 @@ public:
         crc = CRC16(0xA001, 0, 0, false, false);
         flash = DueFlashStorage();
     };
-    int parse(char *buffer, u_int8_t commandlength);
+    int Parse(char *buffer, u_int8_t commandlength);
     DueFlashStorage flash; // I hate this leaky abstraction, I don't have the energy to fix it. ಠ╭╮ಠ
-    void setadd(char add);
+    void SetAdd(char add);
 
 private:
-    bool target;
-    bool adms;
-    bool extra_param;
+    char sdi12add[2], crcASCII[4], outputbuf[200];
+    bool target, adms, extraParam, readingAvaliable, crcReq, contMeasure;
     int retval;
-    bool reading_avaliable;
-    bool cont_measure;
-    void refresh_vals();
-    void sdi12print();
-    char sdi12add[2];
     CRC16 crc;
-    void calccrc();
-    bool crcreq;
-    char crcASCII[4];
-    char outputbuf[200];
-    airoutput air_reading;
-    uint16_t lux_reading;
+    airoutput airReading;
+    uint16_t luxReading;
+    void refresh_vals();
+    void flush_sdi12();
+    void CalcCrc();
 };
 
 void Parser::refresh_vals()
 {
-    lux_reading = sensors.lightmeter.readLightLevel(); // ick
-    air_reading = sensors.airreading();
+    luxReading = sensors.lightmeter.readLightLevel(); // ick
+    airReading = sensors.airreading();
 }
-void Parser::setadd(char add)
+void Parser::SetAdd(char add)
 {
     // run this if the address is different from the default or not first run.
     sdi12add[0] = add;
 }
-void Parser::calccrc()
+void Parser::CalcCrc()
 {
     /*
      Page 21 Ver 1.4 SDI-12 standard 4.4.12.2
@@ -92,13 +85,13 @@ void Parser::calccrc()
     crcASCII[2] = 0x40 | (crcraw & 0x3F);
     crc.restart();
 }
-void Parser::sdi12print()
+void Parser::flush_sdi12()
 {
     SEND();
-    if (crcreq)
+    if (crcReq)
     {
         sdi12.print(outputbuf);
-        calccrc();
+        CalcCrc();
         sdi12.println(crcASCII);
     }
     else
@@ -108,7 +101,7 @@ void Parser::sdi12print()
 
     CLR12();
 }
-int Parser::parse(char *buffer, u_int8_t commandlength)
+int Parser::Parse(char *buffer, u_int8_t commandlength)
 {
     /*
         Excluding the break command, we should have full SDI-12 Ver 1.4 Feb 20, 2023 compliance.
@@ -123,13 +116,13 @@ int Parser::parse(char *buffer, u_int8_t commandlength)
     {
 
         sprintf(outputbuf, "%s", sdi12add);
-        sdi12print();
+        flush_sdi12();
         return EXIT_SUCCESS;
     }
     if (commandlength == 1 && buffer[0] == '?')
     {
         sprintf(outputbuf, "%s", sdi12add);
-        sdi12print();
+        flush_sdi12();
         return EXIT_SUCCESS;
     }
     if (target && commandlength > 1)
@@ -143,7 +136,7 @@ int Parser::parse(char *buffer, u_int8_t commandlength)
             char *heapend = sbrk(0);
             register char *stack_ptr asm("sp");
             sprintf(outputbuf, "%s+RAMFREE+%d", sdi12add, stack_ptr - heapend + mi.fordblks);
-            sdi12print();
+            flush_sdi12();
         }
         break;
 
@@ -152,13 +145,13 @@ int Parser::parse(char *buffer, u_int8_t commandlength)
             // Continous measurement support
             SEND();
             int select;
-            crcreq = buffer[2] == 'C';
+            crcReq = buffer[2] == 'C';
             refresh_vals();
             /*
              Shift which character we are checking depending if CRC is requested.
              Then we will select our sensor for instantaneous measurement
             */
-            if (crcreq)
+            if (crcReq)
             {
                 select = buffer[3] - '0';
             }
@@ -170,27 +163,27 @@ int Parser::parse(char *buffer, u_int8_t commandlength)
             {
             case 1:
             {
-                sprintf(outputbuf, "%s+%u", sdi12add, lux_reading);
+                sprintf(outputbuf, "%s+%u", sdi12add, luxReading);
             }
             break;
             case 2:
             {
-                sprintf(outputbuf, "%s+%.2f", sdi12add, air_reading.temp);
+                sprintf(outputbuf, "%s+%.2f", sdi12add, airReading.temp);
             }
             break;
             case 3:
             {
-                sprintf(outputbuf, "%s+%lu", sdi12add, air_reading.pressure);
+                sprintf(outputbuf, "%s+%lu", sdi12add, airReading.pressure);
             }
             break;
             case 4:
             {
-                sprintf(outputbuf, "%s+%.2f", sdi12add, air_reading.humidity);
+                sprintf(outputbuf, "%s+%.2f", sdi12add, airReading.humidity);
             }
             break;
             case 5:
             {
-                sprintf(outputbuf, "%s+%lu", sdi12add, air_reading.gasresistance);
+                sprintf(outputbuf, "%s+%lu", sdi12add, airReading.gasresistance);
             }
             break;
             case 0: // Some sdi-12 dataloggers are indexed with zero.
@@ -199,18 +192,18 @@ int Parser::parse(char *buffer, u_int8_t commandlength)
                 sprintf(outputbuf, "%s", sdi12add);
             }
             }
-            sdi12print();
+            flush_sdi12();
             return EXIT_SUCCESS;
         };
         case 'C':
-            cont_measure = !cont_measure;
+            contMeasure = !contMeasure;
         case 'M':
         {
             // Supports Measurements + concurrent ones
             // Command is basically the same in implementation.
 
             // Lets check if CRC has been requested
-            crcreq = buffer[2] == 'C';
+            crcReq = buffer[2] == 'C';
             /*
                 lets check if aM1!..aM9 required for ver 1.2 SDI-12 compliance
                 Not implemented, not going to be.... Still compliant due to response
@@ -218,9 +211,9 @@ int Parser::parse(char *buffer, u_int8_t commandlength)
                 TODO: sanitize input
             */
             adms = false;
-            if ((crcreq && commandlength >= 4) || (commandlength >= 3 && !crcreq))
+            if ((crcReq && commandlength >= 4) || (commandlength >= 3 && !crcReq))
             {
-                adms = !adms;
+                adms = !adms;//Additional measurement pages
             }
             /*  Full Compliance aM! aMC!  aM(0-9)! aMC(0-9)! aC! aCC! aC(0-9)! aCC(0-9)!.
                 ttt is zero no service request is required to indicate the sensor is ready for reading Yay!
@@ -236,10 +229,10 @@ int Parser::parse(char *buffer, u_int8_t commandlength)
                 //  This triggers sensor reading
                 //  and placement into sending buffer
                 refresh_vals();
-                reading_avaliable = true; // double ick
+                readingAvaliable = true; // double ick
                 sprintf(outputbuf, "%s0005", sdi12add);
             }
-            sdi12print();
+            flush_sdi12();
 
             if (commandlength == 3)
             {
@@ -257,21 +250,21 @@ int Parser::parse(char *buffer, u_int8_t commandlength)
                    This is technically non compliant,but this behaviour is acceptible due to one page existing.
                    Not implemented, not going to be, this will be optimised out as it is a dead branch. ╭( ๐ _๐)╮
 
-                   This can be implemented in the future when checks are given to students
+                   This can be implemented with ease in the future.
                 */
             }
 
-            if (commandlength == 3 && reading_avaliable)
+            if (commandlength == 3 && readingAvaliable)
             {
-                reading_avaliable = false;
-                if (cont_measure)
+                readingAvaliable = false;
+                if (contMeasure)
                 {
                     refresh_vals();
-                    cont_measure = false;
+                    contMeasure = false;
                 }
-                sprintf(outputbuf, "%s+%u+%.2f+%u+%.2f+%lu", sdi12add, lux_reading, air_reading.temp,
-                        air_reading.pressure, air_reading.humidity, air_reading.gasresistance);
-                sdi12print();
+                sprintf(outputbuf, "%s+%u+%.2f+%u+%.2f+%lu", sdi12add, luxReading, airReading.temp,
+                        airReading.pressure, airReading.humidity, airReading.gasresistance);
+                flush_sdi12();
             }
             return EXIT_SUCCESS;
         }
@@ -284,7 +277,7 @@ int Parser::parse(char *buffer, u_int8_t commandlength)
             */
 
             sprintf(outputbuf, "%s000000", sdi12add);
-            sdi12print();
+            flush_sdi12();
             return EXIT_SUCCESS;
         }
         break;
@@ -304,10 +297,8 @@ int Parser::parse(char *buffer, u_int8_t commandlength)
                 __set_FAULTMASK(1);
                 flash.write(1, sdi12add[0]);
                 __set_FAULTMASK(0);
-
-                SEND();
-                sdi12.println(sdi12add);
-                CLR12();
+                sprintf(outputbuf, "%s", sdi12add);
+                flush_sdi12();
 
                 return EXIT_SUCCESS;
             }
@@ -321,13 +312,13 @@ int Parser::parse(char *buffer, u_int8_t commandlength)
         case 'I':
         {
 
-            crcreq = buffer[3] == 'C';
+            crcReq = buffer[3] == 'C';
             // adms = false;
-            extra_param = false;
+            extraParam = false;
             int param = -1;
             if (commandlength == 7 || commandlength == 8)
             {
-                extra_param = !extra_param;
+                extraParam = !extraParam;
                 param = buffer[commandlength - 1] - '0';
                 // Serial.println(param);
 
@@ -342,21 +333,20 @@ int Parser::parse(char *buffer, u_int8_t commandlength)
              TODO: Replace this steaming pile
             */
 
-            if (((buffer[4] != '_' && crcreq && commandlength >= 5) ||
-                 (commandlength >= 4 && !crcreq && buffer[3] != '_')) &&
+            if (((buffer[4] != '_' && crcReq && commandlength >= 5) ||
+                 (commandlength >= 4 && !crcReq && buffer[3] != '_')) &&
                 ((buffer[2] != 'R') && (buffer[2] != 'D')))
             {
                 sprintf(outputbuf, "%s0000", sdi12add);
-                sdi12print();
+                flush_sdi12();
                 return EXIT_SUCCESS;
-
             }
             Serial.println(commandlength);
             if (commandlength == 2)
             {
                 // Stop early if it is not a metadata command
                 sprintf(outputbuf, "%s14SWINBURNSDIBRG001", sdi12add);
-                sdi12print();
+                flush_sdi12();
                 return EXIT_SUCCESS;
             }
 
@@ -385,7 +375,7 @@ int Parser::parse(char *buffer, u_int8_t commandlength)
             }
             break;
             }
-            sdi12print();
+            flush_sdi12();
 
             return EXIT_SUCCESS;
         }

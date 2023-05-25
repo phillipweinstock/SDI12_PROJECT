@@ -37,7 +37,7 @@ void setup()
   }
   else
   {
-    commandHandler.setadd(commandHandler.flash.read(1));
+    commandHandler.SetAdd(commandHandler.flash.read(1));
   }
   Wire1.begin();
   Wire.begin();
@@ -61,7 +61,7 @@ void loop()
   {
     Serial.println("Recieved command");
     Serial.println(sdi12buf);
-    commandHandler.parse(sdi12buf, sdiBuf.readchars);
+    commandHandler.Parse(sdi12buf, sdiBuf.readchars);
     sdiBuf.resetstatus();
     memset(sdi12buf, 0, sizeof(sdi12buf));
     RECEIVEF;
